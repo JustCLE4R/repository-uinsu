@@ -22,7 +22,7 @@ class LoginRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'nim' => 'required|integer',
+            'nim' => 'required|min:6|max:12',
             'password' => 'required',
         ];
     }
@@ -31,7 +31,8 @@ class LoginRequest extends FormRequest
     {
         return [
             'required' => ':attribute harus diisi',
-            'integer' => ':attribute harus berupa angka',
+            'min' => 'minimal karakter :attribute adalah :min',
+            'max' => 'maksimal karakter :attribute adalah :max',
         ];
     }
 

@@ -51,22 +51,25 @@
 <body>
   <div class="login-container">
     <h2 class="mb-4 text-center">Login</h2>
+    @if (session('error'))
+      <div class="alert alert-danger">{{ session('error') }}</div>
+    @endif
     <form action="{{ route('login') }}" method="POST">
       @csrf
       <div class="mb-3">
         <label for="NIM" class="form-label">NIM</label>
         <input type="NIM" class="form-control" id="NIM" name="nim" placeholder="Enter your NIM">
+        @error('nim')
+          <div style="color: red; ">{{ $message }}</div>
+        @enderror
       </div>
-      @error('nim')
-        <div class="error error-txt">{{ $message }}</div>
-      @enderror
       <div class="mb-3">
         <label for="password" class="form-label">Password</label>
         <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password">
+        @error('password')
+          <div style="color: red; ">{{ $message }}</div>
+        @enderror
       </div>
-      @error('password')
-        <div class="error error-txt">{{ $message }}</div>
-      @enderror
       <button type="submit" class="btn btn-primary w-100">Login</button>
     </form>
   </div>
