@@ -13,10 +13,18 @@ return new class extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
+            $table->string('nim', 10)->unique();
             $table->string('password');
+            $table->string('nama');
+            $table->enum('jenis_kelamin', ['L', 'P']);
+            $table->string('foto');
+            $table->string('email')->unique();
+            $table->string('telepon', 25);
+            $table->string('program_studi');
+            $table->string('fakultas')->nullable();
+            $table->string('strata')->nullable();
+            $table->year('tahun_masuk');
+            $table->enum('role', ['admin', 'mahasiswa'])->default('mahasiswa');
             $table->rememberToken();
             $table->timestamps();
         });
