@@ -37,4 +37,8 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    public function archive(){
+        return $this->hasMany(Archive::class);
+    }
 }

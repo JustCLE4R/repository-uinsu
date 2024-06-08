@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use Illuminate\Http\Request;
 use App\Models\ApiIntegration;
 use App\Http\Requests\LoginRequest;
 use Illuminate\Support\Facades\Auth;
@@ -28,8 +29,6 @@ class LoginController extends Controller
         if(User::firstWhere('nim', $request['nim']) == null && !isset($authData['error'])){
             $authData = $authData['OtentikasiUser'][0];
             $alumniData = $alumniData['DataAlumni'][0];
-
-            // dd($authData, $alumniData);
     
             $mhsData = [
                 'nim' => $authData['user'],
@@ -52,9 +51,16 @@ class LoginController extends Controller
         if(Auth::attempt(['nim' => $request['nim'], 'password' => md5($request['password'])])){
             $request->session()->regenerate();
             
-            return redirect()->intended('/dashboard');
+            return redirect()->intended('/');
         }
     
         return redirect('/login')->with('error', 'NIM atau password yang anda masukkan salah');
+    }
+
+    public function logout(Request $request){
+        Auth::logout();
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+        return redirect('/login');
     }
 }

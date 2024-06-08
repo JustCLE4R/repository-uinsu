@@ -58,7 +58,7 @@
       @csrf
       <div class="mb-3">
         <label for="NIM" class="form-label">NIM</label>
-        <input type="NIM" class="form-control" id="NIM" name="nim" placeholder="Enter your NIM">
+        <input type="NIM" class="form-control" id="NIM" name="nim" placeholder="Enter your NIM" value="41144013">
         @error('nim')
           <div style="color: red; ">{{ $message }}</div>
         @enderror

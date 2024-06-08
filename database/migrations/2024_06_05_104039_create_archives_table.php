@@ -25,7 +25,7 @@ return new class extends Migration
             $table->string('tempat_terbit');
             $table->string('isbn_issn');
             $table->string('official_url');
-            $table->timestamp('date');
+            $table->date('date');
             $table->string('volume');
             $table->string('number');
             $table->string('page');
@@ -34,6 +34,10 @@ return new class extends Migration
 
             $table->string('subjek');
             $table->string('nomor_klasifikasi');
+            $table->enum('status', ['accepted', 'rejected', 'pending'])->default('pending');
+            $table->string('reject_reason')->nullable();
+            $table->timestamp('accepted_at')->nullable();
+            $table->softDeletes();
             $table->timestamps();
         });
     }

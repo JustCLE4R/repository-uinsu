@@ -4,17 +4,18 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Archive extends Model
+class ChangeLog extends Model
 {
-    use HasFactory, SoftDeletes;
+    use HasFactory;
+
+    // protected $fillable = ['archive_id', 'change_type', 'user_id', 'change_date', 'change_details'];
 
     protected $guarded = ['id'];
 
-    public function changeLogs()
+    public function archive()
     {
-        return $this->hasMany(ChangeLog::class);
+        return $this->belongsTo(Archive::class);
     }
 
     public function user()

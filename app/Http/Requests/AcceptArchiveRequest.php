@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class ArchiveRequest extends FormRequest
+class AcceptArchiveRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -38,9 +38,10 @@ class ArchiveRequest extends FormRequest
             "journal_name" => "required",
             "subjek" => "required",
             "nomor_klasifikasi" => "required",
-            "file" => "required|mimes:pdf,jpg,jpeg,png",
+            "file" => "sometimes|mimes:pdf,jpg,jpeg,png",
         ];
     }
+
 
     public function messages(): array
     {
@@ -75,9 +76,4 @@ class ArchiveRequest extends FormRequest
             'file' => 'File',
         ];
     }
-
-    // protected function prepareForValidation()
-    // {
-    //     //
-    // }
 }
