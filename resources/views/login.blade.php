@@ -1,79 +1,124 @@
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Futuristic Login</title>
-  <link href="{{ asset('assets/bootstrap-5.3.3-dist/css/bootstrap.min.css') }}" rel="stylesheet">
-  <style>
-    body {
-      background-color: #2c3e50;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      font-family: 'Arial', sans-serif;
-    }
-    .login-container {
-      background-color: #34495e;
-      padding: 2rem;
-      border-radius: 0.5rem;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-    .form-control {
-      border-radius: 0.25rem;
-      background-color: #3b4b61;
-      border: 1px solid #3b4b61;
-      color: #ecf0f1;
-    }
-    .form-control:focus {
-      background-color: #465a75;
-      border-color: #465a75;
-      color: #ecf0f1;
-    }
-    .btn-primary {
-      background-color: #1abc9c;
-      border-color: #16a085;
-    }
-    .btn-primary:hover {
-      background-color: #16a085;
-      border-color: #149174;
-    }
-    .form-label {
-      color: #ecf0f1;
-    }
-    h2 {
-      color: #ecf0f1;
-    }
-  </style>
-</head>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
 <body>
-  <div class="login-container">
-    <h2 class="mb-4 text-center">Login</h2>
-    @if (session('error'))
-      <div class="alert alert-danger">{{ session('error') }}</div>
-    @endif
-    <form action="{{ route('login') }}" method="POST">
-      @csrf
-      <div class="mb-3">
-        <label for="NIM" class="form-label">NIM</label>
-        <input type="NIM" class="form-control" id="NIM" name="nim" placeholder="Enter your NIM" value="41144013">
-        @error('nim')
-          <div style="color: red; ">{{ $message }}</div>
-        @enderror
-      </div>
-      <div class="mb-3">
-        <label for="password" class="form-label">Password</label>
-        <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password">
-        @error('password')
-          <div style="color: red; ">{{ $message }}</div>
-        @enderror
-      </div>
-      <button type="submit" class="btn btn-primary w-100">Login</button>
-    </form>
+  <div class="container">
+    <div class="cover">
+      <div class="front">
+        <img src="https://preview.uideck.com/items/bliss/assets/img/hero/hero-img.svg" alt="">
+        
+        <div class="text" data-aos="fade-up" data-aos-duration="800">
+          <div class="carousel">
+            <span class="text-1">Selamat Datang <br> Di Website Repositori UINSU <br><a class="kunjungi" href="/">Kunjungi Repositori <i class="fa-regular fa-paper-plane"></i></a></span>
+            <span class="text-1" style="display: none;">Terima Kasih <br> Telah Menggunakan Layanan Kami</span>
+            <!-- Add additional text items here -->
+          </div>
+          <div class="controls">
+            <i class="fas fa-chevron-left prev"></i>
+            <i class="fas fa-chevron-right next"></i>
+          </div>
+        </div>
+        
+        
+      </div>      
+    </div>
+    <div class="forms">
+        <div class="form-content">
+          <div class="login-form">
+              <div class="row justify-content-between" data-aos="fade-up" data-aos-duration="800">
+                <div class="col-2">
+                  <div class="title">Login </div>
+                </div>
+                <div class="col-3">
+                  <span><img src="https://newuinsu.uinsu.ac.id/wp-content/uploads/2024/02/uin-dan-blu-png-2.png"  alt=""></span>
+                </div>
+              </div>
+            @if (session('error'))
+              <div class="alert alert-danger">{{ session('error') }}</div>
+            @endif
+            <form action="{{ route('login') }}" method="POST">
+
+              <div class="input-boxes">
+                <div class="input-box" data-aos="fade-up" data-aos-duration="1200">
+                  <i class="fas fa-envelope"></i>
+                  <input type="text" name="nim" id="NIM" placeholder="Masukan nim.." value="41144013" maxlength="12" required>
+                  @error('nim')
+                    <div style="color: red; ">{{ $message }}</div>
+                  @enderror
+                </div>
+
+                <div class="input-box" data-aos="fade-up" data-aos-duration="1400">
+                  <i class="fas fa-lock"></i>
+                  <input type="password" name="password" placeholder="Masukan Password" required>
+                  @error('password')
+                    <div style="color: red; ">{{ $message }}</div>
+                  @enderror
+                </div>
+
+                <div class="button input-box" data-aos="fade-up" data-aos-duration="1600">
+                  <input type="submit" value="Login">
+                </div>                
+              </div>
+            </form>
+          </div>
+        </div>
+    </div>
   </div>
 
-  <script src="{{ asset('assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+   
+    $(document).ready(function() {
+      AOS.init();
+      var currentIndex = 0;
+      var texts = $(".carousel").children();
+
+      function showText(index) {
+        texts.hide();
+        $(texts[index]).fadeIn();
+      }
+
+      function nextText() {
+        currentIndex = (currentIndex + 1) % texts.length;
+        showText(currentIndex);
+      }
+
+      function prevText() {
+        currentIndex = (currentIndex - 1 + texts.length) % texts.length;
+        showText(currentIndex);
+      }
+
+      $(".next").click(function() {
+        nextText();
+      });
+
+      $(".prev").click(function() {
+        prevText();
+      });
+
+      // Autoplay functionality
+      setInterval(function() {
+        nextText();
+      }, 7000);
+
+      // Show initial text
+      showText(currentIndex);
+    });
+
+
+    </script>
 </body>
 </html>
+

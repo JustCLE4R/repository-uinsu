@@ -10,11 +10,26 @@ Route::middleware(['guest', 'no-cache', 'security-header'])->group(function () {
   Route::post('/login', [LoginController::class, 'authenticate']);
 });
 
+Route::get('/', function () {
+  return view('landing');
+});
+
+Route::get('/arsip', function () {
+  return view('arsip');
+});
+
+Route::get('/pencarian', function () {
+  return view('pencarian');
+});
+Route::get('/unggah', function () {
+  return view('unggah');
+});
+
 
 
 Route::middleware(['auth'])->group(function () {
   Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
-  Route::view('/', 'index')->name('dashboard');
+  Route::view('/admin', 'index')->name('dashboard');
   
   Route::get('/submit', [ArchiveController::class, 'create']);
   Route::post('/submit', [ArchiveController::class, 'store']);
