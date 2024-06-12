@@ -5,8 +5,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="hero-content">
-                        <span class="wow fadeInLeft fs-5 text-secondary" data-wow-delay=".2s">Selamat Datang Di
-                            Website</span>
+                        <span class="wow fadeInLeft fs-5 text-secondary" data-wow-delay=".2s">Selamat Datang </span>
                         <h1 class="wow fadeInUp " data-wow-delay=".4s">Arsip Universitas Islam Negeri Sumatera
                             Utara
                         </h1>
@@ -21,34 +20,13 @@
                                         data-wow-delay="0.3s">
                                         <div class="counter-content media-body">
                                             <div class="counter-count">
-                                                <div class="counter" id="clientsCount">4350</div>
+                                                <div class="counter" id="clientsCount">4352320</div>
                                             </div>
-                                            <p class="text">Mahasiswa</p>
+                                            <p class="text">Dokumen Arsip</p>
                                         </div>
                                     </div> <!-- single counter -->
                                 </div>
-                                <div class="col-sm-4">
-                                    <div class="single-counter counter-color-2 d-flex wow fadeInUp" data-wow-duration="1s"
-                                        data-wow-delay="0.6s">
-                                        <div class="counter-content media-body">
-                                            <div class="counter-count">
-                                                <div class="counter" id="satisfactionCount">2899</div>
-                                            </div>
-                                            <p class="text">Alumni</p>
-                                        </div>
-                                    </div> <!-- single counter -->
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="single-counter counter-color-3 d-flex wow fadeInUp" data-wow-duration="1s"
-                                        data-wow-delay="0.9s">
-                                        <div class="counter-content media-body">
-                                            <div class="counter-count">
-                                                <div class="counter" id="projectsCount">63</div>
-                                            </div>
-                                            <p class="text">Telah Mengisi</p>
-                                        </div>
-                                    </div>
-                                </div>
+
 
                             </div>
                         </div>

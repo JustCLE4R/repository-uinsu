@@ -4,21 +4,20 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
-                    <div class="hero-content">
-                        <span class="wow fadeInLeft fs-5 text-secondary" data-wow-delay=".2s">Selamat Datang Di
+                    <div class="hero-content animate__animated animate__fadeInLeft wow" data-wow-duration="2s">
+                        <span class="  fs-5 text-secondary" >Selamat Datang Di
                             Website</span>
-                        <h1 class="wow fadeInUp " data-wow-delay=".4s">Repositori Universitas Islam Negeri Sumatera
+                        <h1 class="  " >Repositori Universitas Islam Negeri Sumatera
                             Utara
                         </h1>
-                        <p class="wow fadeInUp" data-wow-delay=".6s">Repository Universitas Islam Negeri Sumatera Utara
+                        <p class=" " >Repository Universitas Islam Negeri Sumatera Utara
                             (UINSU) merupakan wadah untuk mempublikasi semua jenis koleksi elektronik yang dihasilkan
                             oleh civitas akademika UIN Sumatera Utara.</p>
 
-                        <div class="about-counter mt-50 ">
+                        <div class="about-counter mt-50 animate__animated animate__fadeInLeft wow" data-wow-duration="2.3s" >
                             <div class="row">
                                 <div class="col-sm-4 ">
-                                    <div class="single-counter counter-color-1 d-flex wow fadeInUp" data-wow-duration="1s"
-                                        data-wow-delay="0.3s">
+                                    <div class="single-counter counter-color-1 d-flex  " >
                                         <div class="counter-content media-body">
                                             <div class="counter-count">
                                                 <div class="counter" id="clientsCount">4232350</div>
@@ -35,7 +34,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="hero-img wow fadeInUp" data-wow-delay=".5s">
+                    <div class="hero-img animate__animated animate__fadeInRight wow" data-wow-duration="1.5s" >
                         <img src="assets/img/hero-2.svg" alt="">
                     </div>
 
@@ -48,23 +47,23 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-xl-6 col-lg-6 order-1" id="content-1">
-                    <div class="about-img text-lg-right wow fadeInUp" data-wow-delay=".5s">
+                    <div class="about-img text-lg-right animate__animated animate__fadeInUp wow" data-wow-duration="1.5s">
                         <img src="assets/img/hero-3.svg" alt="">
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-6" id="content-2">
-                    <div class="about-content">
+                    <div class="about-content animate__animated animate__fadeInUp wow" data-wow-duration="1.5s" >
                         <div class="section-title ">
-                            <h1 class="mb-25 wow fadeInUp" data-wow-delay=".2s">Informasi Tentang Repositori UIN
+                            <h1 class="mb-25  " >Informasi Tentang Repositori UIN
                                 Sumatera Utara</h1>
-                            <p class="wow fadeInUp" data-wow-delay=".3s">Repository Universitas Islam Negeri Sumatera
+                            <p class=" " >Repository Universitas Islam Negeri Sumatera
                                 Utara (UINSU) di awali pada tanggal 8 Desember 2015. Repositoy ini merupakan wadah untuk
                                 mempublikasi semua jenis koleksi elektronik yang dihasilkan oleh civitas akademika UIN
                                 Sumatera Utara.</p>
 
                         </div>
-                        <div class="accordion  wow fadeInUp shadow" data-wow-delay=".2s" id="accordionExample"
-                            style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                        <div class="accordion    shadow"  id="accordionExample"
+                            style="visibility: visible; animation-delay: 0.2s; animation-name: ;">
                             <div class="single-faq">
                                 <button class="w-100 ps-4 text-start collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -75,14 +74,14 @@
                                     data-bs-parent="#accordionExample">
 
                                     <div class="faq-content d-flex flex-wrap" style="text-align: justify;">
-                                        <p class="wow fadeInUp" data-wow-delay=".3s">Jenis koleksi tersebut meliputi:
+                                        <p class=" " >Jenis koleksi tersebut meliputi:
                                             semua hasil karya dosen UIN Sumatera Utara dalam bentuk buku, jurnal ilmiah,
                                             laporan penelitian, proceeding konferensi, buku ajar, laporan kegiatan
                                             pengabdian masyarakat, dan lain sebagainya; Karya mahasiswa meliputi:
                                             skripsi, thesis, disertasi, laporan kerja lapangan; Dokumen kegiatan
                                             pimpinan meliputi: naskah pidato rektor pada berbagai event, poto
                                             dokumentasi kegiatan UIN Sumatera Utara.</p>
-                                        <p class="wow fadeInUp" data-wow-delay=".3s">Repository ini juga memuat karya
+                                        <p class=" " >Repository ini juga memuat karya
                                             ilmiah yang ditulis oleh penulis luat UIN Sumatera Utara yang diterbitkan
                                             pada karya cetak atau publikasi UIN Sumatera Utara seperti misalnya artikel
                                             yang dimuat dalam Online Jurnal System (OJS). Dengan tersedianya Repository
@@ -107,37 +106,37 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-xl-6 col-lg-6">
-                    <div class="about-content">
-                        <div class="section-title mb-30">
-                            <h1 class="mb-25 wow fadeInUp" data-wow-delay=".2s">Arsip UIN Sumatera Utara</h1>
-                            <p class="wow fadeInUp" data-wow-delay=".3s">Arsip UIN Sumatera Utara menyediakan berbagai
+                    <div class="about-content animate__animated animate__fadeInUp wow" data-wow-duration="1.5s">
+                        <div class="section-title mb-30 ">
+                            <h1 class="mb-25  " >Arsip UIN Sumatera Utara</h1>
+                            <p class=" " >Arsip UIN Sumatera Utara menyediakan berbagai
                                 jenis hasil karya ilmiah, baik hasil karya dari dosen ataupun dari mahasiswa </p>
                         </div>
                         <ul>
-                            <li class="wow fadeInUp" data-wow-delay=".35s">
+                            <li class=" ">
                                 <i class="lni lni-checkmark-circle"></i>
                                 E-book & Jurnal Ilmiah
                             </li>
-                            <li class="wow fadeInUp" data-wow-delay=".4s">
+                            <li class=" " >
                                 <i class="lni lni-checkmark-circle"></i>
                                 Laporan Kerja Lapangan & Laporan Kegiatan Pengabdian
                             </li>
-                            <li class="wow fadeInUp" data-wow-delay=".45s">
+                            <li class=" " >
                                 <i class="lni lni-checkmark-circle"></i>
                                 Laporan Penelitian & Buku Ajar
                             </li>
-                            <li class="wow fadeInUp" data-wow-delay=".45s">
+                            <li class=" " >
                                 <i class="lni lni-checkmark-circle"></i>
                                 Thesis & Skripsi
                             </li>
                         </ul>
                         <a href="/career" onclick="window.location.href='/career'"
-                            class="button  mt-20 radius-10 wow fadeInUp" data-wow-delay=".5s">Kunjungi Arsip <i
+                            class="button  mt-20 radius-10  " >Kunjungi Arsip <i
                                 class="lni lni-angle-double-right"></i></a>
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-6">
-                    <div class="about-img text-lg-right wow fadeInUp" data-wow-delay=".5s">
+                    <div class="about-img text-lg-right  animate__animated animate__fadeInUp wow" data-wow-duration="1.5s" >
                         <img src="assets/img/hero-1.svg" alt="">
                     </div>
                 </div>
@@ -149,22 +148,22 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-xl-6 col-lg-6" id="content-3">
-                    <div class="about-img text-lg-right wow fadeInUp" data-wow-delay=".5s">
+                    <div class="about-img text-lg-right  animate__animated animate__fadeInUp wow" data-wow-duration="1.5s" >
                         <img src="assets/img/search-2.svg" alt="">
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-6" id="content-4">
-                    <div class="about-content">
+                    <div class="about-content animate__animated animate__fadeInUp wow" data-wow-duration="1.5s">
                         <div class="section-title mb-30">
-                            <h1 class="mb-25 wow fadeInUp" data-wow-delay=".2s">Temukan Dokumen di Arsip UIN Sumatera
+                            <h1 class="mb-25  " >Temukan Dokumen di Arsip UIN Sumatera
                                 Utara</h1>
-                            <p class="wow fadeInUp" data-wow-delay=".3s">Anda Ingin Mecari Dokumen di Arsip Universitas
+                            <p class=" " >Anda Ingin Mecari Dokumen di Arsip Universitas
                                 Islam Negeri Sumatera Utara Dengan Cepat? Kunjungi dan Lakukan Pencarian Cepat dan Mudah
                                 disini</p>
                         </div>
 
                         <a href="/career" onclick="window.location.href='/career'"
-                            class="button  mt-20 radius-10 wow fadeInUp" data-wow-delay=".5s">Pencarian Arsip <i
+                            class="button  mt-20 radius-10  " >Pencarian Arsip <i
                                 class="lni lni-angle-double-right"></i></a>
                     </div>
                 </div>
@@ -177,7 +176,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xxl-6 col-xl-9 col-lg-12 col-md-12">
-                    <div class="section-title text-center mb-50 wow fadeInUp" data-wow-delay=".5s">
+                    <div class="section-title text-center mb-50  animate__animated animate__fadeInUp wow" data-wow-duration="1.5s" >
                         <h1>Virtual Tour </h1>
                         <p>UIN Sumatera Utara Menyediakan Sarana Virtual Tour Bagi Para Pengunjung Yang Ingin
                             Mengunjungi
@@ -192,7 +191,7 @@
                         <div class="icon color-1">
                             <i class="lni lni-map-marker"></i>
                         </div>
-                        <div class="content wow fadeInUp" data-wow-delay=".5s">
+                        <div class="content  animate__animated animate__fadeInUp wow" data-wow-duration="1.5s" >
                             <h3>Kampus I UINSU</h3>
                             <p>Berlokasikan di Jl. Sutomo Ujung Kota Medan, Sumatera Utara</p>
                             <a href="https://sutomo.uinsu.ac.id/" class="button-sm radius-30 mt-2">Kunjungi <i
@@ -205,7 +204,7 @@
                         <div class="icon color-2">
                             <i class="lni lni-map-marker"></i>
                         </div>
-                        <div class="content wow fadeInUp" data-wow-delay=".5s">
+                        <div class="content  animate__animated animate__fadeInUp wow" data-wow-duration="1.5s" >
                             <h3>Kampus II UINSU</h3>
                             <p>Berlokasikan di Jl. William Iskandar Ps. V, Kabupaten Deli Serdang, Sumatera Utara</p>
                             <a href="https://pancing.uinsu.ac.id/" class="button-sm radius-30 mt-2">Kunjungi <i
@@ -218,7 +217,7 @@
                         <div class="icon color-3">
                             <i class="lni lni-map-marker"></i>
                         </div>
-                        <div class="content wow fadeInUp" data-wow-delay=".5s">
+                        <div class="content  animate__animated animate__fadeInUp wow" data-wow-duration="1.5s" >
                             <h3>Kampus IV UINSU</h3>
                             <p>Berlokasikan di Jl. Lap. Golf No.120, Kabupaten Deli Serdang, Sumatera Utara </p>
                             <a href="https://tuntungan.uinsu.ac.id/" class="button-sm radius-30 mt-2">Kunjungi <i
@@ -238,14 +237,14 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-xl-5 col-lg-6">
-                    <div class="section-title mb-60">
-                        <h3 class="mb-15 wow fadeInUp" data-wow-delay=".2s">Aplikasi Layanan</h3>
-                        <p class="wow fadeInUp" data-wow-delay=".4s">UIN Sumatera Utara Memiliki Banyak Layanan Aplikasi
+                    <div class="section-title mb-60 animate__animated animate__fadeInUp wow" data-wow-duration="1.5s">
+                        <h3 class="mb-15  " >Aplikasi Layanan</h3>
+                        <p class=" " >UIN Sumatera Utara Memiliki Banyak Layanan Aplikasi
                             Dalam Mengelola dan Memanajemen Sistem Yang Ada Dikampus</p>
                     </div>
                 </div>
                 <div class="col-xl-7 col-lg-6">
-                    <div class="pricing-active-wrapper wow fadeInUp" data-wow-delay=".4s">
+                    <div class="pricing-active-wrapper  animate__animated animate__fadeInUp wow" data-wow-duration="1.5s" >
                         <div class="pricing-active">
                             <div class="single-pricing-wrapper">
                                 <div class="single-pricing">

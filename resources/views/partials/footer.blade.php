@@ -34,11 +34,11 @@
                     <div class="footer-widget">
                         <h3>Link</h3>
                         <ul class="links">
-                            <li> <a href="javascript:void(0)">Home</a> </li>
-                            <li> <a href="javascript:void(0)">Tracer Study</a> </li>
-                            <li> <a href="javascript:void(0)">Career</a> </li>
-                            <li> <a href="javascript:void(0)">Questioner</a> </li>
-                            <li> <a href="javascript:void(0)">Laporan</a> </li>
+                            <li> <a href="javascript:void(0)">Beranda</a> </li>
+                            <li> <a href="javascript:void(0)">Arsip</a> </li>
+                            <li> <a href="javascript:void(0)">Pencarian</a> </li>
+                            <li> <a href="javascript:void(0)">Unggah</a> </li>
+                            <li> <a href="javascript:void(0)">Tentang Kami</a> </li>
                             <li> <a href="javascript:void(0)">Login</a> </li>
                         </ul>
                     </div>

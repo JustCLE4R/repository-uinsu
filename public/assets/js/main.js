@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
   setIndicatorPosition();
 });
 
+new WOW().init();
 
 //Loader
 window.addEventListener("DOMContentLoaded", function() {

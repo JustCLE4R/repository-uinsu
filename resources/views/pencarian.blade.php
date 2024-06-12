@@ -5,8 +5,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="hero-content">
-                        <span class="wow fadeInLeft fs-5 text-secondary" data-wow-delay=".2s">Selamat Datang Di
-                            Website</span>
+                        <span class="wow fadeInLeft fs-5 text-secondary" data-wow-delay=".2s">Selamat Datang </span>
                         <h1 class="wow fadeInUp " data-wow-delay=".4s">Pencarian Repositori Universitas Islam Negeri
                             Sumatera Utara
                         </h1>
