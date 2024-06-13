@@ -4,11 +4,20 @@
         <img src="assets/img/logo.png" alt="">
     </div>
     <ul class="top-nav">
-        <li><a onclick="window.location.href='/';">Beranda</a></li>           
-        <li><a onclick="window.location.href='/arsip';">Arsip</a></li>
-        <li><a onclick="window.location.href='/pencarian';">Pencarian</a></li>
-        <li><a onclick="window.location.href='/unggah';">Unggah</a></li>
-        <li><a onclick="window.location.href='/login';">Login</a></li>
+        <li><a class="{{ request()->is('/') ? 'active-nav' : '' }}" onclick="window.location.href='/';">Beranda</a></li>           
+        <li><a class="{{ request()->is('arsip') ? 'active-nav' : '' }}" onclick="window.location.href='/arsip';">Arsip</a></li>
+        <li><a class="{{ request()->is('pencarian') ? 'active-nav' : '' }}" onclick="window.location.href='/pencarian';">Pencarian</a></li>
+        <li><a class="{{ request()->is('unggah') ? 'active-nav' : '' }}" onclick="window.location.href='/unggah';">Unggah</a></li>
+        @auth
+            <li>
+                <a onclick="window.location.href='/logout';">Dashboard</a>
+            </li>
+        @else
+            <li>
+                <a onclick="window.location.href='/login';">Login</a>
+            </li>
+        @endauth
+        
     </ul>
     <div class="profile">
         <img src="assets/img/account.png" style="width: 35px;" alt="">

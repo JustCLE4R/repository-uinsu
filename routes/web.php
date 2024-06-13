@@ -29,7 +29,17 @@ Route::get('/unggah', function () {
 
 Route::middleware(['auth'])->group(function () {
   Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
-  Route::view('/admin', 'index')->name('dashboard');
+  Route::get('/admin', function () {
+    $user = Auth::user();
+    if ($user->role == 'admin') {
+        return view('admin.index');
+    } elseif ($user->role == 'mahasiswa') {
+        return view('landing');
+    } else {
+        abort(403, 'Unauthorized action.');
+    }
+  })->name('admin');
+
   
   Route::get('/submit', [ArchiveController::class, 'create']);
   Route::post('/submit', [ArchiveController::class, 'store']);

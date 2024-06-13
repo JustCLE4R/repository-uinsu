@@ -5,7 +5,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="hero-content animate__animated animate__fadeInLeft wow" data-wow-duration="2s">
-                        <span class="  fs-5 text-secondary" >Selamat Datang Di
+                        <span class="  fs-5 text-secondary" > Selamat Datang Di
                             Website</span>
                         <h1 class="  " >Repositori Universitas Islam Negeri Sumatera
                             Utara
@@ -45,7 +45,7 @@
 
     <section id="tentang" class="about-section pt-50 pb-50">
         <div class="container">
-            <div class="row align-items-center">
+            <div class="row align-items-center">                
                 <div class="col-xl-6 col-lg-6 order-1" id="content-1">
                     <div class="about-img text-lg-right animate__animated animate__fadeInUp wow" data-wow-duration="1.5s">
                         <img src="assets/img/hero-3.svg" alt="">
@@ -60,9 +60,13 @@
                                 Utara (UINSU) di awali pada tanggal 8 Desember 2015. Repositoy ini merupakan wadah untuk
                                 mempublikasi semua jenis koleksi elektronik yang dihasilkan oleh civitas akademika UIN
                                 Sumatera Utara.</p>
-
-                        </div>
-                        <div class="accordion    shadow"  id="accordionExample"
+                        </div>                        
+                    </div>
+                </div>                
+            </div>
+            <div class="row " style="justify-content: center">
+                <div class="col-10">
+                    <div class="accordion    shadow  animate__animated animate__fadeInUp wow" data-wow-duration="1.5s"   id="accordionExample"
                             style="visibility: visible; animation-delay: 0.2s; animation-name: ;">
                             <div class="single-faq">
                                 <button class="w-100 ps-4 text-start collapsed" type="button" data-bs-toggle="collapse"
@@ -70,7 +74,7 @@
                                     <h3>Informasi Selengkapnya</h3>
                                 </button>
 
-                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
                                     data-bs-parent="#accordionExample">
 
                                     <div class="faq-content d-flex flex-wrap" style="text-align: justify;">
@@ -95,9 +99,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -130,7 +132,7 @@
                                 Thesis & Skripsi
                             </li>
                         </ul>
-                        <a href="/career" onclick="window.location.href='/career'"
+                        <a href="/arsip" onclick="window.location.href='/arsip'"
                             class="button  mt-20 radius-10  " >Kunjungi Arsip <i
                                 class="lni lni-angle-double-right"></i></a>
                     </div>
@@ -162,7 +164,7 @@
                                 disini</p>
                         </div>
 
-                        <a href="/career" onclick="window.location.href='/career'"
+                        <a href="/pencarian" onclick="window.location.href='/pencarian'"
                             class="button  mt-20 radius-10  " >Pencarian Arsip <i
                                 class="lni lni-angle-double-right"></i></a>
                     </div>

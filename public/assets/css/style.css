@@ -589,6 +589,9 @@ nav ul li:hover{
   color:green;
 }
 
+.active-nav{
+  color:green !important;
+}
 .bottom-nav{
   display: none ;
 }

@@ -49,7 +49,7 @@
               <div class="alert alert-danger">{{ session('error') }}</div>
             @endif
             <form action="{{ route('login') }}" method="POST">
-
+              @csrf
               <div class="input-boxes">
                 <div class="input-box" data-aos="fade-up" data-aos-duration="1200">
                   <i class="fas fa-envelope"></i>
