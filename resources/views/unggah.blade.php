@@ -15,8 +15,8 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="hero-img wow fadeInUp" data-wow-delay=".5s">
-                        <img src="assets/img/unggah-3.svg" alt="">
+                    <div class="hero-img wow fadeInUp" data-wow-delay=".5s" >
+                        <img src="assets/img/unggah-3.svg" class="wave-animation-1" alt="">
                     </div>
 
                 </div>
@@ -34,8 +34,96 @@
                             <h1 class="mb-25 wow fadeInUp text-center" data-wow-delay=".2s">Unggah Dokumen di Repositori
                             </h1>
 
-                            <div class="shadow p-4 ">
-                                <form action="">
+                            <div class="shadow p-5 ">
+                                <form method="post" action="#" enctype="multipart/form-data">
+                                    <input type="hidden" name="_token" autocomplete="off">                          
+                                    <input type="hidden" name="_method">                          
+                                    <div class="row justify-content-start page page-active">
+                                      <div class="col-12">
+                                        <h5>Form Publikasi</h5>
+                                      </div>
+                                      <div class="col-lg-4 col-md-6 col-sm-12 my-2">
+                                        <label for="exampleFormControlInput1" class="form-label">Tipe</label>
+                                        <input type="text" class="form-control" id="type" name="type" required>
+                                      </div>
+                                      <div class="col-lg-4 col-md-6 col-sm-12 my-2">
+                                        <label for="exampleFormControlInput1" class="form-label">Judul</label>
+                                        <input type="text" class="form-control" id="title" name="title" required>
+                                      </div>
+                                      <div class="col-lg-4 col-md-6 col-sm-12 my-2">
+                                        <label for="exampleFormControlInput1" class="form-label">Abstrak</label>
+                                        <input type="text" class="form-control" id="abstract" name="abstract" required>
+                                      </div>
+                                      <div class="col-lg-4 col-md-6 col-sm-12 my-2">
+                                        <label for="exampleFormControlInput1" class="form-label">Editor</label>
+                                        <input type="text" class="form-control" id="editor" name="editor" required>
+                                      </div>
+                                      <div class="col-lg-4 col-md-6 col-sm-12 my-2">
+                                        <label for="file" class="form-label">File</label>
+                                        <input type="file" class="form-control" id="file" name="file" required>
+                                      </div>
+                                    </div>
+                                    <div class="row justify-content-between page page-active">
+                                      <div class="col-12">
+                                        <h5>Detail Publikasi</h5>
+                                      </div>
+                                      <div class="col-lg-4 col-md-6 col-sm-12 my-2">
+                                        <label for="exampleFormControlInput1" class="form-label">Penerbit</label>
+                                        <input type="text" class="form-control" id="penerbit" name="penerbit" required>
+                                      </div>
+                                      <div class="col-lg-4 col-md-6 col-sm-12 my-2">
+                                        <label for="exampleFormControlInput1" class="form-label">Tempat Terbit</label>
+                                        <input type="text" class="form-control" id="tempat_terbit" name="tempat_terbit" required>
+                                      </div>
+                                      <div class="col-lg-4 col-md-6 col-sm-12 my-2">
+                                        <label for="exampleFormControlInput1" class="form-label">ISBN/ISSN</label>
+                                        <input type="text" class="form-control" id="isbn_issn" name="isbn_issn" required>
+                                      </div>
+                                      <div class="col-lg-4 col-md-6 col-sm-12 my-2">
+                                        <label for="exampleFormControlInput1" class="form-label">Official URL</label>
+                                        <input type="text" class="form-control" id="official_url" name="official_url" required>
+                                      </div>
+                                      <div class="col-lg-4 col-md-6 col-sm-12 my-2">
+                                        <label for="exampleFormControlInput1" class="form-label">Tanggal &amp; Waktu</label>
+                                        <input type="text" class="form-control" id="date" name="date" required>
+                                      </div>
+                                      <div class="col-lg-4 col-md-6 col-sm-12 my-2">
+                                        <label for="exampleFormControlInput1" class="form-label">Volume</label>
+                                        <input type="text" class="form-control" id="volume" name="volume" required>
+                                      </div>
+                                      <div class="col-lg-4 col-md-6 col-sm-12 my-2">
+                                        <label for="exampleFormControlInput1" class="form-label">Nomor</label>
+                                        <input type="text" class="form-control" id="number" name="number" required>
+                                      </div>
+                                      <div class="col-lg-4 col-md-6 col-sm-12 my-2">
+                                        <label for="exampleFormControlInput1" class="form-label">Halaman</label>
+                                        <input type="text" class="form-control" id="page" name="page" required>
+                                      </div>
+                                      <div class="col-lg-4 col-md-6 col-sm-12 my-2">
+                                        <label for="exampleFormControlInput1" class="form-label">Nomor Identifikasi</label>
+                                        <input type="text" class="form-control" id="identification_number" name="identification_number" required>
+                                      </div>
+                                      <div class="col-lg-4 col-md-6 col-sm-12 my-2">
+                                        <label for="exampleFormControlInput1" class="form-label">Nama Jurnal</label>
+                                        <input type="text" class="form-control" id="journal_name" name="journal_name" required>
+                                      </div>
+                                      <div class="col-lg-4 col-md-6 col-sm-12 my-2">
+                                        <label for="exampleFormControlInput1" class="form-label">Subjek</label>
+                                        <input type="text" class="form-control" id="subjek" name="subjek" required>
+                                      </div>
+                                      <div class="col-lg-4 col-md-6 col-sm-12 my-2">
+                                        <label for="exampleFormControlInput1" class="form-label">Nomor Klasifikasi</label>
+                                        <input type="text" class="form-control" id="nomor_klasifikasi" name="nomor_klasifikasi" required>
+                                      </div>
+                                    </div>       
+                                    <div class="col-12 text-end">
+                                        <button type="submit" class="btn btn-success mt-3">Ajukan Dokumen</button>
+                                    </div>
+                                  </form>
+                                  
+                               
+                            </div>
+                             {{-- <form action="">suku cadang
                                     <div class="row justify-content-between page page-active" id="page-1">
                                         <div class="col-12">
                                             <h6>Page 1</h6>
@@ -149,8 +237,7 @@
                                         <button class="btn btn-success float-end" name="submit"
                                             id="submit-btn">Kirim</button>
                                     </div>
-                                </form>
-                            </div>
+                                </form> --}}
 
                         </div>
                     </div>

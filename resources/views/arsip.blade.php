@@ -35,8 +35,8 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="hero-img wow fadeInUp" data-wow-delay=".5s">
-                        <img src="assets/img/hero-3.svg" alt="">
+                    <div class="hero-img wow fadeInUp" style="margin-top: -65px;" data-wow-delay=".5s">
+                        <img src="assets/img/hero-3.svg" class="wave-animation-1" alt="">
                     </div>
 
                 </div>

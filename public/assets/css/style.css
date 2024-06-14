@@ -20,20 +20,37 @@
     order:1;
   }
 }
+@keyframes wave {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* Sesuaikan nilai ini */
+  }
+}
+
+.wave-animation-1 {
+  animation: wave 3s infinite ease-in-out;
+}
+.wave-animation-2 {
+  animation: wave 2s infinite ease-in-out;
+}
+
 .hero-img{
   position: relative;
 }
+
 .hero-figure-box-07 {
   position: absolute;
-  left: 35vw;
-  top: 13vw;
-  width: 50px;
-  height: 50px;
+  left: 89.6%;
+  top: 37.1%;
+  width: 11%;
+  height: 14%;
   background: #018aff;
   transform: rotateZ(45deg) scale(1.5);
   transform-origin: 100% 100%;
   animation: floatUpDown 3s ease-in-out infinite, rotateForever 3s linear infinite;
-  z-index: -1;
+  z-index: ;
 }
 
 .hero-figure-box-07::before {
@@ -49,15 +66,15 @@
 }
 .hero-figure-box-09 {
   position: absolute;
-  left: 21vw;
-  top: 1vw;
-  width: 30px;
-  height: 30px;
+  left: 42.6%;
+  top: -4%;
+  width: 6.63%;
+  height: 8.83%;
   background: #00BFFB;
   transform: rotateZ(45deg) scale(1.5);
   transform-origin: 100% 100%;
   animation: floatUpDown 3s ease-in-out infinite, rotateForever 3s linear infinite;
-  z-index: -1;
+  z-index: 99;
 }
 
 .hero-figure-box-09::before {
@@ -73,13 +90,14 @@
 }
 .hero-figure-box-08 {
   position: absolute;
-  left: 7vw;
-  top: 24vw;
-  width: 72px;
-  height: 72px;
+  left: 27.1%;
+  top: 80.6%;
+  width: 13.51%;
+  height: 18.01%;
   background: #0270D7;
   transform: rotateZ(-22deg);
   transform-origin: 100% 100%;
+  z-index: 99;
 }
 
 .hero-figure-box-08::before {
@@ -105,10 +123,6 @@
 }
 
 
-
-.hero-content h1{
-  color:#005930;
-}
 
 
 

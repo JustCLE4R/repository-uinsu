@@ -9,7 +9,7 @@
                         <h1 class="wow fadeInUp " data-wow-delay=".4s">Dashboard Repositori Universitas Islam Negeri Sumatera
                             Utara
                         </h1>
-                        <p class="wow fadeInUp" data-wow-delay=".6s">Didalam Dashboard ini Anda bisa mengelola dokumen arsip anda dengan sangat mudah</p>
+                        <p class="wow fadeInUp" data-wow-delay=".6s">Dalam Dashboard ini Anda bisa mengelola dokumen arsip anda dengan sangat mudah</p>
 
                         {{-- <div class="about-counter mt-50 ">
                             <div class="row">
@@ -29,13 +29,13 @@
                             </div>
                         </div> --}}
 
-                        <a href="/logout" class="btn btn-success">Keluar</a>
+                        <a href="/logout" class="btn btn-success">Logout</a>
 
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="hero-img wow fadeInUp" data-wow-delay=".5s">
-                        <img src="assets/img/dashboard.svg" alt="">
+                        <img src="assets/img/dashboard.svg" class="wave-animation-1" alt="">
                     </div>
 
                 </div>
@@ -53,31 +53,13 @@
                             <h1 class="mb-25 wow fadeInUp text-center" data-wow-delay=".2s">Dokumen Arsip Anda</h1>
                         </div>
                         <div class="row">
-                            <div class="col-lg-5 col-sm-12">
-                                <div class="input-group mb-3">
+                            <div class="col-lg-4 col-sm-12 my-4">
                                     <select id="tahunLulusSelect-pekerja" class="form-select">
-                                        <option value="">Pilih Tahun</option>
-                                        <option value="2022">2022</option>
-                                        <option value="2023">2023</option>
-                                        <option value="2024">2024</option>
+                                        <option value="">Pilih Status Arsip</option>
+                                        <option value="Diterima">Diterima</option>
+                                        <option value="Ditolak">Ditolak</option>
+                                        <option value="Dalam Proses">Dalam Proses</option>
                                     </select>
-                                    <select id="fakultasSelect-pekerja" class="form-select">
-                                        <option value="">Pilih Subjek</option>
-                                        <option value="Ushuluddin%20dan%20Studi%20Islam">Ushuluddin dan Studi Islam
-                                        </option>
-                                        <option value="Ekonomi%20dan%20Bisnis%20Islam">Ekonomi dan Bisnis Islam</option>
-                                        <option value="Dakwah%20dan%20Komunikasi">Dakwah dan Komunikasi</option>
-                                        <option value="Syariah%20dan%20Hukum">Syariah dan Hukum</option>
-                                        <option value="Ilmu%20Tarbiyah%20dan%20Keguruan">Ilmu Tarbiyah dan Keguruan
-                                        </option>
-                                        <option value="Ilmu%20Sosial">Ilmu Sosial</option>
-                                        <option value="Sains%20dan%20Teknologi">Sains dan Teknologi</option>
-                                        <option value="Kesehatan%20Masyarakat">Kesehatan Masyarakat</option>
-                                        <option value="Pascasarjana">Pascasarjana</option>
-                                    </select>
-
-                                </div>
-
                             </div>
                         </div>
                         <div class="row">

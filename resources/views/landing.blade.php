@@ -7,10 +7,10 @@
                     <div class="hero-content animate__animated animate__fadeInLeft wow" data-wow-duration="2s">
                         <span class="  fs-5 text-secondary" > Selamat Datang Di
                             Website</span>
-                        <h1 class="  " >Repositori Universitas Islam Negeri Sumatera
+                        <h1>Repositori Universitas Islam Negeri Sumatera
                             Utara
                         </h1>
-                        <p class=" " >Repository Universitas Islam Negeri Sumatera Utara
+                        <p >Repository Universitas Islam Negeri Sumatera Utara
                             (UINSU) merupakan wadah untuk mempublikasi semua jenis koleksi elektronik yang dihasilkan
                             oleh civitas akademika UIN Sumatera Utara.</p>
 
@@ -18,11 +18,11 @@
                             <div class="row">
                                 <div class="col-sm-4 ">
                                     <div class="single-counter counter-color-1 d-flex  " >
-                                        <div class="counter-content media-body">
+                                        <div class="counter-content media-body" >
                                             <div class="counter-count">
-                                                <div class="counter" id="clientsCount">4232350</div>
+                                                <div class="counter" id="clientsCount" >4232350</div>
                                             </div>
-                                            <p class="text">Total Arsip</p>
+                                            <p class="text" >Total Arsip</p>
                                         </div>
                                     </div> <!-- single counter -->
                                 </div>
@@ -34,11 +34,15 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="hero-img animate__animated animate__fadeInRight wow" data-wow-duration="1.5s" >
-                        <img src="assets/img/hero-2.svg" alt="">
+                    <div class="hero-img animate__animated animate__fadeInRight wow" data-wow-duration="1.5s">
+                        <div class="hero-figure-box hero-figure-box-09"></div>
+                        <div class="hero-figure-box hero-figure-box-07"></div>
+                        <div class="hero-figure-box hero-figure-box-08 " data-wow-delay=".5s" data-rotation="-22deg"
+                            style="transform: rotate(-22deg) scale(1); opacity: 1;"></div>
+                      <img src="assets/img/hero-2.svg" alt="" class="wave-animation-2">
                     </div>
-
                 </div>
+                  
             </div>
         </div>
     </section>
@@ -151,7 +155,7 @@
             <div class="row align-items-center">
                 <div class="col-xl-6 col-lg-6" id="content-3">
                     <div class="about-img text-lg-right  animate__animated animate__fadeInUp wow" data-wow-duration="1.5s" >
-                        <img src="assets/img/search-2.svg" alt="">
+                        <img src="assets/img/search-3.svg" alt="">
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-6" id="content-4">
