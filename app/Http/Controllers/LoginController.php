@@ -48,10 +48,22 @@ class LoginController extends Controller
         } 
         
         // percobaan login (dengan nim) jika semuanya normal
-        if(Auth::attempt(['nim' => $request['nim'], 'password' => md5($request['password'])])){
+        // if(Auth::attempt(['nim' => $request['nim'], 'password' => md5($request['password'])])){
+        //     $request->session()->regenerate();
+            
+        //     return redirect()->intended('/dashboard');
+        // }
+
+        if(Auth::attempt(['nim' => $request->nim, 'password' => md5($request->password)])) {
             $request->session()->regenerate();
             
-            return redirect()->intended('/');
+            $user = Auth::user();
+            
+            if ($user->role == 'admin') {
+                return redirect()->route('admin');
+            } elseif ($user->role == 'mahasiswa') {
+                return redirect()->route('dashboard');
+            }
         }
     
         return redirect('/login')->with('error', 'NIM atau password yang anda masukkan salah');

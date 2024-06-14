@@ -20,6 +20,143 @@ body {
 
 
 }
+nav{
+  z-index:99;
+  position: fixed;
+  padding:0 6vw;
+  top: 0;
+  height: 70px;
+  width: 100vw;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  overflow: hidden;
+  box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.2);
+}
+nav img{
+  width: 6rem;
+}
+nav ul{
+  display:flex;
+
+}
+nav ul li{
+  margin:5px 12px;
+  font-size:1.1rem;
+  cursor: pointer;
+  list-style: none;
+}
+nav ul li a{
+  color:#000;
+}
+nav ul li:hover{
+  color:green;
+}
+
+.active-nav{
+  color:green !important;
+}
+.bottom-nav{
+  display: none ;
+}
+.navbar {
+  z-index:99;
+  position: fixed;
+  bottom: 0;
+  height: 83px;
+  width: 100vw;
+  background: #fff;
+  border-radius: 5px 5px 0 0; 
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: 0 -5px 10px rgb(221 221 221 / 15%);
+
+}
+
+.navbar ul {
+  position: relative;
+  display: flex;
+}
+
+.navbar ul li {
+  position: relative;
+  list-style-type: none;
+
+}
+
+.navbar ul li a {
+  position: relative;
+  height: 70px;
+  margin-bottom: 7px;
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.navbar ul li a i {
+  position: absolute;
+  font-size: 38px;
+  color: rgb(1 130 54);
+}
+
+ul li a i.activeIcon {
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.6s ease;
+  transition-delay: 0.2s;
+}
+
+.navbar ul li.active a i {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.navbar ul .indicator {
+  position: absolute;
+  bottom: -19px;
+  left: -327px;
+  height: 36px;
+  width: 25px;
+  background: rgb(1 130 54);
+  border-radius: 50%;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+ul .indicator::before {
+  content: "";
+  position: absolute;
+  left: -15px;
+  bottom: 50%;
+  height: 22px;
+  width: 20px;
+  background: #fff;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0 10px 0 rgb(1 130 54);
+}
+
+ul .indicator::after {
+  content: "";
+  position: absolute;
+  right: -15px;
+  bottom: 50%;
+  height: 22px;
+  width: 20px;
+  background: #fff;
+  border-bottom-left-radius: 20px;
+  box-shadow: 0 10px 0 rgb(1 130 54);
+}
+@media only screen and (max-width: 600px){
+  .top-nav{
+    display: none;
+  }
+  .bottom-nav{
+    display:flex;
+  }
+}
 
 .carousel a{
   text-decoration:none;

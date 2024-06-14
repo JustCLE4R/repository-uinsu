@@ -16,8 +16,8 @@
                         <div class="about-counter ">
                             <div class="row">
                                 <div class="col-5">
-                                    <div class="search-box">
-                                        <input type="text" placeholder="Type to search..">
+                                    <div class="search-box wow fadeInUp " data-wow-delay=".4s">
+                                        <input type="text" placeholder="Cari Arsip Disini..">
                                         <div class="search-icon">
                                             <i class="fas fa-search"></i>
                                         </div>
@@ -36,7 +36,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="hero-img wow fadeInUp" data-wow-delay=".5s">
-                        <img src="assets/img/search-2.svg" alt="">
+                        <img src="assets/img/search-3.svg" alt="">
                     </div>
 
                 </div>

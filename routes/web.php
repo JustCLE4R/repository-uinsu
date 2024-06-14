@@ -21,26 +21,37 @@ Route::get('/arsip', function () {
 Route::get('/pencarian', function () {
   return view('pencarian');
 });
-Route::get('/unggah', function () {
-  return view('unggah');
-});
+
+
 
 
 
 Route::middleware(['auth'])->group(function () {
   Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
-  Route::get('/admin', function () {
-    $user = Auth::user();
-    if ($user->role == 'admin') {
-        return view('admin.index');
-    } elseif ($user->role == 'mahasiswa') {
-        return view('landing');
-    } else {
-        abort(403, 'Unauthorized action.');
-    }
-  })->name('admin');
 
-  
+  // Route untuk role 'mahasiswa'
+    Route::get('/dashboard', function () {
+        $user = Auth::user();
+        if ($user->role == 'mahasiswa') {
+            return view('dashboard');
+        } else {
+            abort(403, 'Unauthorized action.');
+        }
+    })->name('dashboard');
+
+    // Route untuk role 'admin'
+    Route::get('/admin', function () {
+        $user = Auth::user();
+        if ($user->role == 'admin') {
+            return view('admin.index');
+        } else {
+            abort(403, 'Unauthorized action.');
+        }
+    })->name('admin');
+
+  Route::get('/unggah', function () {
+    return view('unggah');
+  });
   Route::get('/submit', [ArchiveController::class, 'create']);
   Route::post('/submit', [ArchiveController::class, 'store']);
 

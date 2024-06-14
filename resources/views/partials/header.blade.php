@@ -10,7 +10,7 @@
         <li><a class="{{ request()->is('unggah') ? 'active-nav' : '' }}" onclick="window.location.href='/unggah';">Unggah</a></li>
         @auth
             <li>
-                <a onclick="window.location.href='/logout';">Dashboard</a>
+                <a class="{{ request()->is('dashboard') ? 'active-nav' : '' }}" onclick="window.location.href='/dashboard';">Dashboard</a>
             </li>
         @else
             <li>
@@ -20,8 +20,13 @@
         
     </ul>
     <div class="profile">
-        <img src="assets/img/account.png" style="width: 35px;" alt="">
+        @if(Auth::check())
+            <img class="rounded-circle" src="{{ Auth::user()->foto ? url('https://pmb.uinsu.ac.id/file/photo/' . Auth::user()->foto) : '/assets/img/account.png' }}" alt="" style="width: 35px; height: 35px;">
+        @else
+            <img class="rounded-circle" src="/assets/img/account.png" alt="" style="width: 35px; height: 35px;">
+        @endif
     </div>
+    
 </nav>
 <div class="navbar bottom-nav">
     <ul>
@@ -49,8 +54,8 @@
                 <i class='bx bxs-add-to-queue activeIcon'></i>
             </a>
         </li>
-        <li class="{{ request()->is('login') ? 'active' : '' }}">
-            <a onclick="window.location.href='{{ url('/login') }}'">
+        <li class="{{ request()->is('dashboard') ? 'active' : '' }}">
+            <a onclick="window.location.href='{{ url('/dashboard') }}'">
                 <i class='bx bx-user icon'></i>
                 <i class='bx bxs-user activeIcon'></i>
             </a>
