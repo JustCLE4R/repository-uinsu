@@ -33,29 +33,27 @@
                         <div class="section-title mb-30">
                             <h1 class="mb-25 wow fadeInUp text-center" data-wow-delay=".2s">Unggah Dokumen di Repositori
                             </h1>
-
                             <div class="shadow p-5 ">
-                                <form method="post" action="#" enctype="multipart/form-data">
-                                    <input type="hidden" name="_token" autocomplete="off">                          
-                                    <input type="hidden" name="_method">                          
+                                <form method="post" action="/submit" enctype="multipart/form-data">
+                                    @csrf
                                     <div class="row justify-content-start page page-active">
                                       <div class="col-12">
                                         <h5>Form Publikasi</h5>
                                       </div>
                                       <div class="col-lg-4 col-md-6 col-sm-12 my-2">
-                                        <label for="exampleFormControlInput1" class="form-label">Tipe</label>
+                                        <label for="type" class="form-label">Tipe</label>
                                         <input type="text" class="form-control" id="type" name="type" required>
                                       </div>
                                       <div class="col-lg-4 col-md-6 col-sm-12 my-2">
-                                        <label for="exampleFormControlInput1" class="form-label">Judul</label>
+                                        <label for="title" class="form-label">Judul</label>
                                         <input type="text" class="form-control" id="title" name="title" required>
                                       </div>
                                       <div class="col-lg-4 col-md-6 col-sm-12 my-2">
-                                        <label for="exampleFormControlInput1" class="form-label">Abstrak</label>
+                                        <label for="abstract" class="form-label">Abstrak</label>
                                         <input type="text" class="form-control" id="abstract" name="abstract" required>
                                       </div>
                                       <div class="col-lg-4 col-md-6 col-sm-12 my-2">
-                                        <label for="exampleFormControlInput1" class="form-label">Editor</label>
+                                        <label for="editor" class="form-label">Editor</label>
                                         <input type="text" class="form-control" id="editor" name="editor" required>
                                       </div>
                                       <div class="col-lg-4 col-md-6 col-sm-12 my-2">
@@ -68,51 +66,51 @@
                                         <h5>Detail Publikasi</h5>
                                       </div>
                                       <div class="col-lg-4 col-md-6 col-sm-12 my-2">
-                                        <label for="exampleFormControlInput1" class="form-label">Penerbit</label>
+                                        <label for="penerbit" class="form-label">Penerbit</label>
                                         <input type="text" class="form-control" id="penerbit" name="penerbit" required>
                                       </div>
                                       <div class="col-lg-4 col-md-6 col-sm-12 my-2">
-                                        <label for="exampleFormControlInput1" class="form-label">Tempat Terbit</label>
+                                        <label for="tempat_terbit" class="form-label">Tempat Terbit</label>
                                         <input type="text" class="form-control" id="tempat_terbit" name="tempat_terbit" required>
                                       </div>
                                       <div class="col-lg-4 col-md-6 col-sm-12 my-2">
-                                        <label for="exampleFormControlInput1" class="form-label">ISBN/ISSN</label>
+                                        <label for="isbn_issn" class="form-label">ISBN/ISSN</label>
                                         <input type="text" class="form-control" id="isbn_issn" name="isbn_issn" required>
                                       </div>
                                       <div class="col-lg-4 col-md-6 col-sm-12 my-2">
-                                        <label for="exampleFormControlInput1" class="form-label">Official URL</label>
+                                        <label for="official_url" class="form-label">Official URL</label>
                                         <input type="text" class="form-control" id="official_url" name="official_url" required>
                                       </div>
                                       <div class="col-lg-4 col-md-6 col-sm-12 my-2">
-                                        <label for="exampleFormControlInput1" class="form-label">Tanggal &amp; Waktu</label>
-                                        <input type="text" class="form-control" id="date" name="date" required>
+                                        <label for="date" class="form-label">Tanggal &amp; Waktu</label>
+                                        <input type="date" class="form-control" id="date" name="date" required>
                                       </div>
                                       <div class="col-lg-4 col-md-6 col-sm-12 my-2">
-                                        <label for="exampleFormControlInput1" class="form-label">Volume</label>
+                                        <label for="volume" class="form-label">Volume</label>
                                         <input type="text" class="form-control" id="volume" name="volume" required>
                                       </div>
                                       <div class="col-lg-4 col-md-6 col-sm-12 my-2">
-                                        <label for="exampleFormControlInput1" class="form-label">Nomor</label>
+                                        <label for="number" class="form-label">Nomor</label>
                                         <input type="text" class="form-control" id="number" name="number" required>
                                       </div>
                                       <div class="col-lg-4 col-md-6 col-sm-12 my-2">
-                                        <label for="exampleFormControlInput1" class="form-label">Halaman</label>
+                                        <label for="page" class="form-label">Halaman</label>
                                         <input type="text" class="form-control" id="page" name="page" required>
                                       </div>
                                       <div class="col-lg-4 col-md-6 col-sm-12 my-2">
-                                        <label for="exampleFormControlInput1" class="form-label">Nomor Identifikasi</label>
+                                        <label for="identification_number" class="form-label">Nomor Identifikasi</label>
                                         <input type="text" class="form-control" id="identification_number" name="identification_number" required>
                                       </div>
                                       <div class="col-lg-4 col-md-6 col-sm-12 my-2">
-                                        <label for="exampleFormControlInput1" class="form-label">Nama Jurnal</label>
+                                        <label for="journal_name" class="form-label">Nama Jurnal</label>
                                         <input type="text" class="form-control" id="journal_name" name="journal_name" required>
                                       </div>
                                       <div class="col-lg-4 col-md-6 col-sm-12 my-2">
-                                        <label for="exampleFormControlInput1" class="form-label">Subjek</label>
+                                        <label for="subjek" class="form-label">Subjek</label>
                                         <input type="text" class="form-control" id="subjek" name="subjek" required>
                                       </div>
                                       <div class="col-lg-4 col-md-6 col-sm-12 my-2">
-                                        <label for="exampleFormControlInput1" class="form-label">Nomor Klasifikasi</label>
+                                        <label for="nomor_klasifikasi" class="form-label">Nomor Klasifikasi</label>
                                         <input type="text" class="form-control" id="nomor_klasifikasi" name="nomor_klasifikasi" required>
                                       </div>
                                     </div>       
@@ -120,129 +118,10 @@
                                         <button type="submit" class="btn btn-success mt-3">Ajukan Dokumen</button>
                                     </div>
                                   </form>
-                                  
-                               
                             </div>
-                             {{-- <form action="">suku cadang
-                                    <div class="row justify-content-between page page-active" id="page-1">
-                                        <div class="col-12">
-                                            <h6>Page 1</h6>
-                                        </div>
-                                        <div class="col-lg-4 col-md-6 col-sm-12 my-2">
-                                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                                            <input type="email" class="form-control" id="exampleFormControlInput1"
-                                                placeholder="name@example.com">
-                                        </div>
-                                        <div class="col-lg-4 col-md-6 col-sm-12 my-2">
-                                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                                            <input type="email" class="form-control" id="exampleFormControlInput1"
-                                                placeholder="name@example.com">
-                                        </div>
-                                        <div class="col-lg-4 col-md-6 col-sm-12 my-2">
-                                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                                            <input type="email" class="form-control" id="exampleFormControlInput1"
-                                                placeholder="name@example.com">
-                                        </div>
-                                        <div class="col-lg-4 col-md-6 col-sm-12 my-2">
-                                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                                            <input type="email" class="form-control" id="exampleFormControlInput1"
-                                                placeholder="name@example.com">
-                                        </div>
-                                        <div class="col-lg-4 col-md-6 col-sm-12 my-2">
-                                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                                            <input type="email" class="form-control" id="exampleFormControlInput1"
-                                                placeholder="name@example.com">
-                                        </div>
-                                        <div class="col-lg-4 col-md-6 col-sm-12 my-2">
-                                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                                            <input type="email" class="form-control" id="exampleFormControlInput1"
-                                                placeholder="name@example.com">
-                                        </div>
-                                    </div>
-                                    <div class="row justify-content-between page" id="page-2">
-                                        <div class="col-12">
-                                            <h6>Page 2</h6>
-                                        </div>
-                                        <div class="col-lg-4 col-md-6 col-sm-12 my-2">
-                                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                                            <input type="email" class="form-control" id="exampleFormControlInput1"
-                                                placeholder="name@example.com">
-                                        </div>
-                                        <div class="col-lg-4 col-md-6 col-sm-12 my-2">
-                                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                                            <input type="email" class="form-control" id="exampleFormControlInput1"
-                                                placeholder="name@example.com">
-                                        </div>
-                                        <div class="col-lg-4 col-md-6 col-sm-12 my-2">
-                                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                                            <input type="email" class="form-control" id="exampleFormControlInput1"
-                                                placeholder="name@example.com">
-                                        </div>
-                                        <div class="col-lg-4 col-md-6 col-sm-12 my-2">
-                                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                                            <input type="email" class="form-control" id="exampleFormControlInput1"
-                                                placeholder="name@example.com">
-                                        </div>
-                                        <div class="col-lg-4 col-md-6 col-sm-12 my-2">
-                                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                                            <input type="email" class="form-control" id="exampleFormControlInput1"
-                                                placeholder="name@example.com">
-                                        </div>
-                                        <div class="col-lg-4 col-md-6 col-sm-12 my-2">
-                                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                                            <input type="email" class="form-control" id="exampleFormControlInput1"
-                                                placeholder="name@example.com">
-                                        </div>
-                                    </div>
-                                    <div class="row justify-content-between page" id="page-3">
-                                        <div class="col-12">
-                                            <h6>Page 3</h6>
-                                        </div>
-                                        <div class="col-lg-4 col-md-6 col-sm-12 my-2">
-                                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                                            <input type="email" class="form-control" id="exampleFormControlInput1"
-                                                placeholder="name@example.com">
-                                        </div>
-                                        <div class="col-lg-4 col-md-6 col-sm-12 my-2">
-                                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                                            <input type="email" class="form-control" id="exampleFormControlInput1"
-                                                placeholder="name@example.com">
-                                        </div>
-                                        <div class="col-lg-4 col-md-6 col-sm-12 my-2">
-                                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                                            <input type="email" class="form-control" id="exampleFormControlInput1"
-                                                placeholder="name@example.com">
-                                        </div>
-                                        <div class="col-lg-4 col-md-6 col-sm-12 my-2">
-                                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                                            <input type="email" class="form-control" id="exampleFormControlInput1"
-                                                placeholder="name@example.com">
-                                        </div>
-                                        <div class="col-lg-4 col-md-6 col-sm-12 my-2">
-                                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                                            <input type="email" class="form-control" id="exampleFormControlInput1"
-                                                placeholder="name@example.com">
-                                        </div>
-                                        <div class="col-lg-4 col-md-6 col-sm-12 my-2">
-                                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                                            <input type="email" class="form-control" id="exampleFormControlInput1"
-                                                placeholder="name@example.com">
-                                        </div>
-                                    </div>
-                                    <div class="col-12 my-2">
-                                        <a class="btn btn-success" id="previous-btn"> <i
-                                                class="lni lni-angle-double-left"></i> Sebelumnya</a>
-                                        <a class="btn btn-success" id="next-btn">Selanjutnya <i
-                                                class="lni lni-angle-double-right"></i></a>
-                                        <button class="btn btn-success float-end" name="submit"
-                                            id="submit-btn">Kirim</button>
-                                    </div>
-                                </form> --}}
-
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>

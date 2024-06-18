@@ -46,13 +46,6 @@ class LoginController extends Controller
     
             User::create($mhsData);
         } 
-        
-        // percobaan login (dengan nim) jika semuanya normal
-        // if(Auth::attempt(['nim' => $request['nim'], 'password' => md5($request['password'])])){
-        //     $request->session()->regenerate();
-            
-        //     return redirect()->intended('/dashboard');
-        // }
 
         if(Auth::attempt(['nim' => $request->nim, 'password' => md5($request->password)])) {
             $request->session()->regenerate();
@@ -60,9 +53,9 @@ class LoginController extends Controller
             $user = Auth::user();
             
             if ($user->role == 'admin') {
-                return redirect()->route('admin');
-            } elseif ($user->role == 'mahasiswa') {
-                return redirect()->route('dashboard');
+                return redirect()->intended('/admin');
+            } else {
+                return redirect()->intended('/dashboard');
             }
         }
     

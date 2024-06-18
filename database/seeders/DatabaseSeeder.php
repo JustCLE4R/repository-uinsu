@@ -82,6 +82,8 @@ class DatabaseSeeder extends Seeder
                 "journal_name" => fake()->word(),
                 "subjek" => fake()->word(),
                 "nomor_klasifikasi" => fake()->word(),
+                "fakultas" => fake()->randomElement(['Ushuluddin dan Studi Islam', 'Sains dan Teknologi', 'Ekonomi dan Bisnis']),
+                'program_studi' => fake()->randomElement(['AQIDAH DAN FILSAFAT ISLAM', 'ILMU KOMPUTER', 'MANAJEMEN', 'AKUNTANSI']),
                 "status" => fake()->randomElement(['accepted', 'rejected', 'pending']),
                 "reject_reason" => null,
                 "accepted_at" => null,

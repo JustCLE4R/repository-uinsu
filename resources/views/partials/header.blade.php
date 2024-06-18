@@ -23,7 +23,7 @@
         @if(Auth::check())
             <img class="rounded-circle" src="{{ Auth::user()->foto ? url('https://pmb.uinsu.ac.id/file/photo/' . Auth::user()->foto) : '/assets/img/account.png' }}" alt="" style="width: 35px; height: 35px;">
         @else
-            <img class="rounded-circle" src="/assets/img/account.png" alt="" style="width: 35px; height: 35px;">
+            {{-- <img class="rounded-circle" src="/assets/img/account.png" alt="" style="width: 35px; height: 35px;"> --}}
         @endif
     </div>
     

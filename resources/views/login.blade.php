@@ -37,7 +37,7 @@
         
     </ul>
     <div class="profile">
-        <img src="assets/img/account.png" style="width: 35px;" alt="">
+        {{-- <img src="assets/img/account.png" style="width: 35px;" alt=""> --}}
     </div>
 </nav>
 <div class="navbar bottom-nav">
@@ -116,7 +116,7 @@
               <div class="input-boxes">
                 <div class="input-box" data-aos="fade-up" data-aos-duration="1200">
                   <i class="fas fa-envelope"></i>
-                  <input type="text" name="nim" id="NIM" placeholder="Masukan nim.." value="41144013" maxlength="12" required>
+                  <input type="text" name="nim" id="NIM" placeholder="Masukan NIM" value="41144013" maxlength="12" required>
                   @error('nim')
                     <div style="color: red; ">{{ $message }}</div>
                   @enderror

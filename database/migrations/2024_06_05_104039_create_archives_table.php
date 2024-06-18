@@ -34,6 +34,8 @@ return new class extends Migration
 
             $table->string('subjek');
             $table->string('nomor_klasifikasi');
+            $table->string('fakultas');
+            $table->string('program_studi');
             $table->enum('status', ['accepted', 'rejected', 'pending'])->default('pending');
             $table->string('reject_reason')->nullable();
             $table->timestamp('accepted_at')->nullable();

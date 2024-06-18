@@ -45,7 +45,7 @@
                                 <td>{{ $archive->abstract }}</td>
                                 <td>{{ $archive->editor }}</td>
                                 <td class="text-center"><a class="btn btn-sm btn-success" target="_blank" href="{{ asset('storage/'.$archive->file) }}">Buka</a></td>
-                                <td width="12%" class="text-center">
+                                <td width="15%" class="text-center">
                                     <a href="/admin/archive/{{ $archive->id }}" class="btn btn-sm btn-primary py-0 px-1 d-inline"><i class="bi bi-eye-fill"></i></a>
                                     <a href="/admin/archive/{{ $archive->id }}/editaccept" class="btn btn-sm btn-success py-0 px-1 d-inline"><i class="bi bi-check2"></i></a>
                                     <a href="/admin/archive/{{ $archive->id }}/editreject" class="btn btn-sm btn-warning py-0 px-1 d-inline"><i class="bi bi-x-lg"></i></a>

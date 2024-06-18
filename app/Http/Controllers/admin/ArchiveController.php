@@ -2,18 +2,24 @@
 
 namespace App\Http\Controllers\admin;
 
-use App\Http\Controllers\Controller;
-use App\Http\Requests\AcceptArchiveRequest;
+use App\Models\User;
 use App\Models\Archive;
 use App\Models\ChangeLog;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use App\Http\Requests\ArchiveRequest;
 use Illuminate\Support\Facades\Storage;
+use App\Http\Requests\AcceptArchiveRequest;
 
 class ArchiveController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
+    public function index(){
+        return view('admin.index');
+    }
+
     public function indexPending(){
         $archive = Archive::with('user')->get()->where('status', 'pending');
         
@@ -45,6 +51,34 @@ class ArchiveController extends Controller
         return view('admin.archive.trash', [
             'archives' => $archive
         ]);
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function create()
+    {
+        return view('admin.archive.submit');
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     */
+    public function store(ArchiveRequest $request)
+    {
+        $data = $request->all();
+
+        $data['file'] = $request->file('file')->store('archives');
+        $data['user_id'] = auth()->user()->id;
+        $data['fakultas'] = auth()->user()->fakultas;
+        $data['program_studi'] = auth()->user()->program_studi;
+        
+        Archive::create($data);
+
+        if(auth()->user()->role == 'admin')
+            return redirect('/admin/requests')->with('success', 'Archive submitted successfully');
+
+        return redirect('/')->with('success', 'Archive submitted successfully');
     }
 
     /**
@@ -83,10 +117,8 @@ class ArchiveController extends Controller
         abort_if($archive->status != 'pending', 403);
 
         $oldValues = $archive->toArray();
-        unset($oldValues['id'], $oldValues['created_at'], $oldValues['updated_at']);
 
         $data = $request->except(['_token', '_method']);
-
 
         if($request->hasFile('file')){
             Storage::delete($archive->file);
@@ -98,16 +130,9 @@ class ArchiveController extends Controller
         
         $archive->update($data);
         
-        $newValues = $archive->fresh()->toArray();
-        unset($newValues['id'], $newValues['created_at'], $newValues['updated_at']);    
+        $new_values = $archive->fresh()->toArray();
 
-        $archive->changeLogs()->create([
-            'user_id' => auth()->user()->id,
-            'archive_id' => $archive->id,
-            'action' => 'accept',
-            'old_values' => json_encode($oldValues),
-            'new_values' => json_encode($newValues),
-        ]);
+        $this->createLog($archive, 'accept', $oldValues, $new_values);
 
         return redirect('/admin/requests');
     }
@@ -116,30 +141,16 @@ class ArchiveController extends Controller
         abort_if($archive->status != 'pending', 403);
 
         $oldValues = $archive->toArray();
-        unset($oldValues['id'], $oldValues['created_at'], $oldValues['updated_at']);
 
         $data = $request->except(['_token', '_method']);
-
-
-        if($request->hasFile('file')){
-            Storage::delete($archive->file);
-            $data['file'] = $request->file('file')->store('archives');
-        }
 
         $data['status'] = 'rejected';
         
         $archive->update($data);
-        
-        $newValues = $archive->fresh()->toArray();
-        unset($newValues['id'], $newValues['created_at'], $newValues['updated_at']);    
 
-        $archive->changeLogs()->create([
-            'user_id' => auth()->user()->id,
-            'archive_id' => $archive->id,
-            'action' => 'reject',
-            'old_values' => json_encode($oldValues),
-            'new_values' => json_encode($newValues),
-        ]);
+        $newValues = $archive->fresh()->toArray();
+        
+        $this->createLog($archive, 'reject', $oldValues, $newValues);
 
         return redirect('/admin/requests');
     }
@@ -150,20 +161,12 @@ class ArchiveController extends Controller
     public function destroy(Archive $archive)
     {
         $oldValues = $archive->toArray();
-        unset($oldValues['id'], $oldValues['created_at'], $oldValues['updated_at']);
 
         $archive->delete();
 
         $newValues = $archive->fresh()->toArray();
-        unset($newValues['id'], $newValues['created_at'], $newValues['updated_at']);
 
-        $archive->changeLogs()->create([
-            'user_id' => auth()->user()->id,
-            'archive_id' => $archive->id,
-            'action' => 'delete',
-            'old_values' => json_encode($oldValues),
-            'new_values' => json_encode($newValues),
-        ]);
+        $this->createLog($archive, 'delete', $oldValues, $newValues);
 
         return redirect('/admin/requests');
     }
@@ -172,20 +175,12 @@ class ArchiveController extends Controller
         $archive = Archive::onlyTrashed()->findOrFail($id);
 
         $oldValues = $archive->toArray();
-        unset($oldValues['id'], $oldValues['created_at'], $oldValues['updated_at']);
 
         $archive->restore();
 
         $newValues = $archive->fresh()->toArray();
-        unset($newValues['id'], $newValues['created_at'], $newValues['updated_at']);
 
-        $archive->changeLogs()->create([
-            'user_id' => auth()->user()->id,
-            'archive_id' => $archive->id,
-            'action' => 'restore',
-            'old_values' => json_encode($oldValues),
-            'new_values' => json_encode($newValues),
-        ]);
+        $this->createLog($archive, 'restore', $oldValues, $newValues);
 
         return redirect('/admin/trash');
     }
@@ -194,21 +189,12 @@ class ArchiveController extends Controller
         $archive = Archive::withTrashed()->findOrFail($id);
         
         $oldValues = $archive->toArray();
-        unset($oldValues['id'], $oldValues['created_at'], $oldValues['updated_at']);
 
-        if(Storage::exists($archive->file)){
-            Storage::delete($archive->file);
-        }
+        Storage::delete($archive->file);
 
         $archive->forceDelete();
 
-        $archive->changeLogs()->create([
-            'user_id' => auth()->user()->id,
-            'archive_id' => $archive->id,
-            'action' => 'permanent_delete',
-            'old_values' => json_encode($oldValues),
-            'new_values' => null,
-        ]);
+        $this->createLog($archive, 'permanent_delete', $oldValues);
 
         return redirect('/admin/trash');
     }
@@ -238,5 +224,24 @@ class ArchiveController extends Controller
         $changeLogs = $query->get();
 
         return response()->json($changeLogs);
+    }
+
+
+    private function createLog(Archive $archive, $action, array $old_values = null, array $new_values = null){
+        if ($old_values !== null) {
+            unset($old_values['id'], $old_values['created_at'], $old_values['updated_at']);
+        }
+
+        if ($new_values !== null) {
+            unset($new_values['id'], $new_values['created_at'], $new_values['updated_at']);
+        }
+
+        ChangeLog::create([
+            'user_id' => auth()->user()->id,
+            'archive_id' => $archive->id,
+            'action' => $action,
+            'old_values' => json_encode($old_values),
+            'new_values' => json_encode($new_values),
+        ]);
     }
 }

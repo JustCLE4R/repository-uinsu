@@ -14,7 +14,7 @@
 
                     <div class="row g-0">
                         <div class="col-lg-3 col-md-4 col-sm-10">
-                            <a href="#" class="btn btn-success btn-sm mb-3"><i
+                            <a href="/admin/archive/create" class="btn btn-success btn-sm mb-3"><i
                                     class="bi bi-plus"></i> Tambah Arsip</a>
                         </div>
                     </div>
@@ -32,17 +32,17 @@
                                 </tr>
                             </thead>
                             <tbody style=" background-color: transparent !important; ">
-                              @foreach ($archives as $archive)
-                                <tr>
-                                  <td>{{ $loop->iteration }}</td>
-                                  <td>{{ $archive->user->nama }}</td>
-                                  <td>{{ $archive->type }}</td>
-                                  <td>{{ $archive->title }}</td>
-                                  <td>{{ $archive->abstract }}</td>
-                                  <td>{{ $archive->editor }}</td>
-                                  <td class="text-center"><a class="btn btn-sm btn-success" target="_blank" href="{{ asset('storage/'.$archive->file) }}">Buka</a></td>
-                                </tr>
-                              @endforeach
+                                @foreach ($archives as $archive)
+                                    <tr>
+                                    <td>{{ $loop->iteration }}</td>
+                                    <td>{{ $archive->user->nama }}</td>
+                                    <td>{{ $archive->type }}</td>
+                                    <td><a href="/admin/archive/{{ $archive->id }}">{{ $archive->title }}</a></td>
+                                    <td>{{ $archive->abstract }}</td>
+                                    <td>{{ $archive->editor }}</td>
+                                    <td class="text-center"><a class="btn btn-sm btn-success" target="_blank" href="{{ asset('storage/'.$archive->file) }}">Buka</a></td>
+                                    </tr>
+                                @endforeach
                             </tbody>
                         </table>
                     </div>

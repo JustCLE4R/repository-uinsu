@@ -15,7 +15,7 @@ class ChangeLog extends Model
 
     public function archive()
     {
-        return $this->belongsTo(Archive::class);
+        return $this->belongsTo(Archive::class)->withTrashed();
     }
 
     public function user()

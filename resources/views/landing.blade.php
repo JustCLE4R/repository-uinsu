@@ -20,7 +20,7 @@
                                     <div class="single-counter counter-color-1 d-flex  " >
                                         <div class="counter-content media-body" >
                                             <div class="counter-count">
-                                                <div class="counter" id="clientsCount" >4232350</div>
+                                                <div class="counter" id="clientsCount" >{{ $arsip['count'] }}</div>
                                             </div>
                                             <p class="text" >Total Arsip</p>
                                         </div>
@@ -39,10 +39,9 @@
                         <div class="hero-figure-box hero-figure-box-07"></div>
                         <div class="hero-figure-box hero-figure-box-08 " data-wow-delay=".5s" data-rotation="-22deg"
                             style="transform: rotate(-22deg) scale(1); opacity: 1;"></div>
-                      <img src="assets/img/hero-2.svg" alt="" class="wave-animation-2">
+                        <img src="assets/img/hero-2.svg" alt="" class="wave-animation-2">
                     </div>
                 </div>
-                  
             </div>
         </div>
     </section>
