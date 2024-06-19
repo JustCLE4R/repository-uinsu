@@ -6,7 +6,7 @@ use App\Http\Controllers\ArchiveController;
 use App\Http\Controllers\admin\ArchiveController as AdminArchive;
 
 Route::get('/', [ArchiveController::class, 'landing']);
-Route::view('/arsip', 'arsip');
+Route::get('/arsip', [ArchiveController::class, 'arsip']);
 Route::view('/pencarian', 'pencarian');
 
   Route::middleware(['guest', 'no-cache', 'security-header'])->group(function () {

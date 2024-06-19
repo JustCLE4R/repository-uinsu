@@ -28,6 +28,12 @@
     transform: translateY(-10px); /* Sesuaikan nilai ini */
   }
 }
+#career a{
+  color: black;
+}
+#career a:hover{
+  color: green;
+}
 
 .wave-animation-1 {
   animation: wave 3s infinite ease-in-out;

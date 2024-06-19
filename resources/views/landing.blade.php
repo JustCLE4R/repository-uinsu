@@ -428,4 +428,20 @@
             </div>
         </div>
     </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const clientsCount = document.getElementById('clientsCount');
+
+            let clients = 0;
+            let targetClients = {{ $arsip['count'] }};
+
+            const interval = setInterval(() => {
+                clients += Math.ceil((targetClients - clients) / 10);
+                clientsCount.textContent = clients;
+                if (clients >= targetClients) {
+                    clearInterval(interval);
+                }
+            }, 100);
+        });
+    </script>
 @endsection

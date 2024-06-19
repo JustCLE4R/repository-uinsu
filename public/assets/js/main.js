@@ -42,39 +42,7 @@ window.addEventListener("load", function() {
     }, 1500); // Jeda 1.5 detik (1500 milidetik)
 });
 
-// document.addEventListener("DOMContentLoaded", function() {
-//     const clientsCount = document.getElementById('clientsCount');
-//     const satisfactionCount = document.getElementById('satisfactionCount');
-//     const projectsCount = document.getElementById('projectsCount');
 
-//     let clients = 2000;
-//     let satisfaction = 2000;
-//     let projects = 0;
-
-//     const interval = setInterval(() => {
-//         clients++;
-//         clientsCount.textContent = clients;
-//         if (clients >= 4350) {
-//             clearInterval(interval);
-//         }
-//     }, 1); 
-
-//     const interval2 = setInterval(() => {
-//         satisfaction++;
-//         satisfactionCount.textContent = satisfaction;
-//         if (satisfaction >= 2899) {
-//             clearInterval(interval2);
-//         }
-//     }, 1); 
-
-//     const interval3 = setInterval(() => {
-//         projects++;
-//         projectsCount.textContent = projects;
-//         if (projects >= 63) {
-//             clearInterval(interval3);
-//         }
-//     }, 5); 
-// });
 
 (function() {
     //===== Prealoder

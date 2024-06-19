@@ -18,6 +18,15 @@ class ArchiveController extends Controller
             'arsip' => $arsip
         ]);
     }
+    public function arsip(){
+        $arsip = [
+            'count' => Archive::where('status', 'accepted')->count(),
+        ];
+
+        return view('arsip', [
+            'arsip' => $arsip
+        ]);
+    }
 
     public function dashboard(){
         return view('dashboard');
