@@ -576,7 +576,7 @@ p {
     02.HEADER css 
 ===========================*/
 /*===== NAVBAR =====*/
-nav{
+#nav{
   z-index:99;
   position: fixed;
   padding:0 6vw;
@@ -590,22 +590,22 @@ nav{
   overflow: hidden;
   box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.2);
 }
-nav img{
+#nav img{
   width: 6rem;
 }
-nav ul{
+#nav ul{
   display:flex;
 
 }
-nav ul li{
+#nav ul li{
   margin:5px 12px;
   font-size:1.1rem;
   cursor: pointer;
 }
-nav ul li a{
+#nav ul li a{
   color:#000;
 }
-nav ul li:hover{
+#nav ul li:hover{
   color:green;
 }
 

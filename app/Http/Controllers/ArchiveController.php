@@ -49,4 +49,27 @@ class ArchiveController extends Controller
 
         return redirect('/')->with('success', 'Archive submitted successfully');
     }
+
+    public function archivesByYear($year)
+    {
+        $archives = Archive::where('status', 'accepted')
+                           ->whereYear('created_at', $year)
+                           ->get();
+
+        return view('filter.tahun', [
+            'archives' => $archives,
+            'tahun' => $year,
+        ]);
+    }
+    public function archivesByAuthor($author)
+    {
+        $archives = Archive::where('status', 'accepted')
+                           ->whereauthor('created_at', $author)
+                           ->get();
+
+        return view('filter.author', [
+            'archives' => $archives,
+            'author' => $author,
+        ]);
+    }
 }

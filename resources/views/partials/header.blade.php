@@ -1,7 +1,7 @@
 
-<nav class="shadow-sm">
+<nav id="nav" class="shadow-sm">
     <div class="logo">
-        <img src="assets/img/logo.png" alt="">
+        <img src="/assets/img/logo.png" alt="">
     </div>
     <ul class="top-nav">
         <li><a class="{{ request()->is('/') ? 'active-nav' : '' }}" onclick="window.location.href='/';">Beranda</a></li>           
