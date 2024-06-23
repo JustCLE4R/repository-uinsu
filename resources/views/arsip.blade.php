@@ -20,7 +20,7 @@
                                         data-wow-delay="0.3s">
                                         <div class="counter-content media-body">
                                             <div class="counter-count">
-                                                <div class="counter" id="clientsCount" >{{ $arsip['count'] }}</div>
+                                                <div class="counter" id="clientsCount">{{ $arsip['count'] }}</div>
                                             </div>
                                             <p class="text">Dokumen Arsip</p>
                                         </div>
@@ -68,8 +68,8 @@
 
                             </div>
                         </div>
-                        <div class="row" id="tahun" style="display: none;"> </div>
-                        <div class="row" id="division"> </div>
+                        <div class="row" id="tahun" > </div>
+                        <div class="row" id="division"style="display: none;"> </div>
                         <div class="row" id="author" style="display: none;">
                             <nav aria-label="Page navigation">
                                 <ul class="pagination" id="authorPagination"></ul>
@@ -86,7 +86,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         // Select Filter
-         $(document).ready(function() {
+        $(document).ready(function() {
 
             $('#division').show();
 
@@ -98,7 +98,7 @@
             });
         });
 
-        // Filter tahun
+        //Filter tahun
         $(document).ready(function() {
             $.ajax({
                 url: '/api/archives/count/tahun',
@@ -114,12 +114,12 @@
                         sortedYears.forEach(year => {
                             const count = data[year];
                             htmlContent += `
-                                <div class="col-lg-2 col-md-4 col-sm-6">
-                                    <div class="shadow-sm my-2 p-3">
-                                        <a class="" href="/filter/${year}">Tahun ${year} (${count})</a>
-                                    </div>
-                                </div>
-                            `;
+                        <div class="col-lg-2 col-md-4 col-sm-6">
+                            <div class="shadow-sm my-2 p-3">
+                                <a class="" href="/arsip/tahun/${year}">Tahun ${year} (${count})</a>
+                            </div>
+                        </div>
+                    `;
                         });
 
                         $('#tahun').html(htmlContent);
@@ -149,7 +149,7 @@
                             let programList = '';
                             $.each(programs, function(program, programCount) {
                                 programList += `
-                                    <li><a href="/filter/${encodeURIComponent(program)}">
+                                    <li><a href="/arsip/prodi/${encodeURIComponent(program)}">
                                     <i class="fa-solid fa-caret-right"></i> Prodi ${program} (${programCount})</a></li>
                                 `;
                             });
@@ -159,7 +159,7 @@
                                     <div class="accordion  wow fadeInUp shadow" data-wow-delay=".2s" id="accordionExample"
                                         style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
                                         <div class="single-faq">
-                                            <button class="w-100 ps-4 text-start collapsed" type="button"
+                                            <button class="w-100 ps-3 pe-5 text-start collapsed" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#collapse${division.replace(/\s+/g, '')}" aria-expanded="true"
                                                 aria-controls="collapse${division.replace(/\s+/g, '')}">
                                                 <p>${division} (${count})</p>
@@ -167,7 +167,7 @@
                                             <div id="collapse${division.replace(/\s+/g, '')}" class="collapse" aria-labelledby="heading${division.replace(/\s+/g, '')}"
                                                 data-bs-parent="#accordionExample">
                                                 <div class="faq-content d-flex flex-wrap" style="text-align: justify;">
-                                                    <p><b><a href="/filter/${encodeURIComponent(division)}">Fakultas ${division} (${count})</a></b></p>
+                                                    <p><b><a href="/arsip/fakultas/${encodeURIComponent(division)}">Fakultas ${division} (${count})</a></b></p>
                                                     <ul class="">
                                                         ${programList}
                                                     </ul>
@@ -189,11 +189,11 @@
         });
 
         // Filter Author
-       $(document).ready(function() {
-            const perPage = 40; 
-            let currentPage = 1; 
-            let totalItems = 0; 
-            
+        $(document).ready(function() {
+            const perPage = 40;
+            let currentPage = 1;
+            let totalItems = 0;
+
             function fetchData(page) {
                 $.ajax({
                     url: `/api/archives/count/user?page=${page}&limit=${perPage}`,
@@ -210,7 +210,7 @@
                                 htmlContent += `
                                     <div class="col-lg-3 col-md-6 col-sm-12">
                                         <div class="shadow my-2 p-3">
-                                            <a class="" href="/filter/${encodeURIComponent(user.nama)}">${user.nama} (${user.count})</a>
+                                            <a class="" href="/arsip/author/${encodeURIComponent(user.nama)}">${user.nama} (${user.count})</a>
                                         </div>
                                     </div>
                                 `;

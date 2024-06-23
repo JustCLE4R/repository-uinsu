@@ -7,9 +7,10 @@ use App\Http\Controllers\admin\ArchiveController as AdminArchive;
 
 Route::get('/', [ArchiveController::class, 'landing']);
 Route::get('/arsip', [ArchiveController::class, 'arsip']);
-Route::get('/filter/{author}', [ArchiveController::class, 'archivesByAuthor']);
-Route::get('/filter/{fakultas}', [ArchiveController::class, 'archivesByProdi']);
-Route::view('/filter/{year}', 'filter.tahun')->where('year', '[0-9]{4}');
+Route::view('/arsip/author/{author}' , 'filter.author' );
+Route::view('/arsip/fakultas/{fakultas}', 'filter.fakultas');
+Route::view('/arsip/prodi/{prodi}', 'filter.prodi');
+Route::view('/arsip/tahun/{year}', 'filter.tahun')->where('year', '[0-9]{4}');
 Route::view('/pencarian', 'pencarian');
 
   Route::middleware(['guest', 'no-cache'])->group(function () {

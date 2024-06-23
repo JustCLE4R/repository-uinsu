@@ -11,7 +11,7 @@
                         </h1>
                         <p class="wow fadeInUp" data-wow-delay=".6s">Anda Ingin Mengunggah Dokumen anda di Repositori
                             Universitas Islam Negeri Sumatera Utara ? Login Lalu Selesaikan Proses Pengunggahan Dokumen</p>
-
+                        <a href="#unggah" class="btn btn-success wow fadeInUp " data-wow-delay=".4s">Unggah <i class="fa-solid fa-upload"></i> </a>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -25,7 +25,7 @@
     </section>
 
 
-    <section id="career" class="about-section pt-100 pb-100">
+    <section id="unggah" class="about-section pt-100 pb-100">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-xl-12 col-lg-12">

@@ -54,12 +54,19 @@
                             <h1 class="mb-25 wow fadeInUp text-center" data-wow-delay=".2s">Arsip UIN Sumatera
                                 Utara</h1>
                         </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <a class="text-success" href="/arsip"><i class="fa-solid fa-angles-left"></i> Kembali</a>
+                            </div>
+                            <div id="nama-tahun" class="col-12">
 
+                            </div>
+                        </div>
                         <div class="row" id="tahun">
                             <!-- Data will be inserted here -->
                         </div>
 
-                        <nav aria-label="Page navigation example">
+                        <nav aria-label="Page navigation example" class="justify-content-end d-flex">
                             <ul class="pagination">
                                 <li class="page-item">
                                     <a class="page-link" href="#" id="prevPage" aria-label="Previous">
@@ -138,8 +145,14 @@
                 $('#nextPage').parent().toggleClass('disabled', currentPage * itemsPerPage >= data.length);
             }
 
+            const tahun = window.location.href.split('/').pop();
+            const path = decodeURIComponent(window.location.pathname);
+            const segments = path.split('/');
+            const tahuns = segments.pop(); 
+
+            $('#nama-tahun').html(`<h5 class="my-2">Arsip Tahun ${tahuns}</h5>`);
             $.ajax({
-                url: `/api/archives?tahun=${window.location.href.split('/').pop()}`,
+                url: `/api/archives?tahun=${tahun}`,
                 method: 'GET',
                 dataType: 'json',
                 success: function(response) {

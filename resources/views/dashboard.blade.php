@@ -29,7 +29,7 @@
                             </div>
                         </div> --}}
 
-                        <a href="/logout" class="btn btn-success">Logout</a>
+                        <a href="/logout" class="btn btn-success wow fadeInUp " data-wow-delay=".4s">Logout <i class="fa-solid fa-arrow-right-from-bracket"></i> </a>
 
                     </div>
                 </div>
@@ -53,80 +53,85 @@
                             <h1 class="mb-25 wow fadeInUp text-center" data-wow-delay=".2s">Dokumen Arsip Anda</h1>
                         </div>
                         <div class="row">
-                            <div class="col-lg-4 col-sm-12 my-4">
-                                    <select id="tahunLulusSelect-pekerja" class="form-select">
-                                        <option value="">Pilih Status Arsip</option>
-                                        <option value="Diterima">Diterima</option>
-                                        <option value="Ditolak">Ditolak</option>
-                                        <option value="Dalam Proses">Dalam Proses</option>
+                            <div class="col-lg-4 col-sm-12">
+                                <div class=" mb-3">
+                                    <select id="filterSelect" class="form-select">
+                                        <option value="">Filter Arsip</option>
+                                        <option value="diproses">Sedang Diproses</option>
+                                        <option value="ditolak">Ditolak</option>
+                                        <option value="diterima">Diterima</option>
                                     </select>
+                                </div>
+
                             </div>
                         </div>
-                        <div class="row">
-
-                            <div class="col-lg-4 col-md-6 col-sm-12">
-                                <div class="accordion  wow fadeInUp shadow" data-wow-delay=".2s" id="accordionExample"
-                                    style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-                                    <div class="single-faq">
-                                        <button class="w-100 ps-4 text-start collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
-                                            aria-controls="collapseOne">
-                                            <p>Informasi Selengkapnya</p>
-                                        </button>
-                                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
-                                            data-bs-parent="#accordionExample">
-                                            <div class="faq-content d-flex flex-wrap" style="text-align: justify;">
-                                                <p class="wow fadeInUp" data-wow-delay=".3s">Jenis koleksi tersebut
-                                                    meliputi: semua hasil karya dosen UIN Sumatera Utara </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-12">
-                                <div class="accordion  wow fadeInUp shadow" data-wow-delay=".2s" id="accordionExample"
-                                    style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-                                    <div class="single-faq">
-                                        <button class="w-100 ps-4 text-start collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
-                                            aria-controls="collapseOne">
-                                            <p>Informasi Selengkapnya</p>
-                                        </button>
-                                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
-                                            data-bs-parent="#accordionExample">
-                                            <div class="faq-content d-flex flex-wrap" style="text-align: justify;">
-                                                <p class="wow fadeInUp" data-wow-delay=".3s">Jenis koleksi tersebut
-                                                    meliputi: semua hasil karya dosen UIN Sumatera Utara </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-12">
-                                <div class="accordion  wow fadeInUp shadow" data-wow-delay=".2s" id="accordionExample"
-                                    style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-                                    <div class="single-faq">
-                                        <button class="w-100 ps-4 text-start collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
-                                            aria-controls="collapseOne">
-                                            <p>Informasi Selengkapnya</p>
-                                        </button>
-                                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
-                                            data-bs-parent="#accordionExample">
-                                            <div class="faq-content d-flex flex-wrap" style="text-align: justify;">
-                                                <p class="wow fadeInUp" data-wow-delay=".3s">Jenis koleksi tersebut
-                                                    meliputi: semua hasil karya dosen UIN Sumatera Utara </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
+                        <div class="row" id="semua" > </div>
+                        <div class="row" id="diproses" style="display: none"> </div>
+                        <div class="row" id="ditolak" style="display: none"> </div>
+                        <div class="row" id="diterima" style="display: none"> </div>
                     </div>
                 </div>
 
             </div>
         </div>
     </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+         // Filter Semua
+         $(document).ready(function() {
+            $.ajax({
+                url: '/api/archives?user={{ Auth::user()->nama }}',
+                method: 'GET',
+                dataType: 'json',
+                success: function(response) {
+                    if (response.status === 'success') {
+                        const data = response.data;
+                        let htmlContent = '';
+
+                        $.each(data, function(division, details) {
+                            const count = details.count;
+                            const programs = details.program_studi;
+
+                            let programList = '';
+                            $.each(programs, function(program, programCount) {
+                                programList += `
+                                    <li><a href="/arsip/prodi/${encodeURIComponent(program)}">
+                                    <i class="fa-solid fa-caret-right"></i> Prodi ${program} (${programCount})</a></li>
+                                `;
+                            });
+
+                            htmlContent += `
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="accordion  wow fadeInUp shadow" data-wow-delay=".2s" id="accordionExample"
+                                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                                        <div class="single-faq">
+                                            <button class="w-100 ps-3 pe-5 text-start collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapse${division.replace(/\s+/g, '')}" aria-expanded="true"
+                                                aria-controls="collapse${division.replace(/\s+/g, '')}">
+                                                <p>${division} (${count})</p>
+                                            </button>
+                                            <div id="collapse${division.replace(/\s+/g, '')}" class="collapse" aria-labelledby="heading${division.replace(/\s+/g, '')}"
+                                                data-bs-parent="#accordionExample">
+                                                <div class="faq-content d-flex flex-wrap" style="text-align: justify;">
+                                                    <p><b><a href="/arsip/fakultas/${encodeURIComponent(division)}">Fakultas ${division} (${count})</a></b></p>
+                                                    <ul class="">
+                                                        ${programList}
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            `;
+                        });
+
+                        $('#semua').html(htmlContent);
+                    }
+                },
+                error: function(error) {
+                    console.error('Error fetching data:', error);
+                }
+            });
+        });
+    </script>
 @endsection

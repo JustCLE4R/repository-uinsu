@@ -54,8 +54,15 @@
                             <h1 class="mb-25 wow fadeInUp text-center" data-wow-delay=".2s">Arsip UIN Sumatera
                                 Utara</h1>
                         </div>
-                       
-                        <div class="row" id="tahun">
+                        <div class="row">
+                            <div class="col-12">
+                                <a class="text-success" href="/arsip"><i class="fa-solid fa-angles-left"></i> Kembali</a>
+                            </div>
+                            <div id="nama-author" class="col-12">
+                                
+                            </div>
+                        </div>
+                        <div class="row" id="author">
                             <!-- Data will be inserted here -->
                         </div>
 
@@ -85,6 +92,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(document).ready(function() {
+           
+
             const itemsPerPage = 10;
             let currentPage = 1;
             let data = [];
@@ -104,7 +113,7 @@
                     <div class="accordion wow fadeInUp shadow" data-wow-delay=".2s" id="accordionExample"
                         style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
                         <div class="single-faq">
-                            <button class="w-100 ps-4 text-start collapsed" type="button"
+                            <button class="w-100 ps-3 pe-5 text-start collapsed" type="button"
                                 data-bs-toggle="collapse" data-bs-target="#collapse${archive.id}"
                                 aria-expanded="false" aria-controls="collapse${archive.id}">
                                 <p>${archive.user.nama} (${year}) <a href="#">${archive.title}</a> ${archive.tempat_terbit} ${archive.isbn_issn}</p>
@@ -116,7 +125,7 @@
                                     <ul class="">
                                         <li><i class="fa-solid fa-caret-right"></i> Jenis Item: ${archive.type}</li>
                                         <li><i class="fa-solid fa-caret-right"></i> Subjek: ${archive.subjek}</li>
-                                        <li><i class="fa-solid fa-caret-right"></i> Division: Fakultas ${archive.fakultas}, Prodi ${archive.program_studi}</li>
+                                        <li><i class="fa-solid fa-caret-right"></i> Division: Fakultas ${archive.fakultas}, author ${archive.program_studi}</li>
                                         <li><i class="fa-solid fa-caret-right"></i> Editor: ${archive.editor}</li>
                                         <li><i class="fa-solid fa-caret-right"></i> Dibuat Pada: ${archive.created_at}</li>
                                         <li><i class="fa-solid fa-caret-right"></i> Update Terakhir Pada: ${archive.updated_at}</li>
@@ -138,8 +147,14 @@
                 $('#nextPage').parent().toggleClass('disabled', currentPage * itemsPerPage >= data.length);
             }
 
+            const author = window.location.href.split('/').pop();
+            const path = decodeURIComponent(window.location.pathname);
+            const segments = path.split('/');
+            const authors = segments.pop(); 
+
+            $('#nama-author').html(`<h5 class="my-2">Arsip Author ${authors}</h5>`);
             $.ajax({
-                url: '/api/archives?user={{ $user }}',
+                url: `/api/archives?user=${author}`,
                 method: 'GET',
                 dataType: 'json',
                 success: function(response) {
