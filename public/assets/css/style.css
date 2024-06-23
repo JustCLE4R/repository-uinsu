@@ -593,19 +593,19 @@ p {
 #nav img{
   width: 6rem;
 }
-#nav ul{
+#nav .top-nav{
   display:flex;
 
 }
-#nav ul li{
+#nav .top-nav li{
   margin:5px 12px;
   font-size:1.1rem;
   cursor: pointer;
 }
-#nav ul li a{
+#nav .top-nav li a{
   color:#000;
 }
-#nav ul li:hover{
+#nav .top-nav li:hover{
   color:green;
 }
 
@@ -705,7 +705,7 @@ ul .indicator::after {
   box-shadow: 0 10px 0 rgb(1 130 54);
 }
 @media only screen and (max-width: 600px){
-  .top-nav{
+  #nav .top-nav{
     display: none;
   }
   .bottom-nav{

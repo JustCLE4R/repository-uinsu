@@ -116,7 +116,7 @@
                             htmlContent += `
                                 <div class="col-lg-2 col-md-4 col-sm-6">
                                     <div class="shadow-sm my-2 p-3">
-                                        <a class="" href="http://127.0.0.1:8000/filter/${year}">Tahun ${year} (${count})</a>
+                                        <a class="" href="/filter/${year}">Tahun ${year} (${count})</a>
                                     </div>
                                 </div>
                             `;
@@ -149,7 +149,7 @@
                             let programList = '';
                             $.each(programs, function(program, programCount) {
                                 programList += `
-                                    <li><a href="http://127.0.0.1:8000/filter/${encodeURIComponent(program)}">
+                                    <li><a href="/filter/${encodeURIComponent(program)}">
                                     <i class="fa-solid fa-caret-right"></i> Prodi ${program} (${programCount})</a></li>
                                 `;
                             });
@@ -167,7 +167,7 @@
                                             <div id="collapse${division.replace(/\s+/g, '')}" class="collapse" aria-labelledby="heading${division.replace(/\s+/g, '')}"
                                                 data-bs-parent="#accordionExample">
                                                 <div class="faq-content d-flex flex-wrap" style="text-align: justify;">
-                                                    <p><b><a href="http://127.0.0.1:8000/filter/${encodeURIComponent(division)}">Fakultas ${division} (${count})</a></b></p>
+                                                    <p><b><a href="/filter/${encodeURIComponent(division)}">Fakultas ${division} (${count})</a></b></p>
                                                     <ul class="">
                                                         ${programList}
                                                     </ul>
@@ -210,7 +210,7 @@
                                 htmlContent += `
                                     <div class="col-lg-3 col-md-6 col-sm-12">
                                         <div class="shadow my-2 p-3">
-                                            <a class="" href="http://127.0.0.1:8000/filter/${encodeURIComponent(user.nama)}">${user.nama} (${user.count})</a>
+                                            <a class="" href="/filter/${encodeURIComponent(user.nama)}">${user.nama} (${user.count})</a>
                                         </div>
                                     </div>
                                 `;

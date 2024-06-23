@@ -104,7 +104,7 @@
                     <div class="accordion wow fadeInUp shadow" data-wow-delay=".2s" id="accordionExample"
                         style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
                         <div class="single-faq">
-                            <button class="w-100 ps-4 text-start collapsed" type="button"
+                            <button class="w-100 ps-3 pe-5 text-start collapsed" type="button"
                                 data-bs-toggle="collapse" data-bs-target="#collapse${archive.id}"
                                 aria-expanded="false" aria-controls="collapse${archive.id}">
                                 <p>${archive.user.nama} (${year}) <a href="#">${archive.title}</a> ${archive.tempat_terbit} ${archive.isbn_issn}</p>
