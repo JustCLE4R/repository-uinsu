@@ -65,7 +65,7 @@
                       <option value="Dakwah dan Komunikasi">Dakwah dan Komunikasi</option>
                       <option value="Kesehatan Masyarakat">Kesehatan Masyarakat</option>
                       <option value="Ilmu Sosial">Ilmu Sosial</option>
-                      <option value="Ilmu Tarbiyan dan Keguruan">Ilmu Tarbiyan dan Keguruan</option>
+                      <option value="Ilmu Tarbiyah dan Keguruan">Ilmu Tarbiyah dan Keguruan</option>
                       <option value="Syariah dan Hukum">Syariah dan Hukum</option>
                       <option value="Sains dan Teknologi">Sains dan Teknologi</option>
                       <option value="Ushuluddin dan Studi Islam">Ushuluddin dan Studi Islam</option>

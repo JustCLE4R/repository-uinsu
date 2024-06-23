@@ -22,13 +22,13 @@
                         <table class="table text-start align-middle table-bordered table-hover mb-0">
                             <thead>
                                 <tr class="text-dark">
-                                    <th style="background-color: transparent !important; " class="col"> No </th>
-                                    <th style="background-color: transparent !important; " class="col"> Pemilik </th>
-                                    <th style=" background-color: transparent !important; " class="col"> Tipe  </th>
-                                    <th style="background-color: transparent !important; " class="col"> Judul </th>
-                                    <th style="background-color: transparent !important; " class="col"> Abstrak </th>
-                                    <th style=" background-color: transparent !important; " class="col"> Editor  </th>
-                                    <th style=" background-color: transparent !important; " class="col text-center"> File </th>
+                                    <th style="background-color: transparent !important; " class="col">No</th>
+                                    <th style="background-color: transparent !important; " class="col">Pengunggah</th>
+                                    <th style=" background-color: transparent !important; " class="col">Tipe</th>
+                                    <th style="background-color: transparent !important; " class="col">Judul</th>
+                                    <th style="background-color: transparent !important; " class="col">Abstrak</th>
+                                    <th style=" background-color: transparent !important; " class="col">Editor</th>
+                                    <th style=" background-color: transparent !important; " class="col text-center">File</th>
                                 </tr>
                             </thead>
                             <tbody style=" background-color: transparent !important; ">

@@ -26,7 +26,7 @@
                         <thead>
                             <tr class="text-dark">
                                 <th style="background-color: transparent !important;" class="col">No</th>
-                                <th style="background-color: transparent !important;" class="col">Pemilik</th>
+                                <th style="background-color: transparent !important;" class="col">Pengunggah</th>
                                 <th style="background-color: transparent !important;" class="col">Tipe</th>
                                 <th style="background-color: transparent !important;" class="col">Judul</th>
                                 <th style="background-color: transparent !important;" class="col">Abstrak</th>
@@ -75,6 +75,21 @@
             "ordering": true,
             "info": true,
             "autoWidth": false,
+            "language": {
+                "emptyTable": "Tidak ada data tersedia",
+                "zeroRecords": "Tidak ada data yang cocok",
+                "info": "Menampilkan _START_ sampai _END_ dari _TOTAL_ entri",
+                "infoEmpty": "Menampilkan 0 sampai 0 dari 0 entri",
+                "infoFiltered": "(Disaring dari _MAX_ entri keseluruhan)",
+                "lengthMenu": "Tampilkan _MENU_ entri",
+                "search": "Cari:",
+                "paginate": {
+                    "first": "Pertama",
+                    "last": "Terakhir",
+                    "next": "Selanjutnya",
+                    "previous": "Sebelumnya"
+                },
+            }
         });
     });
 </script>
