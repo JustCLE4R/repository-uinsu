@@ -139,7 +139,7 @@
             }
 
             $.ajax({
-                url: '/api/archives?tahun={{ $tahun }}',
+                url: `/api/archives?tahun=${window.location.href.split('/').pop()}`,
                 method: 'GET',
                 dataType: 'json',
                 success: function(response) {

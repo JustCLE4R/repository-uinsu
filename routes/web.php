@@ -7,18 +7,18 @@ use App\Http\Controllers\admin\ArchiveController as AdminArchive;
 
 Route::get('/', [ArchiveController::class, 'landing']);
 Route::get('/arsip', [ArchiveController::class, 'arsip']);
-Route::get('/filter/{year}', [ArchiveController::class, 'archivesByYear']);
 Route::get('/filter/{author}', [ArchiveController::class, 'archivesByAuthor']);
 Route::get('/filter/{fakultas}', [ArchiveController::class, 'archivesByProdi']);
+Route::view('/filter/{year}', 'filter.tahun')->where('year', '[0-9]{4}');
 Route::view('/pencarian', 'pencarian');
 
-  Route::middleware(['guest', 'no-cache', 'security-header'])->group(function () {
+  Route::middleware(['guest', 'no-cache'])->group(function () {
     Route::get('/login', [LoginController::class, 'index'])->name('login');
     Route::post('/login', [LoginController::class, 'authenticate']);
   });
 
 Route::middleware(['auth'])->group(function () {
-  Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
+  Route::get('/logout', [LoginController::class, 'logout'])->middleware('no-cache')->name('logout');
 
   // Dashboard untuk mahasiswa
   Route::get('/dashboard', [ArchiveController::class, 'dashboard'])->name('dashboard');
@@ -26,7 +26,7 @@ Route::middleware(['auth'])->group(function () {
   Route::get('/unggah', [ArchiveController::class, 'create']);
   Route::post('/submit', [ArchiveController::class, 'store']);
 
-  Route::middleware(['is-admin'])->prefix('admin')->group(function () {
+  Route::middleware(['is-admin', 'no-cache'])->prefix('admin')->group(function () {
     Route::get('/', [AdminArchive::class, 'index']);
 
     Route::get('/archive/create', [AdminArchive::class, 'create']);

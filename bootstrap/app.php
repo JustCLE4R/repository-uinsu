@@ -18,7 +18,10 @@ return Application::configure(basePath: dirname(__DIR__))
         $middleware->alias([
             'is-admin' => IsAdmin::class,
             'no-cache' => NoCache::class,
-            'security-header' => SecurityHeader::class,
+        ]);
+
+        $middleware->append([
+            SecurityHeader::class,
         ]);
     })
     ->withExceptions(function (Exceptions $exceptions) {
