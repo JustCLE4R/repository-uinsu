@@ -5,7 +5,7 @@
                 <div class="col-xl-3 col-md-6">
                     <div class="footer-widget">
                         <div class="logo mb-35">
-                            <a href="index.html"> <img src="assets/img/logo.png" width="200px" alt=""> </a>
+                            <a href="index.html"> <img src="/assets/img/logo.png" width="200px" alt=""> </a>
                         </div>
                         <p class="desc mb-35">UIN Sumatera Utara memiliki 8 Fakultas dan 1 Program Pascasarjana.
                             UINSU adalah kampus islam yang memiliki moto “Smart Islamic University”</p>

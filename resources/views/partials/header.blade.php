@@ -1,7 +1,7 @@
 
-<nav class="shadow-sm">
+<nav id="nav" class="shadow-sm">
     <div class="logo">
-        <img src="assets/img/logo.png" alt="">
+        <img src="/assets/img/logo.png" alt="">
     </div>
     <ul class="top-nav">
         <li><a class="{{ request()->is('/') ? 'active-nav' : '' }}" onclick="window.location.href='/';">Beranda</a></li>           
@@ -23,7 +23,7 @@
         @if(Auth::check())
             <img class="rounded-circle" src="{{ Auth::user()->foto ? url('https://pmb.uinsu.ac.id/file/photo/' . Auth::user()->foto) : '/assets/img/account.png' }}" alt="" style="width: 35px; height: 35px;">
         @else
-            {{-- <img class="rounded-circle" src="/assets/img/account.png" alt="" style="width: 35px; height: 35px;"> --}}
+            <img class="rounded-circle" src="/assets/img/account.png" alt="" style="width: 35px; height: 35px;">
         @endif
     </div>
     

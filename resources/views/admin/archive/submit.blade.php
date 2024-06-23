@@ -1,13 +1,16 @@
 @extends('admin.layouts.main')
 
 @section('content')
-<section id="career" class="about-section pt-100 pb-100">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-xl-12 col-lg-12">
-        <div class="about-content">
-          <div class="section-title mb-30">
-            <div class="shadow p-5 ">
+<div class="container-fluid pt-4 px-4">
+  <div class="row g-4">
+      <div class="col-sm-12 col-xl-12">
+          <div class="bg-light rounded p-5 border-top border-success border-5" style="min-height: 70vh">
+              <div class="row">
+                  <div class="col-12">
+                      <span class="h4">Arsip</span>
+                      <hr />
+                  </div>
+              </div>
               <form method="post" action="/submit" enctype="multipart/form-data">
                 @csrf
                 <div class="row justify-content-start page page-active">
@@ -183,13 +186,11 @@
                   <button type="submit" class="btn btn-success mt-3">Ajukan Dokumen</button>
                 </div>
               </form>
-            </div>
+             
           </div>
-        </div>
       </div>
-    </div>
   </div>
-</section>
+</div>
 @endsection
 
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>

@@ -20,7 +20,7 @@
                                         data-wow-delay="0.3s">
                                         <div class="counter-content media-body">
                                             <div class="counter-count">
-                                                <div class="counter" id="clientsCount">4352320</div>
+                                                <div class="counter" id="clientsCount" >{{ $arsip['count'] }}</div>
                                             </div>
                                             <p class="text">Dokumen Arsip</p>
                                         </div>
@@ -55,98 +55,232 @@
                                 Utara</h1>
                         </div>
                         <div class="row">
-                            <div class="col-lg-5 col-sm-12">
-                                <div class="input-group mb-3">
-                                    <select id="tahunLulusSelect-pekerja" class="form-select">
-                                        <option value="">Pilih Tahun</option>
-                                        <option value="2022">2022</option>
-                                        <option value="2023">2023</option>
-                                        <option value="2024">2024</option>
+                            <div class="col-lg-4 col-sm-12">
+                                <div class=" mb-3">
+                                    <select id="filterSelect" class="form-select">
+                                        <option value="">Filter Arsip</option>
+                                        <option value="tahun">Berdasarkan Tahun</option>
+                                        <option value="division">Berdasarkan Divisi</option>
+                                        <option value="author">Berdasarkan Author</option>
+                                        <option value="subjek">Berdasarkan Subjek</option>
                                     </select>
-                                    <select id="fakultasSelect-pekerja" class="form-select">
-                                        <option value="">Pilih Subjek</option>
-                                        <option value="Ushuluddin%20dan%20Studi%20Islam">Ushuluddin dan Studi Islam
-                                        </option>
-                                        <option value="Ekonomi%20dan%20Bisnis%20Islam">Ekonomi dan Bisnis Islam</option>
-                                        <option value="Dakwah%20dan%20Komunikasi">Dakwah dan Komunikasi</option>
-                                        <option value="Syariah%20dan%20Hukum">Syariah dan Hukum</option>
-                                        <option value="Ilmu%20Tarbiyah%20dan%20Keguruan">Ilmu Tarbiyah dan Keguruan
-                                        </option>
-                                        <option value="Ilmu%20Sosial">Ilmu Sosial</option>
-                                        <option value="Sains%20dan%20Teknologi">Sains dan Teknologi</option>
-                                        <option value="Kesehatan%20Masyarakat">Kesehatan Masyarakat</option>
-                                        <option value="Pascasarjana">Pascasarjana</option>
-                                    </select>
-
                                 </div>
 
                             </div>
                         </div>
-                        <div class="row">
-
-                            <div class="col-lg-4 col-md-6 col-sm-12">
-                                <div class="accordion  wow fadeInUp shadow" data-wow-delay=".2s" id="accordionExample"
-                                    style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-                                    <div class="single-faq">
-                                        <button class="w-100 ps-4 text-start collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
-                                            aria-controls="collapseOne">
-                                            <p>Informasi Selengkapnya</p>
-                                        </button>
-                                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
-                                            data-bs-parent="#accordionExample">
-                                            <div class="faq-content d-flex flex-wrap" style="text-align: justify;">
-                                                <p class="wow fadeInUp" data-wow-delay=".3s">Jenis koleksi tersebut
-                                                    meliputi: semua hasil karya dosen UIN Sumatera Utara </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-12">
-                                <div class="accordion  wow fadeInUp shadow" data-wow-delay=".2s" id="accordionExample"
-                                    style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-                                    <div class="single-faq">
-                                        <button class="w-100 ps-4 text-start collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
-                                            aria-controls="collapseOne">
-                                            <p>Informasi Selengkapnya</p>
-                                        </button>
-                                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
-                                            data-bs-parent="#accordionExample">
-                                            <div class="faq-content d-flex flex-wrap" style="text-align: justify;">
-                                                <p class="wow fadeInUp" data-wow-delay=".3s">Jenis koleksi tersebut
-                                                    meliputi: semua hasil karya dosen UIN Sumatera Utara </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-12">
-                                <div class="accordion  wow fadeInUp shadow" data-wow-delay=".2s" id="accordionExample"
-                                    style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-                                    <div class="single-faq">
-                                        <button class="w-100 ps-4 text-start collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
-                                            aria-controls="collapseOne">
-                                            <p>Informasi Selengkapnya</p>
-                                        </button>
-                                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
-                                            data-bs-parent="#accordionExample">
-                                            <div class="faq-content d-flex flex-wrap" style="text-align: justify;">
-                                                <p class="wow fadeInUp" data-wow-delay=".3s">Jenis koleksi tersebut
-                                                    meliputi: semua hasil karya dosen UIN Sumatera Utara </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
+                        <div class="row" id="tahun" style="display: none;"> </div>
+                        <div class="row" id="division"> </div>
+                        <div class="row" id="author" style="display: none;">
+                            <nav aria-label="Page navigation">
+                                <ul class="pagination" id="authorPagination"></ul>
+                            </nav>
                         </div>
+                        <div class="row" id="subjek" style="display: none;"> </div>
+
                     </div>
                 </div>
 
             </div>
         </div>
     </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // Select Filter
+         $(document).ready(function() {
+
+            $('#division').show();
+
+            $('#filterSelect').change(function() {
+                var selectedOption = $(this).val();
+                $('#tahun, #division, #author, #subjek').hide();
+
+                $('#' + selectedOption).show();
+            });
+        });
+
+        // Filter tahun
+        $(document).ready(function() {
+            $.ajax({
+                url: '/api/archives/count/tahun',
+                method: 'GET',
+                dataType: 'json',
+                success: function(response) {
+                    if (response.status === 'success') {
+                        const data = response.data;
+                        let htmlContent = '';
+
+                        const sortedYears = Object.keys(data).sort((a, b) => b - a);
+
+                        sortedYears.forEach(year => {
+                            const count = data[year];
+                            htmlContent += `
+                                <div class="col-lg-2 col-md-4 col-sm-6">
+                                    <div class="shadow-sm my-2 p-3">
+                                        <a class="" href="/filter/${year}">Tahun ${year} (${count})</a>
+                                    </div>
+                                </div>
+                            `;
+                        });
+
+                        $('#tahun').html(htmlContent);
+                    }
+                },
+                error: function(error) {
+                    console.error('Error fetching data:', error);
+                }
+            });
+        });
+
+        // Filter Divisi
+        $(document).ready(function() {
+            $.ajax({
+                url: '/api/archives/count/division',
+                method: 'GET',
+                dataType: 'json',
+                success: function(response) {
+                    if (response.status === 'success') {
+                        const data = response.data;
+                        let htmlContent = '';
+
+                        $.each(data, function(division, details) {
+                            const count = details.count;
+                            const programs = details.program_studi;
+
+                            let programList = '';
+                            $.each(programs, function(program, programCount) {
+                                programList += `
+                                    <li><a href="/filter/${encodeURIComponent(program)}">
+                                    <i class="fa-solid fa-caret-right"></i> Prodi ${program} (${programCount})</a></li>
+                                `;
+                            });
+
+                            htmlContent += `
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="accordion  wow fadeInUp shadow" data-wow-delay=".2s" id="accordionExample"
+                                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                                        <div class="single-faq">
+                                            <button class="w-100 ps-4 text-start collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapse${division.replace(/\s+/g, '')}" aria-expanded="true"
+                                                aria-controls="collapse${division.replace(/\s+/g, '')}">
+                                                <p>${division} (${count})</p>
+                                            </button>
+                                            <div id="collapse${division.replace(/\s+/g, '')}" class="collapse" aria-labelledby="heading${division.replace(/\s+/g, '')}"
+                                                data-bs-parent="#accordionExample">
+                                                <div class="faq-content d-flex flex-wrap" style="text-align: justify;">
+                                                    <p><b><a href="/filter/${encodeURIComponent(division)}">Fakultas ${division} (${count})</a></b></p>
+                                                    <ul class="">
+                                                        ${programList}
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            `;
+                        });
+
+                        $('#division').html(htmlContent);
+                    }
+                },
+                error: function(error) {
+                    console.error('Error fetching data:', error);
+                }
+            });
+        });
+
+        // Filter Author
+       $(document).ready(function() {
+            const perPage = 40; 
+            let currentPage = 1; 
+            let totalItems = 0; 
+            
+            function fetchData(page) {
+                $.ajax({
+                    url: `/api/archives/count/user?page=${page}&limit=${perPage}`,
+                    method: 'GET',
+                    dataType: 'json',
+                    success: function(response) {
+                        if (response.status === 'success') {
+                            const data = response.data;
+                            totalItems = data.length;
+
+                            let htmlContent = '';
+
+                            $.each(data, function(index, user) {
+                                htmlContent += `
+                                    <div class="col-lg-3 col-md-6 col-sm-12">
+                                        <div class="shadow my-2 p-3">
+                                            <a class="" href="/filter/${encodeURIComponent(user.nama)}">${user.nama} (${user.count})</a>
+                                        </div>
+                                    </div>
+                                `;
+                            });
+
+                            $('#author').html(htmlContent);
+
+                            updatePagination();
+                        }
+                    },
+                    error: function(error) {
+                        console.error('Error fetching data:', error);
+                    }
+                });
+            }
+
+            function updatePagination() {
+                const totalPages = Math.ceil(totalItems / perPage);
+
+                let paginationHtml = '';
+                paginationHtml += `
+                    <li class="page-item ${currentPage === 1 ? 'disabled' : ''}">
+                        <a class="page-link" href="#" aria-label="Previous" onclick="changePage(${currentPage - 1})">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                `;
+
+                for (let i = 1; i <= totalPages; i++) {
+                    paginationHtml += `
+                        <li class="page-item ${currentPage === i ? 'active' : ''}">
+                            <a class="page-link" href="#" onclick="changePage(${i})">${i}</a>
+                        </li>
+                    `;
+                }
+
+                paginationHtml += `
+                    <li class="page-item ${currentPage === totalPages ? 'disabled' : ''}">
+                        <a class="page-link" href="#" aria-label="Next" onclick="changePage(${currentPage + 1})">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                `;
+
+                $('#authorPagination').html(paginationHtml);
+            }
+
+            window.changePage = function(page) {
+                if (page < 1 || page > Math.ceil(totalItems / perPage)) {
+                    return;
+                }
+                currentPage = page;
+                fetchData(currentPage);
+            };
+
+            fetchData(currentPage);
+        });
+
+        // Count Arsip
+        $(document).ready(function() {
+            const clientsCount = $('#clientsCount');
+            let clients = 0;
+            let targetClients = {{ $arsip['count'] }};
+            const interval = setInterval(function() {
+                clients += Math.ceil((targetClients - clients) / 10);
+                clientsCount.text(clients);
+                if (clients >= targetClients) {
+                    clearInterval(interval);
+                }
+            }, 100);
+        });
+    </script>
 @endsection

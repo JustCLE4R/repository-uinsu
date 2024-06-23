@@ -37,7 +37,7 @@
         
     </ul>
     <div class="profile">
-        {{-- <img src="assets/img/account.png" style="width: 35px;" alt=""> --}}
+        <img src="assets/img/account.png" style="width: 35px;" alt="">
     </div>
 </nav>
 <div class="navbar bottom-nav">

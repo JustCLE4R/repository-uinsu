@@ -28,6 +28,12 @@
     transform: translateY(-10px); /* Sesuaikan nilai ini */
   }
 }
+#career a{
+  color: black;
+}
+#career a:hover{
+  color: green;
+}
 
 .wave-animation-1 {
   animation: wave 3s infinite ease-in-out;
@@ -570,7 +576,7 @@ p {
     02.HEADER css 
 ===========================*/
 /*===== NAVBAR =====*/
-nav{
+#nav{
   z-index:99;
   position: fixed;
   padding:0 6vw;
@@ -584,22 +590,22 @@ nav{
   overflow: hidden;
   box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.2);
 }
-nav img{
+#nav img{
   width: 6rem;
 }
-nav ul{
+#nav .top-nav{
   display:flex;
 
 }
-nav ul li{
+#nav .top-nav li{
   margin:5px 12px;
   font-size:1.1rem;
   cursor: pointer;
 }
-nav ul li a{
+#nav .top-nav li a{
   color:#000;
 }
-nav ul li:hover{
+#nav .top-nav li:hover{
   color:green;
 }
 
@@ -699,7 +705,7 @@ ul .indicator::after {
   box-shadow: 0 10px 0 rgb(1 130 54);
 }
 @media only screen and (max-width: 600px){
-  .top-nav{
+  #nav .top-nav{
     display: none;
   }
   .bottom-nav{
