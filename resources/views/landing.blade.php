@@ -107,7 +107,7 @@
         </div>
     </section>
 
-    <section id="arsip" class="about-section pt-10 pb-10">
+    <section id="arsip" class="about-section pt-10 pb-10" style="background: url('https://preview.uideck.com/items/bliss/assets/img/service/service-bg.jpg');">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-xl-6 col-lg-6">
@@ -176,67 +176,6 @@
             </div>
         </div>
     </section>
-
-    <section id="service" class="service-section img-bg pt-100 pb-100 mt-150">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xxl-6 col-xl-9 col-lg-12 col-md-12">
-                    <div class="section-title text-center mb-50  animate__animated animate__fadeInUp wow" data-wow-duration="1.5s" >
-                        <h1>Virtual Tour </h1>
-                        <p>UIN Sumatera Utara Menyediakan Sarana Virtual Tour Bagi Para Pengunjung Yang Ingin
-                            Mengunjungi
-                            Setiap Kampus UINSU Secara Virtual</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row  justify-content-center">
-                <div class="col-xl-4 col-md-6">
-                    <div class="single-service">
-                        <div class="icon color-1">
-                            <i class="lni lni-map-marker"></i>
-                        </div>
-                        <div class="content  animate__animated animate__fadeInUp wow" data-wow-duration="1.5s" >
-                            <h3>Kampus I UINSU</h3>
-                            <p>Berlokasikan di Jl. Sutomo Ujung Kota Medan, Sumatera Utara</p>
-                            <a href="https://sutomo.uinsu.ac.id/" class="button-sm radius-30 mt-2">Kunjungi <i
-                                    class="lni lni-angle-double-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6">
-                    <div class="single-service">
-                        <div class="icon color-2">
-                            <i class="lni lni-map-marker"></i>
-                        </div>
-                        <div class="content  animate__animated animate__fadeInUp wow" data-wow-duration="1.5s" >
-                            <h3>Kampus II UINSU</h3>
-                            <p>Berlokasikan di Jl. William Iskandar Ps. V, Kabupaten Deli Serdang, Sumatera Utara</p>
-                            <a href="https://pancing.uinsu.ac.id/" class="button-sm radius-30 mt-2">Kunjungi <i
-                                    class="lni lni-angle-double-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6">
-                    <div class="single-service">
-                        <div class="icon color-3">
-                            <i class="lni lni-map-marker"></i>
-                        </div>
-                        <div class="content  animate__animated animate__fadeInUp wow" data-wow-duration="1.5s" >
-                            <h3>Kampus IV UINSU</h3>
-                            <p>Berlokasikan di Jl. Lap. Golf No.120, Kabupaten Deli Serdang, Sumatera Utara </p>
-                            <a href="https://tuntungan.uinsu.ac.id/" class="button-sm radius-30 mt-2">Kunjungi <i
-                                    class="lni lni-angle-double-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-    </section>
-
-
 
     <section id="pricing" class="pricing-section pricing-style-4 bg-light">
         <div class="container">

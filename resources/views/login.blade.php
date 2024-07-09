@@ -80,7 +80,7 @@
   <div class="container">
     <div class="cover">
       <div class="front">
-        <img src="https://preview.uideck.com/items/bliss/assets/img/hero/hero-img.svg" alt="">
+        <img src="/assets/img/hero-2.svg" alt="">
         
         <div class="text" data-aos="fade-up" data-aos-duration="800">
           <div class="carousel">
@@ -105,7 +105,7 @@
                   <div class="title">Login </div>
                 </div>
                 <div class="col-3">
-                  <span><img src="https://newuinsu.uinsu.ac.id/wp-content/uploads/2024/02/uin-dan-blu-png-2.png"  alt=""></span>
+                  <span><img src="assets/img/logo.png"  alt=""></span>
                 </div>
               </div>
             @if (session('error'))

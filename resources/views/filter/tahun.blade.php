@@ -121,13 +121,17 @@
                                 style="">
                                 <div class="faq-content d-flex flex-wrap" style="text-align: justify;">
                                     <ul class="">
-                                        <li><i class="fa-solid fa-caret-right"></i> Jenis Item: ${archive.type}</li>
-                                        <li><i class="fa-solid fa-caret-right"></i> Subjek: ${archive.subjek}</li>
-                                        <li><i class="fa-solid fa-caret-right"></i> Division: Fakultas ${archive.fakultas}, Prodi ${archive.program_studi}</li>
-                                        <li><i class="fa-solid fa-caret-right"></i> Editor: ${archive.editor}</li>
-                                        <li><i class="fa-solid fa-caret-right"></i> Dibuat Pada: ${archive.created_at}</li>
-                                        <li><i class="fa-solid fa-caret-right"></i> Update Terakhir Pada: ${archive.updated_at}</li>
-                                        <li><i class="fa-solid fa-caret-right"></i> <a href="${archive.official_url}">Buka File</a></li>
+                                        <li>
+                                            <a href="${archive.official_url}" target="_blank">
+                                                <img src="${archive.cover_url}" alt="Cover" style="width: 200px;">
+                                            </a>
+                                        </li>
+                                        <li> Jenis Item: ${archive.type}</li>
+                                        <li> Subjek: ${archive.subjek}</li>
+                                        <li> Division: Fakultas ${archive.fakultas}, Prodi ${archive.program_studi}</li>
+                                        <li> Editor: ${archive.editor}</li>
+                                        <li> Dibuat Pada: ${archive.created_at}</li>
+                                        <li> Update Terakhir Pada: ${archive.updated_at}</li>
                                     </ul>
                                 </div>
                             </div>
