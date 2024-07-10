@@ -16,7 +16,7 @@ return new class extends Migration
             $table->foreignId('user_id')->constrained('users')->onDelete('cascade');
             $table->string('type');
             $table->string('title');
-            $table->string('abstract');
+            $table->mediumText('abstract');
             $table->string('editor');
             $table->string('file');
 
@@ -32,13 +32,20 @@ return new class extends Migration
             $table->string('identification_number');
             $table->string('journal_name');
 
-            $table->string('subjek');
+            $table->foreignId('subject_id')->constrained('subjects')->onDelete('cascade');
             $table->string('nomor_klasifikasi');
             $table->string('fakultas');
             $table->string('program_studi');
             $table->enum('status', ['accepted', 'rejected', 'pending'])->default('pending');
             $table->string('reject_reason')->nullable();
             $table->timestamp('accepted_at')->nullable();
+            $table->enum('visibility', ['public', 'private'])->default('public');
+
+            // Download statistics
+            $table->unsignedBigInteger('total_downloads')->default(0);
+            $table->jsonb('monthly_downloads')->nullable();
+            $table->jsonb('download_origins')->nullable();
+
             $table->softDeletes();
             $table->timestamps();
         });

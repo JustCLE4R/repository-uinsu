@@ -12,6 +12,11 @@ class Archive extends Model
 
     protected $guarded = ['id'];
 
+    protected $casts = [
+        'monthly_downloads' => 'json',
+        'download_origins' => 'json',
+    ];
+
     public function changeLogs()
     {
         return $this->hasMany(ChangeLog::class);
@@ -20,5 +25,10 @@ class Archive extends Model
     public function user()
     {
         return $this->belongsTo(User::class);
+    }
+
+    public function subject()
+    {
+        return $this->belongsTo(Subject::class);
     }
 }

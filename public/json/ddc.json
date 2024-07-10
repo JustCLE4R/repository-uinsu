@@ -1,1616 +1,1587 @@
-    {
-        "000": {
-            "class": "Computer science, knowledge, and systems",
-            "subclasses": {
-                "000": "Computer science, information and general works",
-                "001": "Knowledge",
-                "002": "The book (writing, libraries, and book-related topics)",
-                "003": "Systems",
-                "004": "Data processing and computer science",
-                "005": "Computer programming, programs, and data",
-                "006": "Special computer methods (e.g. AI, multimedia, VR)",
-                "007": "Not assigned",
-                "008": "Not assigned",
-                "009": "Not assigned"
-            }
-        },
-        "010": {
-            "class": "Bibliographies",
-            "subclasses": {
-                "010": "Bibliography",
-                "011": "Bibliographies",
-                "012": "Bibliographies of individuals",
-                "013": "Not assigned",
-                "014": "Bibliographies of anonymous and pseudonymous works",
-                "015": "Bibliographies of works from specific places",
-                "016": "Bibliographies of works on specific subjects",
-                "017": "General subject catalogs",
-                "018": "Catalogs arranged by author, date, etc.",
-                "019": "Dictionary catalogs"
-            }
-        },
-        "020": {
-            "class": "Library and information sciences",
-            "subclasses": {
-                "020": "Library and information sciences",
-                "021": "Library relationships (with archives, information centers, etc.)",
-                "022": "Administration of physical plant",
-                "023": "Personnel management",
-                "024": "Not assigned",
-                "025": "Library operations",
-                "026": "Libraries for specific subjects",
-                "027": "General libraries",
-                "028": "Reading and use of other information media",
-                "029": "Not assigned"
-            }
-        },
-        "030": {
-            "class": "Encyclopedias and books of facts",
-            "subclasses": {
-                "030": "General encyclopedic works",
-                "031": "Encyclopedias in American English",
-                "032": "Encyclopedias in English",
-                "033": "Encyclopedias in other Germanic languages",
-                "034": "Encyclopedias in French, Occitan, and Catalan",
-                "035": "Encyclopedias in Italian, Romanian, and related languages",
-                "036": "Encyclopedias in Spanish and Portuguese",
-                "037": "Encyclopedias in Slavic languages",
-                "038": "Encyclopedias in Scandinavian languages",
-                "039": "Encyclopedias in other languages"
-            }
-        },
-        "040": {
-            "class": "Not assigned",
-            "subclasses": {}
-        },
-        "050": {
-            "class": "Magazines, journals and serials",
-            "subclasses": {
-                "050": "General serial publications",
-                "051": "Serials in American English",
-                "052": "Serials in English",
-                "053": "Serials in other Germanic languages",
-                "054": "Serials in French, Occitan, and Catalan",
-                "055": "Serials in Italian, Romanian, and related languages",
-                "056": "Serials in Spanish and Portuguese",
-                "057": "Serials in Slavic languages",
-                "058": "Serials in Scandinavian languages",
-                "059": "Serials in other languages"
-            }
-        },
-        "050": {
-            "class": "Magazines, journals and serials",
-            "subclasses": {
-                "050": "General serial publications",
-                "051": "Serials in American English",
-                "052": "Serials in English",
-                "053": "Serials in other Germanic languages",
-                "054": "Serials in French, Occitan, and Catalan",
-                "055": "Serials in Italian, Romanian, and related languages",
-                "056": "Serials in Spanish and Portuguese",
-                "057": "Serials in Slavic languages",
-                "058": "Serials in Scandinavian languages",
-                "059": "Serials in other languages"
-            }
-        },
-        "060": {
-            "class": "Associations, organizations and museums",
-            "subclasses": {
-                "060": "General organizations and museum science",
-                "061": "Organizations in North America",
-                "062": "Organizations in British Isles; in England",
-                "063": "Organizations in central Europe; in Germany",
-                "064": "Organizations in France and Monaco",
-                "065": "Organizations in Italy and adjacent islands",
-                "066": "Organizations in Iberian peninsula and adjacent islands",
-                "067": "Organizations in eastern Europe; in Russia",
-                "068": "Organizations in other geographic areas",
-                "069": "Museum science"
-            }
-        },
-        "070": {
-            "class": "News media, journalism, and publishing",
-            "subclasses": {
-                "070": "News media, journalism, and publishing",
-                "071": "Newspapers in North America",
-                "072": "Newspapers in British Isles; in England",
-                "073": "Newspapers in central Europe; in Germany",
-                "074": "Newspapers in France and Monaco",
-                "075": "Newspapers in Italy and adjacent islands",
-                "076": "Newspapers in Iberian peninsula and adjacent islands",
-                "077": "Newspapers in eastern Europe; in Russia",
-                "078": "Newspapers in Scandinavia",
-                "079": "Newspapers in other geographic areas"
-            }
-        },
-        "080": {
-            "class": "Quotations",
-            "subclasses": {
-                "080": "General collections",
-                "081": "Collections in American English",
-                "082": "Collections in English",
-                "083": "Collections in other Germanic languages",
-                "084": "Collections in French, Occitan, Catalan",
-                "085": "Collections in Italian, Romanian, and related languages",
-                "086": "Collections in Spanish and Portuguese",
-                "087": "Collections in Slavic languages",
-                "088": "Collections in Scandinavian languages",
-                "089": "Collections in other languages"
-            }
-        },
-        "090": {
-            "class": "Manuscripts and rare books",
-            "subclasses": {
-                "090": "Manuscripts and rare books",
-                "091": "Manuscripts",
-                "092": "Block books",
-                "093": "Incunabula",
-                "094": "Printed books",
-                "095": "Books notable for bindings",
-                "096": "Books notable for illustrations",
-                "097": "Books notable for ownership or origin",
-                "098": "Prohibited works, forgeries, and hoaxes",
-                "099": "Books notable for format"
-            }
-        },
-        "100": {
-            "class": "Philosophy and psychology",
-            "subclasses": {
-                "100": "Philosophy and psychology",
-                "101": "Theory of philosophy",
-                "102": "Miscellany",
-                "103": "Dictionaries and encyclopedias",
-                "104": "No longer used — formerly Essays",
-                "105": "Serial publications",
-                "106": "Organizations and management",
-                "107": "Education, research, related topics of philosophy",
-                "108": "Groups of people",
-                "109": "History and collected biography"
-            }
-        },
-        "110": {
-            "class": "Metaphysics",
-            "subclasses": {
-                "110": "Metaphysics",
-                "111": "Ontology",
-                "112": "No longer used",
-                "113": "Cosmology (Philosophy of nature)",
-                "114": "Space",
-                "115": "Time",
-                "116": "Change",
-                "117": "Structure",
-                "118": "Force and energy",
-                "119": "Number and quantity"
-            }
-        },
-        "120": {
-            "class": "Epistemology",
-            "subclasses": {
-                "120": "Epistemology",
-                "121": "Theory of knowledge",
-                "122": "Causation",
-                "123": "Determinism and indeterminism",
-                "124": "Teleology",
-                "125": "No longer used",
-                "126": "The self",
-                "127": "The unconscious and the subconscious",
-                "128": "Humankind",
-                "129": "Origin and destiny of individual souls"
-            }
-        },
-        "130": {
-            "class": "Parapsychology and occultism",
-            "subclasses": {
-                "130": "Parapsychology and occultism",
-                "131": "Parapsychological and occult methods",
-                "132": "No longer used",
-                "133": "Specific topics in parapsychology and occultism",
-                "134": "No longer used",
-                "135": "Dreams and mysteries",
-                "136": "No longer used",
-                "137": "Divinatory graphology",
-                "138": "Physiognomy",
-                "139": "Phrenology"
-            }
-        },
-        "140": {
-            "class": "Philosophical schools of thought",
-            "subclasses": {
-                "140": "Philosophical schools of thought",
-                "141": "Idealism and related systems",
-                "142": "Critical philosophy",
-                "143": "Bergsonism and intuitionism",
-                "144": "Humanism and related systems",
-                "145": "Sensationalism",
-                "146": "Naturalism and related systems",
-                "147": "Pantheism and related systems",
-                "148": "Eclecticism and related systems",
-                "149": "Other philosophical systems"
-            }
-        },
-        "150": {
-            "class": "Psychology",
-            "subclasses": {
-                "150": "Psychology",
-                "151": "No longer used",
-                "152": "Perception, movement, emotions, and drives",
-                "153": "Mental processes and intelligence",
-                "154": "Subconscious and altered states",
-                "155": "Differential and developmental psychology",
-                "156": "Comparative psychology",
-                "157": "No longer used",
-                "158": "Applied psychology",
-                "159": "No longer used"
-            }
-        },
-        "160": {
-            "class": "Logic",
-            "subclasses": {
-                "160": "Logic",
-                "161": "Induction",
-                "162": "Deduction",
-                "163": "No longer used",
-                "164": "No longer used",
-                "165": "Fallacies and sources of error",
-                "166": "Syllogisms",
-                "167": "Hypotheses",
-                "168": "Argument and persuasion",
-                "169": "Analogy"
-            }
-        },
-        "170": {
-            "class": "Ethics",
-            "subclasses": {
-                "170": "Ethics",
-                "171": "Ethical systems",
-                "172": "Political ethics",
-                "173": "Ethics of family relationships",
-                "174": "Occupational ethics",
-                "175": "Ethics of recreation and leisure",
-                "176": "Ethics of sex and reproduction",
-                "177": "Ethics of social relations",
-                "178": "Ethics of consumption",
-                "179": "Other ethical norms"
-            }
-        },
-        "180": {
-            "class": "Ancient, medieval, and eastern philosophy",
-            "subclasses": {
-                "180": "Ancient, medieval, and eastern philosophy",
-                "181": "Eastern philosophy",
-                "182": "Pre-Socratic Greek philosophies",
-                "183": "Sophistic and Socratic philosophies",
-                "184": "Platonic philosophy",
-                "185": "Aristotelian philosophy",
-                "186": "Skeptic and Neoplatonic philosophies",
-                "187": "Epicurean philosophy",
-                "188": "Stoic philosophy",
-                "189": "Medieval western philosophy"
-            }
-        },
-        "190": {
-            "class": "Modern western philosophy",
-            "subclasses": {
-                "190": "Modern western philosophy",
-                "191": "Philosophy of the United States and Canada",
-                "192": "Philosophy of the British Isles",
-                "193": "Philosophy of Germany and Austria",
-                "194": "Philosophy of France",
-                "195": "Philosophy of Italy",
-                "196": "Philosophy of Spain and Portugal",
-                "197": "Philosophy of Russia",
-                "198": "Philosophy of Scandinavia",
-                "199": "Philosophy in other geographic areas"
-            }
-        },
-        "200": {
-            "class": "Religion",
-            "subclasses": {
-                "200": "Religion",
-                "201": "Religious mythology, general classes of religion",
-                "202": "Doctrines",
-                "203": "Public worship and other practices",
-                "204": "Religious experience, life, practice",
-                "205": "Religious ethics",
-                "206": "Leaders and organization",
-                "207": "Missions and religious education",
-                "208": "Sources",
-                "209": "Sects and reform movements"
-            }
-        },
-        "201": {
-            "class": "Religious mythology, general classes of religion",
-            "subclasses": {
-                "201": "Religious mythology",
-                "202": "Doctrines",
-                "203": "Public worship and other practices",
-                "204": "Religious experience, life, practice",
-                "205": "Religious ethics",
-                "206": "Leaders and organization",
-                "207": "Missions and religious education",
-                "208": "Sources",
-                "209": "Sects and reform movements"
-            }
-        },
-        "210": {
-            "class": "Philosophy and theory of religion",
-            "subclasses": {
-                "210": "Philosophy and theory of religion",
-                "211": "Concepts of God",
-                "212": "Existence, attributes of God",
-                "213": "Creation",
-                "214": "Theodicy",
-                "215": "Science and religion",
-                "216": "No longer used",
-                "217": "Religious experience, life, practice",
-                "218": "Humankind",
-                "219": "Analogies, metaphors, symbols"
-            }
-        },
-        "220": {
-            "class": "The Bible",
-            "subclasses": {
-                "220": "The Bible",
-                "221": "Old Testament (Tanakh)",
-                "222": "Historical books of Old Testament",
-                "223": "Poetic books of Old Testament",
-                "224": "Prophetic books of Old Testament",
-                "225": "New Testament",
-                "226": "Gospels and Acts",
-                "227": "Epistles",
-                "228": "Revelation (Apocalypse)",
-                "229": "Apocrypha and pseudepigrapha"
-            }
-        },
-        "230": {
-            "class": "Christianity and Christian theology",
-            "subclasses": {
-                "230": "Christianity",
-                "231": "God",
-                "232": "Jesus Christ and his family",
-                "233": "Humankind",
-                "234": "Salvation and grace",
-                "235": "Spiritual beings",
-                "236": "Eschatology",
-                "237": "No longer used",
-                "238": "Creeds and catechisms",
-                "239": "Apologetics and polemics"
-            }
-        },
-        "240": {
-            "class": "Christian moral and devotional theology",
-            "subclasses": {
-                "240": "Christian moral and devotional theology",
-                "241": "Christian ethics",
-                "242": "Devotional literature",
-                "243": "Evangelistic writings for individuals and families",
-                "244": "No longer used",
-                "245": "No longer used",
-                "246": "Use of art in Christianity",
-                "247": "Church furnishings and articles",
-                "248": "Christian experience, practice, life",
-                "249": "Christian observances in family life"
-            }
-        },
-        "250": {
-            "class": "Christian orders and local church",
-            "subclasses": {
-                "250": "Christian orders",
-                "251": "Preaching (Homiletics)",
-                "252": "Texts of sermons",
-                "253": "Pastoral office and work",
-                "254": "Parochial work",
-                "255": "Religious congregations and orders",
-                "256": "No longer used",
-                "257": "No longer used",
-                "258": "No longer used",
-                "259": "Pastoral care of families, youth, aged"
-            }
-        },
-        "260": {
-            "class": "Social and ecclesiastical theology",
-            "subclasses": {
-                "260": "Social and ecclesiastical theology",
-                "261": "Social theology",
-                "262": "Ecclesiology",
-                "263": "Days, times, places of religious observance",
-                "264": "Public worship",
-                "265": "Sacraments, other rites and acts",
-                "266": "Missions",
-                "267": "Associations for religious work",
-                "268": "Religious education",
-                "269": "Spiritual renewal"
-            }
-        },
-        "270": {
-            "class": "History of Christianity",
-            "subclasses": {
-                "270": "History of Christianity",
-                "271": "Religious congregations and orders in Christianity",
-                "272": "Persecutions in Christianity",
-                "273": "Doctrinal controversies and heresies in general Christianity",
-                "274": "Christianity in Europe",
-                "275": "Christianity in Asia",
-                "276": "Christianity in Africa",
-                "277": "Christianity in North America",
-                "278": "Christianity in South America",
-                "279": "Christianity in other areas"
-            }
-        },
-        "280": {
-            "class": "Christian denominations",
-            "subclasses": {
-                "280": "Christian denominations",
-                "281": "Early church and Eastern churches",
-                "282": "Roman Catholic Church",
-                "283": "Anglican churches",
-                "284": "Protestants of Continental origin",
-                "285": "Presbyterian, Reformed, and Congregational",
-                "286": "Baptists, Disciples of Christ, Adventists",
-                "287": "Methodists, Wesleyans, Holiness churches",
-                "288": "No longer used",
-                "289": "Other denominations and sects"
-            }
-        },
-        "290": {
-            "class": "Other religions",
-            "subclasses": {
-                "290": "Other religions",
-                "291": "Comparative religion",
-                "292": "Classical (Greek and Roman) religion",
-                "293": "Germanic religion",
-                "294": "Religions of Indic origin",
-                "295": "Zoroastrianism (Mazdaism, Parseeism)",
-                "296": "Judaism",
-                "297": "Islam, Babism, Bahá'í Faith",
-                "298": "No longer used",
-                "299": "Religions not provided for elsewhere"
-            }
-        },
-        "300": {
-            "class": "Social sciences",
-            "subclasses": {
-                "300": "Social sciences",
-                "301": "Sociology and anthropology",
-                "302": "Social interaction",
-                "303": "Social processes",
-                "304": "Factors affecting social behavior",
-                "305": "Social groups",
-                "306": "Culture and institutions",
-                "307": "Communities",
-                "308": "No longer used",
-                "309": "Social situation and conditions"
-            }
-        },
-        "301": {
-            "class": "Sociology and anthropology",
-            "subclasses": {
-                "301": "Sociology and anthropology",
-                "302": "Social interaction",
-                "303": "Social processes",
-                "304": "Factors affecting social behavior",
-                "305": "Social groups",
-                "306": "Culture and institutions",
-                "307": "Communities",
-                "308": "No longer used",
-                "309": "Social situation and conditions"
-            }
-        },
-        "310": {
-            "class": "Statistics",
-            "subclasses": {
-                "310": "Statistics",
-                "311": "No longer used",
-                "312": "No longer used",
-                "313": "No longer used",
-                "314": "General statistics of Europe",
-                "315": "General statistics of Asia",
-                "316": "General statistics of Africa",
-                "317": "General statistics of North America",
-                "318": "General statistics of South America",
-                "319": "General statistics of other areas"
-            }
-        },
-        "320": {
-            "class": "Political science",
-            "subclasses": {
-                "320": "Political science",
-                "321": "Systems of governments and states",
-                "322": "Relation of state to organized groups",
-                "323": "Civil and political rights",
-                "324": "The political process",
-                "325": "International migration and colonization",
-                "326": "Slavery and emancipation",
-                "327": "International relations",
-                "328": "The legislative process",
-                "329": "Not assigned or no longer used"
-            }
-        },
-        "330": {
-            "class": "Economics",
-            "subclasses": {
-                "330": "Economics",
-                "331": "Labor economics",
-                "332": "Financial economics",
-                "333": "Economics of land and energy",
-                "334": "Cooperatives",
-                "335": "Socialism and related systems",
-                "336": "Public finance",
-                "337": "International economics",
-                "338": "Production",
-                "339": "Macroeconomics and related topics"
-            }
-        },
-        "340": {
-            "class": "Law",
-            "subclasses": {
-                "340": "Law",
-                "341": "International law",
-                "342": "Constitutional and administrative law",
-                "343": "Military, tax, trade, industrial law",
-                "344": "Labor, social, education, cultural law",
-                "345": "Criminal law",
-                "346": "Private law",
-                "347": "Procedure and courts",
-                "348": "Laws, regulations, cases",
-                "349": "Law of specific jurisdictions and areas"
-            }
-        },
-        "350": {
-            "class": "Public administration and military science",
-            "subclasses": {
-                "350": "Public administration and military science",
-                "351": "Public administration",
-                "352": "General considerations of public administration",
-                "353": "Specific fields of public administration",
-                "354": "Administration of economy and environment",
-                "355": "Military science",
-                "356": "Infantry forces and warfare",
-                "357": "Cavalry, armored, mechanized forces and warfare",
-                "358": "Air forces and warfare",
-                "359": "Naval forces and warfare"
-            }
-        },
-        "360": {
-            "class": "Social problems and services; associations",
-            "subclasses": {
-                "360": "Social problems and services; associations",
-                "361": "General social problems",
-                "362": "Social welfare problems and services",
-                "363": "Other social problems and services",
-                "364": "Criminology",
-                "365": "Penal and related institutions",
-                "366": "Association",
-                "367": "General clubs",
-                "368": "Insurance",
-                "369": "Other forms of insurance"
-            }
-        },
-        "370": {
-            "class": "Education",
-            "subclasses": {
-                "370": "Education",
-                "371": "Schools and their activities; special education",
-                "372": "Primary education (Elementary education)",
-                "373": "Secondary education",
-                "374": "Adult education",
-                "375": "Curricula",
-                "376": "Education of women",
-                "377": "Schools and religion",
-                "378": "Higher education",
-                "379": "Public policy issues in education"
-            }
-        },
-        "380": {
-            "class": "Commerce, communications, transport",
-            "subclasses": {
-                "380": "Commerce, communications, transport",
-                "381": "Internal commerce (Domestic trade)",
-                "382": "International commerce (Foreign trade)",
-                "383": "Postal communication",
-                "384": "Telecommunication",
-                "385": "Railroad transportation",
-                "386": "Inland waterway and ferry transportation",
-                "387": "Water, air, space transportation",
-                "388": "Transportation",
-                "389": "Metrology and standardization"
-            }
-        },
-        "390": {
-            "class": "Customs, etiquette, folklore",
-            "subclasses": {
-                "390": "Customs, etiquette, folklore",
-                "391": "Costume and personal appearance",
-                "392": "Customs of life cycle and domestic life",
-                "393": "Death customs",
-                "394": "General customs",
-                "395": "Etiquette (Manners)",
-                "396": "No longer used",
-                "397": "No longer used",
-                "398": "Folklore",
-                "399": "Customs of war and diplomacy"
-            }
-        },
-        "400": {
-            "class": "Language",
-            "subclasses": {
-                "400": "Language",
-                "401": "Philosophy and theory of linguistics",
-                "402": "Miscellany",
-                "403": "Dictionaries, encyclopedias, concordances",
-                "404": "Special topics of language",
-                "405": "Serial publications",
-                "406": "Organizations and management",
-                "407": "Education, research, related topics of language",
-                "408": "Kinds of persons treatment",
-                "409": "Geographic and persons treatment"
-            }
-        },
-        "410": {
-            "class": "Linguistics",
-            "subclasses": {
-                "410": "Linguistics",
-                "411": "Writing systems",
-                "412": "Etymology",
-                "413": "Dictionaries",
-                "414": "Phonology",
-                "415": "Grammar",
-                "416": "Prosody",
-                "417": "Dialectology and historical linguistics",
-                "418": "Standard usage; Applied linguistics",
-                "419": "Sign languages"
-            }
-        },
-        "420": {
-            "class": "English and Old English languages",
-            "subclasses": {
-                "420": "English and Old English (Anglo-Saxon)",
-                "421": "English writing system and phonology",
-                "422": "English etymology",
-                "423": "English dictionaries",
-                "424": "No longer used",
-                "425": "English grammar",
-                "426": "English prosody",
-                "427": "English dialectology",
-                "428": "Standard English usage",
-                "429": "Old English (Anglo-Saxon)"
-            }
-        },
-        "430": {
-            "class": "Germanic languages; German",
-            "subclasses": {
-                "430": "Germanic languages; German",
-                "431": "German writing system and phonology",
-                "432": "German etymology",
-                "433": "German dictionaries",
-                "434": "No longer used",
-                "435": "German grammar",
-                "436": "German prosody",
-                "437": "German dialectology",
-                "438": "Standard German usage",
-                "439": "Other Germanic languages"
-            }
-        },
-        "440": {
-            "class": "Romance languages; French",
-            "subclasses": {
-                "440": "Romance languages; French",
-                "441": "French writing system and phonology",
-                "442": "French etymology",
-                "443": "French dictionaries",
-                "444": "No longer used",
-                "445": "French grammar",
-                "446": "French prosody",
-                "447": "French dialectology",
-                "448": "Standard French usage",
-                "449": "Occitan and Catalan"
-            }
-        },
-        "450": {
-            "class": "Italian, Romanian, Rhaeto-Romanic",
-            "subclasses": {
-                "450": "Italian, Romanian, Rhaeto-Romanic",
-                "451": "Italian writing system and phonology",
-                "452": "Italian etymology",
-                "453": "Italian dictionaries",
-                "454": "No longer used",
-                "455": "Italian grammar",
-                "456": "Italian prosody",
-                "457": "Italian dialectology",
-                "458": "Standard Italian usage",
-                "459": "Romanian and Rhaeto-Romanic"
-            }
-        },
-        "460": {
-            "class": "Spanish and Portuguese languages",
-            "subclasses": {
-                "460": "Spanish and Portuguese languages",
-                "461": "Spanish writing system and phonology",
-                "462": "Spanish etymology",
-                "463": "Spanish dictionaries",
-                "464": "No longer used",
-                "465": "Spanish grammar",
-                "466": "Spanish prosody",
-                "467": "Spanish dialectology",
-                "468": "Standard Spanish usage",
-                "469": "Portuguese"
-            }
-        },
-        "470": {
-            "class": "Italic languages; Latin",
-            "subclasses": {
-                "470": "Italic languages; Latin",
-                "471": "Classical Latin writing and phonology",
-                "472": "Classical Latin etymology",
-                "473": "Classical Latin dictionaries",
-                "474": "No longer used",
-                "475": "Classical Latin grammar",
-                "476": "Classical Latin prosody",
-                "477": "Old, Postclassical, Vulgar Latin",
-                "478": "Ecclesiastical Latin",
-                "479": "Other Italic languages"
-            }
-        },
-        "480": {
-            "class": "Hellenic languages; Classical Greek",
-            "subclasses": {
-                "480": "Hellenic languages; Classical Greek",
-                "481": "Classical Greek writing and phonology",
-                "482": "Classical Greek etymology",
-                "483": "Classical Greek dictionaries",
-                "484": "No longer used",
-                "485": "Classical Greek grammar",
-                "486": "Classical Greek prosody",
-                "487": "Preclassical and Postclassical Greek",
-                "488": "Other Hellenic languages",
-                "489": "Other languages"
-            }
-        },
-        "490": {
-            "class": "Other languages",
-            "subclasses": {
-                "490": "Other languages",
-                "491": "East Indo-European and Celtic languages",
-                "492": "Afro-Asiatic languages; Semitic languages",
-                "493": "Non-Semitic Afro-Asiatic languages",
-                "494": "Altai languages",
-                "495": "Languages of East and Southeast Asia",
-                "496": "African languages",
-                "497": "North American native languages",
-                "498": "South American native languages",
-                "499": "Austronesian and other languages"
-            }
-        },
-        "500": {
-            "class": "Natural sciences and mathematics",
-            "subclasses": {
-                "500": "Natural sciences and mathematics",
-                "501": "Philosophy and theory",
-                "502": "Miscellany",
-                "503": "Dictionaries and encyclopedias",
-                "504": "Not assigned or no longer used",
-                "505": "Serial publications",
-                "506": "Organizations and management",
-                "507": "Education, research, related topics",
-                "508": "Natural history",
-                "509": "Historical, geographic, persons treatment"
-            }
-        },
-        "501": {
-            "class": "Philosophy and theory",
-            "subclasses": {
-                "501": "Philosophy and theory",
-                "502": "Miscellany",
-                "503": "Dictionaries and encyclopedias",
-                "504": "Not assigned or no longer used",
-                "505": "Serial publications",
-                "506": "Organizations and management",
-                "507": "Education, research, related topics",
-                "508": "Natural history",
-                "509": "Historical, geographic, persons treatment"
-            }
-        },
-        "510": {
-            "class": "Mathematics",
-            "subclasses": {
-                "510": "Mathematics",
-                "511": "General principles",
-                "512": "Algebra",
-                "513": "Arithmetic",
-                "514": "Topology",
-                "515": "Analysis",
-                "516": "Geometry",
-                "517": "Not assigned or no longer used",
-                "518": "Numerical analysis",
-                "519": "Probabilities and applied mathematics"
-            }
-        },
-        "520": {
-            "class": "Astronomy",
-            "subclasses": {
-                "520": "Astronomy",
-                "521": "Celestial mechanics",
-                "522": "Techniques, equipment, materials",
-                "523": "Specific celestial bodies and phenomena",
-                "524": "Not assigned or no longer used",
-                "525": "Earth (Astronomical geography)",
-                "526": "Mathematical geography",
-                "527": "Celestial navigation",
-                "528": "Ephemerides",
-                "529": "Chronology"
-            }
-        },
-        "530": {
-            "class": "Physics",
-            "subclasses": {
-                "530": "Physics",
-                "531": "Classical mechanics; Solid mechanics",
-                "532": "Fluid mechanics; Liquid mechanics",
-                "533": "Gas mechanics",
-                "534": "Sound and related vibrations",
-                "535": "Light and related radiation",
-                "536": "Heat",
-                "537": "Electricity and electronics",
-                "538": "Magnetism",
-                "539": "Modern physics"
-            }
-        },
-        "540": {
-            "class": "Chemistry",
-            "subclasses": {
-                "540": "Chemistry",
-                "541": "Physical chemistry",
-                "542": "Techniques, equipment, materials",
-                "543": "Analytical chemistry",
-                "544": "Not assigned or no longer used",
-                "545": "Not assigned or no longer used",
-                "546": "Inorganic chemistry",
-                "547": "Organic chemistry",
-                "548": "Crystallography",
-                "549": "Mineralogy"
-            }
-        },
-        "550": {
-            "class": "Earth sciences and geology",
-            "subclasses": {
-                "550": "Earth sciences and geology",
-                "551": "Geology, hydrology, meteorology",
-                "552": "Petrology",
-                "553": "Economic geology",
-                "554": "Earth sciences of Europe",
-                "555": "Earth sciences of Asia",
-                "556": "Earth sciences of Africa",
-                "557": "Earth sciences of North America",
-                "558": "Earth sciences of South America",
-                "559": "Earth sciences of other areas"
-            }
-        },
-        "560": {
-            "class": "Paleontology; Paleozoology",
-            "subclasses": {
-                "560": "Paleontology; Paleozoology",
-                "561": "Fossil plants",
-                "562": "Fossil invertebrates",
-                "563": "Fossil primitive phyla",
-                "564": "Fossil Mollusca and Molluscoidea",
-                "565": "Other fossil invertebrates",
-                "566": "Fossil Vertebrates",
-                "567": "Fossil cold-blooded vertebrates",
-                "568": "Fossil birds",
-                "569": "Fossil mammals"
-            }
-        },
-        "570": {
-            "class": "Life sciences; Biology",
-            "subclasses": {
-                "570": "Life sciences; Biology",
-                "571": "Physiology and related subjects",
-                "572": "Biochemistry",
-                "573": "Specific physiological systems in animals",
-                "574": "Ecology and environments",
-                "575": "Evolution and genetics",
-                "576": "Microbiology",
-                "577": "General nature of life",
-                "578": "Natural history of organisms",
-                "579": "Collections and studies of specific kinds of organisms"
-            }
-        },
-        "580": {
-            "class": "Plants (Botany)",
-            "subclasses": {
-                "580": "Plants",
-                "581": "Specific topics in natural history of plants",
-                "582": "Plants noted for characteristics and flowers",
-                "583": "Dicotyledons",
-                "584": "Monocotyledons",
-                "585": "Gymnosperms (Conifers)",
-                "586": "Seedless plants",
-                "587": "Pteridophyta (Ferns)",
-                "588": "Bryophyta (Mosses)",
-                "589": "Other groups of plants"
-            }
-        },
-        "590": {
-            "class": "Animals (Zoology)",
-            "subclasses": {
-                "590": "Animals",
-                "591": "Specific topics in natural history of animals",
-                "592": "Invertebrates",
-                "593": "Other invertebrates",
-                "594": "Mollusca and Molluscoidea",
-                "595": "Other invertebrates",
-                "596": "Vertebrates",
-                "597": "Cold-blooded vertebrates",
-                "598": "Birds",
-                "599": "Mammals"
-            }
-        },
-        "600": {
-            "class": "Technology",
-            "subclasses": {
-                "600": "Technology",
-                "601": "Philosophy and theory",
-                "602": "Miscellany",
-                "603": "Dictionaries and encyclopedias",
-                "604": "Special topics",
-                "605": "Serial publications",
-                "606": "Organizations",
-                "607": "Education, research, related topics",
-                "608": "Inventions and patents",
-                "609": "Historical, geographic, persons treatment"
-            }
-        },
-        "610": {
-            "class": "Medical sciences; Medicine",
-            "subclasses": {
-                "610": "Medical sciences; Medicine",
-                "611": "Human anatomy, cytology, histology",
-                "612": "Human physiology",
-                "613": "Personal health and safety",
-                "614": "Incidence and prevention of disease",
-                "615": "Pharmacology and therapeutics",
-                "616": "Diseases",
-                "617": "Surgery and related medical specialties",
-                "618": "Gynecology, obstetrics, pediatrics, geriatrics",
-                "619": "Experimental medicine"
-            }
-        },
-        "620": {
-            "class": "Engineering and allied operations",
-            "subclasses": {
-                "620": "Engineering and allied operations",
-                "621": "Applied physics",
-                "622": "Mining and related operations",
-                "623": "Military and nautical engineering",
-                "624": "Civil engineering",
-                "625": "Engineering of railroads and roads",
-                "626": "Not assigned or no longer used",
-                "627": "Hydraulic engineering",
-                "628": "Sanitary and municipal engineering",
-                "629": "Other branches of engineering"
-            }
-        },
-        "630": {
-            "class": "Agriculture",
-            "subclasses": {
-                "630": "Agriculture",
-                "631": "Techniques, equipment, materials",
-                "632": "Plant injuries, diseases, pests",
-                "633": "Field and plantation crops",
-                "634": "Orchards, fruits, forestry",
-                "635": "Garden crops (Horticulture)",
-                "636": "Animal husbandry",
-                "637": "Processing dairy and related products",
-                "638": "Insect culture",
-                "639": "Hunting, fishing, conservation"
-            }
-        },
-        "640": {
-            "class": "Home economics and family living",
-            "subclasses": {
-                "640": "Home economics and family living",
-                "641": "Food and drink",
-                "642": "Meals and table service",
-                "643": "Housing and household equipment",
-                "644": "Household utilities",
-                "645": "Household furnishings",
-                "646": "Sewing, clothing, personal living",
-                "647": "Management of public households",
-                "648": "Housekeeping",
-                "649": "Child rearing, home care of persons"
-            }
-        },
-        "650": {
-            "class": "Management and auxiliary services",
-            "subclasses": {
-                "650": "Management and auxiliary services",
-                "651": "Office services",
-                "652": "Processes of written communication",
-                "653": "Shorthand",
-                "654": "Not assigned or no longer used",
-                "655": "Publishing",
-                "656": "Transportation",
-                "657": "Accounting",
-                "658": "General management",
-                "659": "Advertising and public relations"
-            }
-        },
-        "660": {
-            "class": "Chemical engineering",
-            "subclasses": {
-                "660": "Chemical engineering",
-                "661": "Industrial chemicals technology",
-                "662": "Explosives, fuels technology",
-                "663": "Beverage technology",
-                "664": "Food technology",
-                "665": "Industrial oils, fats, waxes, gases",
-                "666": "Ceramic and allied technologies",
-                "667": "Cleaning, color, coating technologies",
-                "668": "Other organic product industries",
-                "669": "Metallurgy"
-            }
-        },
-        "670": {
-            "class": "Manufacturing",
-            "subclasses": {
-                "670": "Manufacturing",
-                "671": "Metalworking processes",
-                "672": "Iron, steel, other iron alloys",
-                "673": "Nonferrous metals",
-                "674": "Lumber processing, wood products, cork",
-                "675": "Leather and fur processing",
-                "676": "Pulp and paper technology",
-                "677": "Textile processes",
-                "678": "Elastomers and elastomer products",
-                "679": "Other products of specific materials"
-            }
-        },
-        "680": {
-            "class": "Manufacture for specific uses",
-            "subclasses": {
-                "680": "Manufacture for specific uses",
-                "681": "Precision instruments and other devices",
-                "682": "Small forging and related operations",
-                "683": "Hardware and household appliances",
-                "684": "Furnishings and home workshops",
-                "685": "Leather, fur goods, related products",
-                "686": "Printing and related activities",
-                "687": "Clothing and accessories",
-                "688": "Other final products and packaging",
-                "689": "Not assigned or no longer used"
-            }
-        },
-        "690": {
-            "class": "Buildings",
-            "subclasses": {
-                "690": "Buildings",
-                "691": "Building materials",
-                "692": "Auxiliary construction practices",
-                "693": "Specific materials and purposes",
-                "694": "Wood construction",
-                "695": "Roof covering",
-                "696": "Utilities",
-                "697": "Heating, ventilating, air-conditioning",
-                "698": "Detail finishing",
-                "699": "Miscellaneous"
-            }
-        },
-        "700": {
-            "class": "The arts; Fine and decorative arts",
-            "subclasses": {
-                "700": "The arts",
-                "701": "Philosophy and theory",
-                "702": "Miscellany",
-                "703": "Dictionaries and encyclopedias",
-                "704": "Special topics",
-                "705": "Serial publications",
-                "706": "Organizations",
-                "707": "Education, research, related topics",
-                "708": "Galleries, museums, private collections",
-                "709": "Historical, geographic, persons treatment"
-            }
-        },
-        "701": {
-            "class": "Philosophy and theory",
-            "subclasses": {
-                "701": "Philosophy and theory",
-                "702": "Miscellany",
-                "703": "Dictionaries and encyclopedias",
-                "704": "Special topics",
-                "705": "Serial publications",
-                "706": "Organizations",
-                "707": "Education, research, related topics",
-                "708": "Galleries, museums, private collections",
-                "709": "Historical, geographic, persons treatment"
-            }
-        },
-        "710": {
-            "class": "Civic and landscape art",
-            "subclasses": {
-                "710": "Civic and landscape art",
-                "711": "Area planning (Civic art)",
-                "712": "Landscape architecture",
-                "713": "Landscape architecture of trafficways",
-                "714": "Water features",
-                "715": "Woody plants",
-                "716": "Herbaceous plants",
-                "717": "Structures in landscape architecture",
-                "718": "Landscape design of cemeteries",
-                "719": "Natural landscapes"
-            }
-        },
-        "720": {
-            "class": "Architecture",
-            "subclasses": {
-                "720": "Architecture",
-                "721": "Architectural structure",
-                "722": "Architecture from earliest times to ca. 300",
-                "723": "Architecture from ca. 300 to 1399",
-                "724": "Architecture from 1400",
-                "725": "Public structures",
-                "726": "Buildings for religious and related purposes",
-                "727": "Buildings for education and research",
-                "728": "Residential and related buildings",
-                "729": "Design and decoration"
-            }
-        },
-        "730": {
-            "class": "Plastic arts; Sculpture",
-            "subclasses": {
-                "730": "Plastic arts; Sculpture",
-                "731": "Processes, forms, subjects of sculpture",
-                "732": "Sculpture to ca. 500",
-                "733": "Greek, Etruscan, Roman sculpture",
-                "734": "Sculpture from ca. 500 to 1399",
-                "735": "Sculpture from 1400",
-                "736": "Carving and carvings",
-                "737": "Numismatics and sigillography",
-                "738": "Ceramic arts",
-                "739": "Art metalwork"
-            }
-        },
-        "740": {
-            "class": "Drawing and decorative arts",
-            "subclasses": {
-                "740": "Drawing and decorative arts",
-                "741": "Drawing and drawings",
-                "742": "Perspective",
-                "743": "Drawing and drawings by subject",
-                "744": "Not assigned or no longer used",
-                "745": "Decorative arts",
-                "746": "Textile arts",
-                "747": "Interior decoration",
-                "748": "Glass",
-                "749": "Furniture and accessories"
-            }
-        },
-        "750": {
-            "class": "Painting and paintings",
-            "subclasses": {
-                "750": "Painting and paintings",
-                "751": "Techniques, equipment, forms",
-                "752": "Color",
-                "753": "Symbolism, allegory, mythology, legend",
-                "754": "Genre paintings",
-                "755": "Religion",
-                "756": "Other subjects",
-                "757": "Human figures",
-                "758": "Other subjects",
-                "759": "Historical, geographic, persons treatment"
-            }
-        },
-        "760": {
-            "class": "Printmaking and prints",
-            "subclasses": {
-                "760": "Printmaking and prints",
-                "761": "Relief processes (Block printing)",
-                "762": "Not assigned or no longer used",
-                "763": "Lithographic processes",
-                "764": "Chromolithography and serigraphy",
-                "765": "Metal engraving",
-                "766": "Mezzotinting",
-                "767": "Etching and drypoint",
-                "768": "Not assigned or no longer used",
-                "769": "Prints"
-            }
-        },
-        "770": {
-            "class": "Photography and photographs",
-            "subclasses": {
-                "770": "Photography and photographs",
-                "771": "Techniques, procedures, apparatus, equipment, materials",
-                "772": "Not assigned or no longer used",
-                "773": "Prints",
-                "774": "Holography",
-                "775": "Digital photography",
-                "776": "Computer art",
-                "777": "Moving pictures",
-                "778": "Special kinds of photography",
-                "779": "Photographic images"
-            }
-        },
-        "780": {
-            "class": "Music",
-            "subclasses": {
-                "780": "Music",
-                "781": "General principles and musical forms",
-                "782": "Vocal music",
-                "783": "Music for single voices; The voice",
-                "784": "Instruments and Instrumental ensembles",
-                "785": "Ensembles with only one instrument per part",
-                "786": "Keyboard, mechanical, and other non-acoustic instruments",
-                "787": "Stringed instruments",
-                "788": "Wind instruments",
-                "789": "Not assigned or no longer used"
-            }
-        },
-        "790": {
-            "class": "Recreational and performing arts",
-            "subclasses": {
-                "790": "Recreational and performing arts",
-                "791": "Public performances",
-                "792": "Stage presentations",
-                "793": "Indoor games and amusements",
-                "794": "Indoor games of skill",
-                "795": "Games of chance",
-                "796": "Athletic and outdoor sports and games",
-                "797": "Aquatic and air sports",
-                "798": "Equestrian sports and animal racing",
-                "799": "Fishing, hunting, shooting"
-            }
-        },
-        "800": {
-            "class": "Literature, rhetoric, and criticism",
-            "subclasses": {
-                "800": "Literature, rhetoric, and criticism",
-                "801": "Philosophy and theory",
-                "802": "Miscellany",
-                "803": "Dictionaries, encyclopedias, concordances",
-                "804": "Not assigned or no longer used",
-                "805": "Serial publications",
-                "806": "Organizations and management",
-                "807": "Education, research, related topics",
-                "808": "Rhetoric and collections of literature",
-                "809": "Literary history and criticism"
-            }
-        },
-        "810": {
-            "class": "American literature in English",
-            "subclasses": {
-                "810": "American literature in English",
-                "811": "Poetry",
-                "812": "Drama",
-                "813": "Fiction",
-                "814": "Essays",
-                "815": "Speeches",
-                "816": "Letters",
-                "817": "Satire and humor",
-                "818": "Miscellaneous writings",
-                "819": "Not assigned or no longer used"
-            }
-        },
-        "820": {
-            "class": "English and Old English literatures",
-            "subclasses": {
-                "820": "English and Old English literatures",
-                "821": "English poetry",
-                "822": "English drama",
-                "823": "English fiction",
-                "824": "English essays",
-                "825": "English speeches",
-                "826": "English letters",
-                "827": "English satire and humor",
-                "828": "English miscellaneous writings",
-                "829": "Old English (Anglo-Saxon)"
-            }
-        },
-        "830": {
-            "class": "German and related literatures",
-            "subclasses": {
-                "830": "German and related literatures",
-                "831": "German poetry",
-                "832": "German drama",
-                "833": "German fiction",
-                "834": "German essays",
-                "835": "German speeches",
-                "836": "German letters",
-                "837": "German satire and humor",
-                "838": "German miscellaneous writings",
-                "839": "Other Germanic literatures"
-            }
-        },
-        "840": {
-            "class": "French and related literatures",
-            "subclasses": {
-                "840": "French and related literatures",
-                "841": "French poetry",
-                "842": "French drama",
-                "843": "French fiction",
-                "844": "French essays",
-                "845": "French speeches",
-                "846": "French letters",
-                "847": "French satire and humor",
-                "848": "French miscellaneous writings",
-                "849": "Occitan, Catalan, Franco-Provençal"
-            }
-        },
-        "850": {
-            "class": "Italian, Romanian, and related literatures",
-            "subclasses": {
-                "850": "Italian, Romanian, and related literatures",
-                "851": "Italian poetry",
-                "852": "Italian drama",
-                "853": "Italian fiction",
-                "854": "Italian essays",
-                "855": "Italian speeches",
-                "856": "Italian letters",
-                "857": "Italian satire and humor",
-                "858": "Italian miscellaneous writings",
-                "859": "Romanian, Rhaeto-Romanic"
-            }
-        },
-        "860": {
-            "class": "Spanish, Portuguese, Galician literatures",
-            "subclasses": {
-                "860": "Spanish, Portuguese, Galician literatures",
-                "861": "Spanish poetry",
-                "862": "Spanish drama",
-                "863": "Spanish fiction",
-                "864": "Spanish essays",
-                "865": "Spanish speeches",
-                "866": "Spanish letters",
-                "867": "Spanish satire and humor",
-                "868": "Spanish miscellaneous writings",
-                "869": "Portuguese, Galician literatures"
-            }
-        },
-        "870": {
-            "class": "Latin and Italic literatures",
-            "subclasses": {
-                "870": "Latin and Italic literatures",
-                "871": "Latin poetry",
-                "872": "Latin dramatic poetry and drama",
-                "873": "Latin epic poetry and fiction",
-                "874": "Latin lyric poetry",
-                "875": "Latin speeches",
-                "876": "Latin letters",
-                "877": "Latin satire and humor",
-                "878": "Latin miscellaneous writings",
-                "879": "Italic literatures"
-            }
-        },
-        "880": {
-            "class": "Classical and modern Greek literatures",
-            "subclasses": {
-                "880": "Classical and modern Greek literatures",
-                "881": "Classical Greek poetry",
-                "882": "Classical Greek drama",
-                "883": "Classical Greek epic poetry and fiction",
-                "884": "Classical Greek lyric poetry",
-                "885": "Classical Greek speeches",
-                "886": "Classical Greek letters",
-                "887": "Classical Greek satire and humor",
-                "888": "Classical Greek miscellaneous writings",
-                "889": "Modern Greek literature"
-            }
-        },
-        "890": {
-            "class": "Other literatures",
-            "subclasses": {
-                "890": "Other literatures",
-                "891": "East Indo-European and Celtic literatures",
-                "892": "Afro-Asiatic literatures",
-                "893": "Non-Semitic Afro-Asiatic literatures",
-                "894": "Altaic, Uralic, Hyperborean, Dravidian",
-                "895": "East and Southeast Asian literatures",
-                "896": "African literatures",
-                "897": "North American native literatures",
-                "898": "South American native literatures",
-                "899": "Austronesian and other literatures"
-            }
-        },
-        "900": {
-            "class": "History and geography",
-            "subclasses": {
-                "900": "History and geography",
-                "901": "Philosophy and theory of history",
-                "902": "Miscellany of history",
-                "903": "Dictionaries, encyclopedias, concordances",
-                "904": "Collected accounts of events",
-                "905": "Serial publications of history",
-                "906": "Organizations and management",
-                "907": "Education, research, related topics",
-                "908": "History with respect to groups of people",
-                "909": "World history"
-            }
-        },
-        "901": {
-            "class": "Philosophy and theory of history",
-            "subclasses": {
-                "901": "Philosophy and theory of history"
-            }
-        },
-        "902": {
-            "class": "Miscellany of history",
-            "subclasses": {
-                "902": "Miscellany of history"
-            }
-        },
-        "903": {
-            "class": "Dictionaries, encyclopedias, concordances of history",
-            "subclasses": {
-                "903": "Dictionaries, encyclopedias, concordances of history"
-            }
-        },
-        "904": {
-            "class": "Collected accounts of events",
-            "subclasses": {
-                "904": "Collected accounts of events"
-            }
-        },
-        "905": {
-            "class": "Serial publications of history",
-            "subclasses": {
-                "905": "Serial publications of history"
-            }
-        },
-        "906": {
-            "class": "Organizations and management of history",
-            "subclasses": {
-                "906": "Organizations and management of history"
-            }
-        },
-        "907": {
-            "class": "Education, research, related topics of history",
-            "subclasses": {
-                "907": "Education, research, related topics of history"
-            }
-        },
-        "908": {
-            "class": "History with respect to groups of people",
-            "subclasses": {
-                "908": "History with respect to groups of people"
-            }
-        },
-        "909": {
-            "class": "World history",
-            "subclasses": {
-                "909": "World history"
-            }
-        },
-        "910": {
-            "class": "Geography and travel",
-            "subclasses": {
-                "910": "Geography and travel",
-                "911": "Historical geography",
-                "912": "Graphic representations of earth",
-                "913": "Geography of and travel in ancient world",
-                "914": "Geography of and travel in Europe",
-                "915": "Geography of and travel in Asia",
-                "916": "Geography of and travel in Africa",
-                "917": "Geography of and travel in North America",
-                "918": "Geography of and travel in South America",
-                "919": "Geography of and travel in other areas"
-            }
-        },
-        "920": {
-            "class": "Biography, genealogy, insignia",
-            "subclasses": {
-                "920": "Biography, genealogy, insignia",
-                "921": "Biography",
-                "922": "Religious figures",
-                "923": "Not assigned or no longer used",
-                "924": "Not assigned or no longer used",
-                "925": "Not assigned or no longer used",
-                "926": "Not assigned or no longer used",
-                "927": "Not assigned or no longer used",
-                "928": "Not assigned or no longer used",
-                "929": "Genealogy, names, insignia"
-            }
-        },
-        "930": {
-            "class": "History of ancient world (to ca. 499)",
-            "subclasses": {
-                "930": "History of ancient world (to ca. 499)",
-                "931": "China",
-                "932": "Egypt",
-                "933": "Palestine",
-                "934": "India",
-                "935": "Mesopotamia and Iranian Plateau",
-                "936": "Europe north and west of Italy",
-                "937": "Italy and adjacent territories",
-                "938": "Greece",
-                "939": "Other parts of ancient world"
-            }
-        },
-        "940": {
-            "class": "History of Europe",
-            "subclasses": {
-                "940": "History of Europe",
-                "941": "British Isles",
-                "942": "England and Wales",
-                "943": "Germany and adjacent areas",
-                "944": "France and Monaco",
-                "945": "Italy, San Marino, Vatican City",
-                "946": "Iberian Peninsula and adjacent islands",
-                "947": "Eastern Europe; Russia",
-                "948": "Scandinavia",
-                "949": "Other parts of Europe"
-            }
-        },
-        "950": {
-            "class": "History of Asia",
-            "subclasses": {
-                "950": "History of Asia",
-                "951": "China",
-                "952": "Japan",
-                "953": "Arabian Peninsula and adjacent areas",
-                "954": "South Asia; India",
-                "955": "Iran",
-                "956": "Middle East (Near East)",
-                "957": "Siberia (Asiatic Russia)",
-                "958": "Central Asia",
-                "959": "Southeast Asia"
-            }
-        },
-        "960": {
-            "class": "History of Africa",
-            "subclasses": {
-                "960": "History of Africa",
-                "961": "Tunisia and Libya",
-                "962": "Egypt and Sudan",
-                "963": "Ethiopia",
-                "964": "Morocco and Canary Islands",
-                "965": "Algeria",
-                "966": "West Africa and offshore islands",
-                "967": "Central Africa and offshore islands",
-                "968": "Southern Africa",
-                "969": "South Indian Ocean islands"
-            }
-        },
-        "970": {
-            "class": "History of North America",
-            "subclasses": {
-                "970": "History of North America",
-                "971": "Canada",
-                "972": "Middle America; Mexico",
-                "973": "United States",
-                "974": "Northeastern United States",
-                "975": "Southeastern United States",
-                "976": "South central United States",
-                "977": "North central United States",
-                "978": "Western United States",
-                "979": "Great Basin and Pacific Slope region"
-            }
-        },
-        "980": {
-            "class": "History of South America",
-            "subclasses": {
-                "980": "History of South America",
-                "981": "Brazil",
-                "982": "Argentina",
-                "983": "Chile",
-                "984": "Bolivia",
-                "985": "Peru",
-                "986": "Colombia and Ecuador",
-                "987": "Venezuela",
-                "988": "Guiana",
-                "989": "Paraguay and Uruguay"
-            }
-        },
-        "990": {
-            "class": "History of other areas",
-            "subclasses": {
-                "990": "History of other areas",
-                "991": "Not assigned or no longer used",
-                "992": "Not assigned or no longer used",
-                "993": "New Zealand",
-                "994": "Australia",
-                "995": "Melanesia; New Guinea",
-                "996": "Other parts of Pacific Polynesia",
-                "997": "Atlantic Ocean islands",
-                "998": "Arctic islands and Antarctica",
-                "999": "Extraterrestrial worlds"
-            }
+{
+    "000": {
+        "class": "Computer science, knowledge, and systems",
+        "subclasses": {
+            "000": "Computer science, information and general works",
+            "001": "Knowledge",
+            "002": "The book (writing, libraries, and book-related topics)",
+            "003": "Systems",
+            "004": "Data processing and computer science",
+            "005": "Computer programming, programs, and data",
+            "006": "Special computer methods (e.g. AI, multimedia, VR)",
+            "007": "Not assigned",
+            "008": "Not assigned",
+            "009": "Not assigned"
+        }
+    },
+    "010": {
+        "class": "Bibliographies",
+        "subclasses": {
+            "010": "Bibliography",
+            "011": "Bibliographies",
+            "012": "Bibliographies of individuals",
+            "013": "Not assigned",
+            "014": "Bibliographies of anonymous and pseudonymous works",
+            "015": "Bibliographies of works from specific places",
+            "016": "Bibliographies of works on specific subjects",
+            "017": "General subject catalogs",
+            "018": "Catalogs arranged by author, date, etc.",
+            "019": "Dictionary catalogs"
+        }
+    },
+    "020": {
+        "class": "Library and information sciences",
+        "subclasses": {
+            "020": "Library and information sciences",
+            "021": "Library relationships (with archives, information centers, etc.)",
+            "022": "Administration of physical plant",
+            "023": "Personnel management",
+            "024": "Not assigned",
+            "025": "Library operations",
+            "026": "Libraries for specific subjects",
+            "027": "General libraries",
+            "028": "Reading and use of other information media",
+            "029": "Not assigned"
+        }
+    },
+    "030": {
+        "class": "Encyclopedias and books of facts",
+        "subclasses": {
+            "030": "General encyclopedic works",
+            "031": "Encyclopedias in American English",
+            "032": "Encyclopedias in English",
+            "033": "Encyclopedias in other Germanic languages",
+            "034": "Encyclopedias in French, Occitan, and Catalan",
+            "035": "Encyclopedias in Italian, Romanian, and related languages",
+            "036": "Encyclopedias in Spanish and Portuguese",
+            "037": "Encyclopedias in Slavic languages",
+            "038": "Encyclopedias in Scandinavian languages",
+            "039": "Encyclopedias in other languages"
+        }
+    },
+    "040": {
+        "class": "Not assigned",
+        "subclasses": {}
+    },
+    "050": {
+        "class": "Magazines, journals and serials",
+        "subclasses": {
+            "050": "General serial publications",
+            "051": "Serials in American English",
+            "052": "Serials in English",
+            "053": "Serials in other Germanic languages",
+            "054": "Serials in French, Occitan, and Catalan",
+            "055": "Serials in Italian, Romanian, and related languages",
+            "056": "Serials in Spanish and Portuguese",
+            "057": "Serials in Slavic languages",
+            "058": "Serials in Scandinavian languages",
+            "059": "Serials in other languages"
+        }
+    },
+    "060": {
+        "class": "Associations, organizations and museums",
+        "subclasses": {
+            "060": "General organizations and museum science",
+            "061": "Organizations in North America",
+            "062": "Organizations in British Isles; in England",
+            "063": "Organizations in central Europe; in Germany",
+            "064": "Organizations in France and Monaco",
+            "065": "Organizations in Italy and adjacent islands",
+            "066": "Organizations in Iberian peninsula and adjacent islands",
+            "067": "Organizations in eastern Europe; in Russia",
+            "068": "Organizations in other geographic areas",
+            "069": "Museum science"
+        }
+    },
+    "070": {
+        "class": "News media, journalism, and publishing",
+        "subclasses": {
+            "070": "News media, journalism, and publishing",
+            "071": "Newspapers in North America",
+            "072": "Newspapers in British Isles; in England",
+            "073": "Newspapers in central Europe; in Germany",
+            "074": "Newspapers in France and Monaco",
+            "075": "Newspapers in Italy and adjacent islands",
+            "076": "Newspapers in Iberian peninsula and adjacent islands",
+            "077": "Newspapers in eastern Europe; in Russia",
+            "078": "Newspapers in Scandinavia",
+            "079": "Newspapers in other geographic areas"
+        }
+    },
+    "080": {
+        "class": "Quotations",
+        "subclasses": {
+            "080": "General collections",
+            "081": "Collections in American English",
+            "082": "Collections in English",
+            "083": "Collections in other Germanic languages",
+            "084": "Collections in French, Occitan, Catalan",
+            "085": "Collections in Italian, Romanian, and related languages",
+            "086": "Collections in Spanish and Portuguese",
+            "087": "Collections in Slavic languages",
+            "088": "Collections in Scandinavian languages",
+            "089": "Collections in other languages"
+        }
+    },
+    "090": {
+        "class": "Manuscripts and rare books",
+        "subclasses": {
+            "090": "Manuscripts and rare books",
+            "091": "Manuscripts",
+            "092": "Block books",
+            "093": "Incunabula",
+            "094": "Printed books",
+            "095": "Books notable for bindings",
+            "096": "Books notable for illustrations",
+            "097": "Books notable for ownership or origin",
+            "098": "Prohibited works, forgeries, and hoaxes",
+            "099": "Books notable for format"
+        }
+    },
+    "100": {
+        "class": "Philosophy and psychology",
+        "subclasses": {
+            "100": "Philosophy and psychology",
+            "101": "Theory of philosophy",
+            "102": "Miscellany",
+            "103": "Dictionaries and encyclopedias",
+            "104": "No longer used — formerly Essays",
+            "105": "Serial publications",
+            "106": "Organizations and management",
+            "107": "Education, research, related topics of philosophy",
+            "108": "Groups of people",
+            "109": "History and collected biography"
+        }
+    },
+    "110": {
+        "class": "Metaphysics",
+        "subclasses": {
+            "110": "Metaphysics",
+            "111": "Ontology",
+            "112": "No longer used",
+            "113": "Cosmology (Philosophy of nature)",
+            "114": "Space",
+            "115": "Time",
+            "116": "Change",
+            "117": "Structure",
+            "118": "Force and energy",
+            "119": "Number and quantity"
+        }
+    },
+    "120": {
+        "class": "Epistemology",
+        "subclasses": {
+            "120": "Epistemology",
+            "121": "Theory of knowledge",
+            "122": "Causation",
+            "123": "Determinism and indeterminism",
+            "124": "Teleology",
+            "125": "No longer used",
+            "126": "The self",
+            "127": "The unconscious and the subconscious",
+            "128": "Humankind",
+            "129": "Origin and destiny of individual souls"
+        }
+    },
+    "130": {
+        "class": "Parapsychology and occultism",
+        "subclasses": {
+            "130": "Parapsychology and occultism",
+            "131": "Parapsychological and occult methods",
+            "132": "No longer used",
+            "133": "Specific topics in parapsychology and occultism",
+            "134": "No longer used",
+            "135": "Dreams and mysteries",
+            "136": "No longer used",
+            "137": "Divinatory graphology",
+            "138": "Physiognomy",
+            "139": "Phrenology"
+        }
+    },
+    "140": {
+        "class": "Philosophical schools of thought",
+        "subclasses": {
+            "140": "Philosophical schools of thought",
+            "141": "Idealism and related systems",
+            "142": "Critical philosophy",
+            "143": "Bergsonism and intuitionism",
+            "144": "Humanism and related systems",
+            "145": "Sensationalism",
+            "146": "Naturalism and related systems",
+            "147": "Pantheism and related systems",
+            "148": "Eclecticism and related systems",
+            "149": "Other philosophical systems"
+        }
+    },
+    "150": {
+        "class": "Psychology",
+        "subclasses": {
+            "150": "Psychology",
+            "151": "No longer used",
+            "152": "Perception, movement, emotions, and drives",
+            "153": "Mental processes and intelligence",
+            "154": "Subconscious and altered states",
+            "155": "Differential and developmental psychology",
+            "156": "Comparative psychology",
+            "157": "No longer used",
+            "158": "Applied psychology",
+            "159": "No longer used"
+        }
+    },
+    "160": {
+        "class": "Logic",
+        "subclasses": {
+            "160": "Logic",
+            "161": "Induction",
+            "162": "Deduction",
+            "163": "No longer used",
+            "164": "No longer used",
+            "165": "Fallacies and sources of error",
+            "166": "Syllogisms",
+            "167": "Hypotheses",
+            "168": "Argument and persuasion",
+            "169": "Analogy"
+        }
+    },
+    "170": {
+        "class": "Ethics",
+        "subclasses": {
+            "170": "Ethics",
+            "171": "Ethical systems",
+            "172": "Political ethics",
+            "173": "Ethics of family relationships",
+            "174": "Occupational ethics",
+            "175": "Ethics of recreation and leisure",
+            "176": "Ethics of sex and reproduction",
+            "177": "Ethics of social relations",
+            "178": "Ethics of consumption",
+            "179": "Other ethical norms"
+        }
+    },
+    "180": {
+        "class": "Ancient, medieval, and eastern philosophy",
+        "subclasses": {
+            "180": "Ancient, medieval, and eastern philosophy",
+            "181": "Eastern philosophy",
+            "182": "Pre-Socratic Greek philosophies",
+            "183": "Sophistic and Socratic philosophies",
+            "184": "Platonic philosophy",
+            "185": "Aristotelian philosophy",
+            "186": "Skeptic and Neoplatonic philosophies",
+            "187": "Epicurean philosophy",
+            "188": "Stoic philosophy",
+            "189": "Medieval western philosophy"
+        }
+    },
+    "190": {
+        "class": "Modern western philosophy",
+        "subclasses": {
+            "190": "Modern western philosophy",
+            "191": "Philosophy of the United States and Canada",
+            "192": "Philosophy of the British Isles",
+            "193": "Philosophy of Germany and Austria",
+            "194": "Philosophy of France",
+            "195": "Philosophy of Italy",
+            "196": "Philosophy of Spain and Portugal",
+            "197": "Philosophy of Russia",
+            "198": "Philosophy of Scandinavia",
+            "199": "Philosophy in other geographic areas"
+        }
+    },
+    "200": {
+        "class": "Religion",
+        "subclasses": {
+            "200": "Religion",
+            "201": "Religious mythology, general classes of religion",
+            "202": "Doctrines",
+            "203": "Public worship and other practices",
+            "204": "Religious experience, life, practice",
+            "205": "Religious ethics",
+            "206": "Leaders and organization",
+            "207": "Missions and religious education",
+            "208": "Sources",
+            "209": "Sects and reform movements"
+        }
+    },
+    "210": {
+        "class": "Philosophy and theory of religion",
+        "subclasses": {
+            "210": "Philosophy and theory of religion",
+            "211": "Concepts of God",
+            "212": "Existence, attributes of God",
+            "213": "Creation",
+            "214": "Theodicy",
+            "215": "Science and religion",
+            "216": "No longer used",
+            "217": "Religious experience, life, practice",
+            "218": "Humankind",
+            "219": "Analogies, metaphors, symbols"
+        }
+    },
+    "220": {
+        "class": "The Bible",
+        "subclasses": {
+            "220": "The Bible",
+            "221": "Old Testament (Tanakh)",
+            "222": "Historical books of Old Testament",
+            "223": "Poetic books of Old Testament",
+            "224": "Prophetic books of Old Testament",
+            "225": "New Testament",
+            "226": "Gospels and Acts",
+            "227": "Epistles",
+            "228": "Revelation (Apocalypse)",
+            "229": "Apocrypha and pseudepigrapha"
+        }
+    },
+    "230": {
+        "class": "Christianity and Christian theology",
+        "subclasses": {
+            "230": "Christianity",
+            "231": "God",
+            "232": "Jesus Christ and his family",
+            "233": "Humankind",
+            "234": "Salvation and grace",
+            "235": "Spiritual beings",
+            "236": "Eschatology",
+            "237": "No longer used",
+            "238": "Creeds and catechisms",
+            "239": "Apologetics and polemics"
+        }
+    },
+    "240": {
+        "class": "Christian moral and devotional theology",
+        "subclasses": {
+            "240": "Christian moral and devotional theology",
+            "241": "Christian ethics",
+            "242": "Devotional literature",
+            "243": "Evangelistic writings for individuals and families",
+            "244": "No longer used",
+            "245": "No longer used",
+            "246": "Use of art in Christianity",
+            "247": "Church furnishings and articles",
+            "248": "Christian experience, practice, life",
+            "249": "Christian observances in family life"
+        }
+    },
+    "250": {
+        "class": "Christian orders and local church",
+        "subclasses": {
+            "250": "Christian orders",
+            "251": "Preaching (Homiletics)",
+            "252": "Texts of sermons",
+            "253": "Pastoral office and work",
+            "254": "Parochial work",
+            "255": "Religious congregations and orders",
+            "256": "No longer used",
+            "257": "No longer used",
+            "258": "No longer used",
+            "259": "Pastoral care of families, youth, aged"
+        }
+    },
+    "260": {
+        "class": "Social and ecclesiastical theology",
+        "subclasses": {
+            "260": "Social and ecclesiastical theology",
+            "261": "Social theology",
+            "262": "Ecclesiology",
+            "263": "Days, times, places of religious observance",
+            "264": "Public worship",
+            "265": "Sacraments, other rites and acts",
+            "266": "Missions",
+            "267": "Associations for religious work",
+            "268": "Religious education",
+            "269": "Spiritual renewal"
+        }
+    },
+    "270": {
+        "class": "History of Christianity",
+        "subclasses": {
+            "270": "History of Christianity",
+            "271": "Religious congregations and orders in Christianity",
+            "272": "Persecutions in Christianity",
+            "273": "Doctrinal controversies and heresies in general Christianity",
+            "274": "Christianity in Europe",
+            "275": "Christianity in Asia",
+            "276": "Christianity in Africa",
+            "277": "Christianity in North America",
+            "278": "Christianity in South America",
+            "279": "Christianity in other areas"
+        }
+    },
+    "280": {
+        "class": "Christian denominations",
+        "subclasses": {
+            "280": "Christian denominations",
+            "281": "Early church and Eastern churches",
+            "282": "Roman Catholic Church",
+            "283": "Anglican churches",
+            "284": "Protestants of Continental origin",
+            "285": "Presbyterian, Reformed, and Congregational",
+            "286": "Baptists, Disciples of Christ, Adventists",
+            "287": "Methodists, Wesleyans, Holiness churches",
+            "288": "No longer used",
+            "289": "Other denominations and sects"
+        }
+    },
+    "290": {
+        "class": "Other religions",
+        "subclasses": {
+            "290": "Other religions",
+            "291": "Comparative religion",
+            "292": "Classical (Greek and Roman) religion",
+            "293": "Germanic religion",
+            "294": "Religions of Indic origin",
+            "295": "Zoroastrianism (Mazdaism, Parseeism)",
+            "296": "Judaism",
+            "297": "Islam, Babism, Bahá'í Faith",
+            "298": "No longer used",
+            "299": "Religions not provided for elsewhere"
+        }
+    },
+    "300": {
+        "class": "Social sciences",
+        "subclasses": {
+            "300": "Social sciences",
+            "301": "Sociology and anthropology",
+            "302": "Social interaction",
+            "303": "Social processes",
+            "304": "Factors affecting social behavior",
+            "305": "Social groups",
+            "306": "Culture and institutions",
+            "307": "Communities",
+            "308": "No longer used",
+            "309": "Social situation and conditions"
+        }
+    },
+    "301": {
+        "class": "Sociology and anthropology",
+        "subclasses": {
+            "301": "Sociology and anthropology",
+            "302": "Social interaction",
+            "303": "Social processes",
+            "304": "Factors affecting social behavior",
+            "305": "Social groups",
+            "306": "Culture and institutions",
+            "307": "Communities",
+            "308": "No longer used",
+            "309": "Social situation and conditions"
+        }
+    },
+    "310": {
+        "class": "Statistics",
+        "subclasses": {
+            "310": "Statistics",
+            "311": "No longer used",
+            "312": "No longer used",
+            "313": "No longer used",
+            "314": "General statistics of Europe",
+            "315": "General statistics of Asia",
+            "316": "General statistics of Africa",
+            "317": "General statistics of North America",
+            "318": "General statistics of South America",
+            "319": "General statistics of other areas"
+        }
+    },
+    "320": {
+        "class": "Political science",
+        "subclasses": {
+            "320": "Political science",
+            "321": "Systems of governments and states",
+            "322": "Relation of state to organized groups",
+            "323": "Civil and political rights",
+            "324": "The political process",
+            "325": "International migration and colonization",
+            "326": "Slavery and emancipation",
+            "327": "International relations",
+            "328": "The legislative process",
+            "329": "Not assigned or no longer used"
+        }
+    },
+    "330": {
+        "class": "Economics",
+        "subclasses": {
+            "330": "Economics",
+            "331": "Labor economics",
+            "332": "Financial economics",
+            "333": "Economics of land and energy",
+            "334": "Cooperatives",
+            "335": "Socialism and related systems",
+            "336": "Public finance",
+            "337": "International economics",
+            "338": "Production",
+            "339": "Macroeconomics and related topics"
+        }
+    },
+    "340": {
+        "class": "Law",
+        "subclasses": {
+            "340": "Law",
+            "341": "International law",
+            "342": "Constitutional and administrative law",
+            "343": "Military, tax, trade, industrial law",
+            "344": "Labor, social, education, cultural law",
+            "345": "Criminal law",
+            "346": "Private law",
+            "347": "Procedure and courts",
+            "348": "Laws, regulations, cases",
+            "349": "Law of specific jurisdictions and areas"
+        }
+    },
+    "350": {
+        "class": "Public administration and military science",
+        "subclasses": {
+            "350": "Public administration and military science",
+            "351": "Public administration",
+            "352": "General considerations of public administration",
+            "353": "Specific fields of public administration",
+            "354": "Administration of economy and environment",
+            "355": "Military science",
+            "356": "Infantry forces and warfare",
+            "357": "Cavalry, armored, mechanized forces and warfare",
+            "358": "Air forces and warfare",
+            "359": "Naval forces and warfare"
+        }
+    },
+    "360": {
+        "class": "Social problems and services; associations",
+        "subclasses": {
+            "360": "Social problems and services; associations",
+            "361": "General social problems",
+            "362": "Social welfare problems and services",
+            "363": "Other social problems and services",
+            "364": "Criminology",
+            "365": "Penal and related institutions",
+            "366": "Association",
+            "367": "General clubs",
+            "368": "Insurance",
+            "369": "Other forms of insurance"
+        }
+    },
+    "370": {
+        "class": "Education",
+        "subclasses": {
+            "370": "Education",
+            "371": "Schools and their activities; special education",
+            "372": "Primary education (Elementary education)",
+            "373": "Secondary education",
+            "374": "Adult education",
+            "375": "Curricula",
+            "376": "Education of women",
+            "377": "Schools and religion",
+            "378": "Higher education",
+            "379": "Public policy issues in education"
+        }
+    },
+    "380": {
+        "class": "Commerce, communications, transport",
+        "subclasses": {
+            "380": "Commerce, communications, transport",
+            "381": "Internal commerce (Domestic trade)",
+            "382": "International commerce (Foreign trade)",
+            "383": "Postal communication",
+            "384": "Telecommunication",
+            "385": "Railroad transportation",
+            "386": "Inland waterway and ferry transportation",
+            "387": "Water, air, space transportation",
+            "388": "Transportation",
+            "389": "Metrology and standardization"
+        }
+    },
+    "390": {
+        "class": "Customs, etiquette, folklore",
+        "subclasses": {
+            "390": "Customs, etiquette, folklore",
+            "391": "Costume and personal appearance",
+            "392": "Customs of life cycle and domestic life",
+            "393": "Death customs",
+            "394": "General customs",
+            "395": "Etiquette (Manners)",
+            "396": "No longer used",
+            "397": "No longer used",
+            "398": "Folklore",
+            "399": "Customs of war and diplomacy"
+        }
+    },
+    "400": {
+        "class": "Language",
+        "subclasses": {
+            "400": "Language",
+            "401": "Philosophy and theory of linguistics",
+            "402": "Miscellany",
+            "403": "Dictionaries, encyclopedias, concordances",
+            "404": "Special topics of language",
+            "405": "Serial publications",
+            "406": "Organizations and management",
+            "407": "Education, research, related topics of language",
+            "408": "Kinds of persons treatment",
+            "409": "Geographic and persons treatment"
+        }
+    },
+    "410": {
+        "class": "Linguistics",
+        "subclasses": {
+            "410": "Linguistics",
+            "411": "Writing systems",
+            "412": "Etymology",
+            "413": "Dictionaries",
+            "414": "Phonology",
+            "415": "Grammar",
+            "416": "Prosody",
+            "417": "Dialectology and historical linguistics",
+            "418": "Standard usage; Applied linguistics",
+            "419": "Sign languages"
+        }
+    },
+    "420": {
+        "class": "English and Old English languages",
+        "subclasses": {
+            "420": "English and Old English (Anglo-Saxon)",
+            "421": "English writing system and phonology",
+            "422": "English etymology",
+            "423": "English dictionaries",
+            "424": "No longer used",
+            "425": "English grammar",
+            "426": "English prosody",
+            "427": "English dialectology",
+            "428": "Standard English usage",
+            "429": "Old English (Anglo-Saxon)"
+        }
+    },
+    "430": {
+        "class": "Germanic languages; German",
+        "subclasses": {
+            "430": "Germanic languages; German",
+            "431": "German writing system and phonology",
+            "432": "German etymology",
+            "433": "German dictionaries",
+            "434": "No longer used",
+            "435": "German grammar",
+            "436": "German prosody",
+            "437": "German dialectology",
+            "438": "Standard German usage",
+            "439": "Other Germanic languages"
+        }
+    },
+    "440": {
+        "class": "Romance languages; French",
+        "subclasses": {
+            "440": "Romance languages; French",
+            "441": "French writing system and phonology",
+            "442": "French etymology",
+            "443": "French dictionaries",
+            "444": "No longer used",
+            "445": "French grammar",
+            "446": "French prosody",
+            "447": "French dialectology",
+            "448": "Standard French usage",
+            "449": "Occitan and Catalan"
+        }
+    },
+    "450": {
+        "class": "Italian, Romanian, Rhaeto-Romanic",
+        "subclasses": {
+            "450": "Italian, Romanian, Rhaeto-Romanic",
+            "451": "Italian writing system and phonology",
+            "452": "Italian etymology",
+            "453": "Italian dictionaries",
+            "454": "No longer used",
+            "455": "Italian grammar",
+            "456": "Italian prosody",
+            "457": "Italian dialectology",
+            "458": "Standard Italian usage",
+            "459": "Romanian and Rhaeto-Romanic"
+        }
+    },
+    "460": {
+        "class": "Spanish and Portuguese languages",
+        "subclasses": {
+            "460": "Spanish and Portuguese languages",
+            "461": "Spanish writing system and phonology",
+            "462": "Spanish etymology",
+            "463": "Spanish dictionaries",
+            "464": "No longer used",
+            "465": "Spanish grammar",
+            "466": "Spanish prosody",
+            "467": "Spanish dialectology",
+            "468": "Standard Spanish usage",
+            "469": "Portuguese"
+        }
+    },
+    "470": {
+        "class": "Italic languages; Latin",
+        "subclasses": {
+            "470": "Italic languages; Latin",
+            "471": "Classical Latin writing and phonology",
+            "472": "Classical Latin etymology",
+            "473": "Classical Latin dictionaries",
+            "474": "No longer used",
+            "475": "Classical Latin grammar",
+            "476": "Classical Latin prosody",
+            "477": "Old, Postclassical, Vulgar Latin",
+            "478": "Ecclesiastical Latin",
+            "479": "Other Italic languages"
+        }
+    },
+    "480": {
+        "class": "Hellenic languages; Classical Greek",
+        "subclasses": {
+            "480": "Hellenic languages; Classical Greek",
+            "481": "Classical Greek writing and phonology",
+            "482": "Classical Greek etymology",
+            "483": "Classical Greek dictionaries",
+            "484": "No longer used",
+            "485": "Classical Greek grammar",
+            "486": "Classical Greek prosody",
+            "487": "Preclassical and Postclassical Greek",
+            "488": "Other Hellenic languages",
+            "489": "Other languages"
+        }
+    },
+    "490": {
+        "class": "Other languages",
+        "subclasses": {
+            "490": "Other languages",
+            "491": "East Indo-European and Celtic languages",
+            "492": "Afro-Asiatic languages; Semitic languages",
+            "493": "Non-Semitic Afro-Asiatic languages",
+            "494": "Altai languages",
+            "495": "Languages of East and Southeast Asia",
+            "496": "African languages",
+            "497": "North American native languages",
+            "498": "South American native languages",
+            "499": "Austronesian and other languages"
+        }
+    },
+    "500": {
+        "class": "Natural sciences and mathematics",
+        "subclasses": {
+            "500": "Natural sciences and mathematics",
+            "501": "Philosophy and theory",
+            "502": "Miscellany",
+            "503": "Dictionaries and encyclopedias",
+            "504": "Not assigned or no longer used",
+            "505": "Serial publications",
+            "506": "Organizations and management",
+            "507": "Education, research, related topics",
+            "508": "Natural history",
+            "509": "Historical, geographic, persons treatment"
+        }
+    },
+    "501": {
+        "class": "Philosophy and theory",
+        "subclasses": {
+            "501": "Philosophy and theory",
+            "502": "Miscellany",
+            "503": "Dictionaries and encyclopedias",
+            "504": "Not assigned or no longer used",
+            "505": "Serial publications",
+            "506": "Organizations and management",
+            "507": "Education, research, related topics",
+            "508": "Natural history",
+            "509": "Historical, geographic, persons treatment"
+        }
+    },
+    "510": {
+        "class": "Mathematics",
+        "subclasses": {
+            "510": "Mathematics",
+            "511": "General principles",
+            "512": "Algebra",
+            "513": "Arithmetic",
+            "514": "Topology",
+            "515": "Analysis",
+            "516": "Geometry",
+            "517": "Not assigned or no longer used",
+            "518": "Numerical analysis",
+            "519": "Probabilities and applied mathematics"
+        }
+    },
+    "520": {
+        "class": "Astronomy",
+        "subclasses": {
+            "520": "Astronomy",
+            "521": "Celestial mechanics",
+            "522": "Techniques, equipment, materials",
+            "523": "Specific celestial bodies and phenomena",
+            "524": "Not assigned or no longer used",
+            "525": "Earth (Astronomical geography)",
+            "526": "Mathematical geography",
+            "527": "Celestial navigation",
+            "528": "Ephemerides",
+            "529": "Chronology"
+        }
+    },
+    "530": {
+        "class": "Physics",
+        "subclasses": {
+            "530": "Physics",
+            "531": "Classical mechanics; Solid mechanics",
+            "532": "Fluid mechanics; Liquid mechanics",
+            "533": "Gas mechanics",
+            "534": "Sound and related vibrations",
+            "535": "Light and related radiation",
+            "536": "Heat",
+            "537": "Electricity and electronics",
+            "538": "Magnetism",
+            "539": "Modern physics"
+        }
+    },
+    "540": {
+        "class": "Chemistry",
+        "subclasses": {
+            "540": "Chemistry",
+            "541": "Physical chemistry",
+            "542": "Techniques, equipment, materials",
+            "543": "Analytical chemistry",
+            "544": "Not assigned or no longer used",
+            "545": "Not assigned or no longer used",
+            "546": "Inorganic chemistry",
+            "547": "Organic chemistry",
+            "548": "Crystallography",
+            "549": "Mineralogy"
+        }
+    },
+    "550": {
+        "class": "Earth sciences and geology",
+        "subclasses": {
+            "550": "Earth sciences and geology",
+            "551": "Geology, hydrology, meteorology",
+            "552": "Petrology",
+            "553": "Economic geology",
+            "554": "Earth sciences of Europe",
+            "555": "Earth sciences of Asia",
+            "556": "Earth sciences of Africa",
+            "557": "Earth sciences of North America",
+            "558": "Earth sciences of South America",
+            "559": "Earth sciences of other areas"
+        }
+    },
+    "560": {
+        "class": "Paleontology; Paleozoology",
+        "subclasses": {
+            "560": "Paleontology; Paleozoology",
+            "561": "Fossil plants",
+            "562": "Fossil invertebrates",
+            "563": "Fossil primitive phyla",
+            "564": "Fossil Mollusca and Molluscoidea",
+            "565": "Other fossil invertebrates",
+            "566": "Fossil Vertebrates",
+            "567": "Fossil cold-blooded vertebrates",
+            "568": "Fossil birds",
+            "569": "Fossil mammals"
+        }
+    },
+    "570": {
+        "class": "Life sciences; Biology",
+        "subclasses": {
+            "570": "Life sciences; Biology",
+            "571": "Physiology and related subjects",
+            "572": "Biochemistry",
+            "573": "Specific physiological systems in animals",
+            "574": "Ecology and environments",
+            "575": "Evolution and genetics",
+            "576": "Microbiology",
+            "577": "General nature of life",
+            "578": "Natural history of organisms",
+            "579": "Collections and studies of specific kinds of organisms"
+        }
+    },
+    "580": {
+        "class": "Plants (Botany)",
+        "subclasses": {
+            "580": "Plants",
+            "581": "Specific topics in natural history of plants",
+            "582": "Plants noted for characteristics and flowers",
+            "583": "Dicotyledons",
+            "584": "Monocotyledons",
+            "585": "Gymnosperms (Conifers)",
+            "586": "Seedless plants",
+            "587": "Pteridophyta (Ferns)",
+            "588": "Bryophyta (Mosses)",
+            "589": "Other groups of plants"
+        }
+    },
+    "590": {
+        "class": "Animals (Zoology)",
+        "subclasses": {
+            "590": "Animals",
+            "591": "Specific topics in natural history of animals",
+            "592": "Invertebrates",
+            "593": "Other invertebrates",
+            "594": "Mollusca and Molluscoidea",
+            "595": "Other invertebrates",
+            "596": "Vertebrates",
+            "597": "Cold-blooded vertebrates",
+            "598": "Birds",
+            "599": "Mammals"
+        }
+    },
+    "600": {
+        "class": "Technology",
+        "subclasses": {
+            "600": "Technology",
+            "601": "Philosophy and theory",
+            "602": "Miscellany",
+            "603": "Dictionaries and encyclopedias",
+            "604": "Special topics",
+            "605": "Serial publications",
+            "606": "Organizations",
+            "607": "Education, research, related topics",
+            "608": "Inventions and patents",
+            "609": "Historical, geographic, persons treatment"
+        }
+    },
+    "610": {
+        "class": "Medical sciences; Medicine",
+        "subclasses": {
+            "610": "Medical sciences; Medicine",
+            "611": "Human anatomy, cytology, histology",
+            "612": "Human physiology",
+            "613": "Personal health and safety",
+            "614": "Incidence and prevention of disease",
+            "615": "Pharmacology and therapeutics",
+            "616": "Diseases",
+            "617": "Surgery and related medical specialties",
+            "618": "Gynecology, obstetrics, pediatrics, geriatrics",
+            "619": "Experimental medicine"
+        }
+    },
+    "620": {
+        "class": "Engineering and allied operations",
+        "subclasses": {
+            "620": "Engineering and allied operations",
+            "621": "Applied physics",
+            "622": "Mining and related operations",
+            "623": "Military and nautical engineering",
+            "624": "Civil engineering",
+            "625": "Engineering of railroads and roads",
+            "626": "Not assigned or no longer used",
+            "627": "Hydraulic engineering",
+            "628": "Sanitary and municipal engineering",
+            "629": "Other branches of engineering"
+        }
+    },
+    "630": {
+        "class": "Agriculture",
+        "subclasses": {
+            "630": "Agriculture",
+            "631": "Techniques, equipment, materials",
+            "632": "Plant injuries, diseases, pests",
+            "633": "Field and plantation crops",
+            "634": "Orchards, fruits, forestry",
+            "635": "Garden crops (Horticulture)",
+            "636": "Animal husbandry",
+            "637": "Processing dairy and related products",
+            "638": "Insect culture",
+            "639": "Hunting, fishing, conservation"
+        }
+    },
+    "640": {
+        "class": "Home economics and family living",
+        "subclasses": {
+            "640": "Home economics and family living",
+            "641": "Food and drink",
+            "642": "Meals and table service",
+            "643": "Housing and household equipment",
+            "644": "Household utilities",
+            "645": "Household furnishings",
+            "646": "Sewing, clothing, personal living",
+            "647": "Management of public households",
+            "648": "Housekeeping",
+            "649": "Child rearing, home care of persons"
+        }
+    },
+    "650": {
+        "class": "Management and auxiliary services",
+        "subclasses": {
+            "650": "Management and auxiliary services",
+            "651": "Office services",
+            "652": "Processes of written communication",
+            "653": "Shorthand",
+            "654": "Not assigned or no longer used",
+            "655": "Publishing",
+            "656": "Transportation",
+            "657": "Accounting",
+            "658": "General management",
+            "659": "Advertising and public relations"
+        }
+    },
+    "660": {
+        "class": "Chemical engineering",
+        "subclasses": {
+            "660": "Chemical engineering",
+            "661": "Industrial chemicals technology",
+            "662": "Explosives, fuels technology",
+            "663": "Beverage technology",
+            "664": "Food technology",
+            "665": "Industrial oils, fats, waxes, gases",
+            "666": "Ceramic and allied technologies",
+            "667": "Cleaning, color, coating technologies",
+            "668": "Other organic product industries",
+            "669": "Metallurgy"
+        }
+    },
+    "670": {
+        "class": "Manufacturing",
+        "subclasses": {
+            "670": "Manufacturing",
+            "671": "Metalworking processes",
+            "672": "Iron, steel, other iron alloys",
+            "673": "Nonferrous metals",
+            "674": "Lumber processing, wood products, cork",
+            "675": "Leather and fur processing",
+            "676": "Pulp and paper technology",
+            "677": "Textile processes",
+            "678": "Elastomers and elastomer products",
+            "679": "Other products of specific materials"
+        }
+    },
+    "680": {
+        "class": "Manufacture for specific uses",
+        "subclasses": {
+            "680": "Manufacture for specific uses",
+            "681": "Precision instruments and other devices",
+            "682": "Small forging and related operations",
+            "683": "Hardware and household appliances",
+            "684": "Furnishings and home workshops",
+            "685": "Leather, fur goods, related products",
+            "686": "Printing and related activities",
+            "687": "Clothing and accessories",
+            "688": "Other final products and packaging",
+            "689": "Not assigned or no longer used"
+        }
+    },
+    "690": {
+        "class": "Buildings",
+        "subclasses": {
+            "690": "Buildings",
+            "691": "Building materials",
+            "692": "Auxiliary construction practices",
+            "693": "Specific materials and purposes",
+            "694": "Wood construction",
+            "695": "Roof covering",
+            "696": "Utilities",
+            "697": "Heating, ventilating, air-conditioning",
+            "698": "Detail finishing",
+            "699": "Miscellaneous"
+        }
+    },
+    "700": {
+        "class": "The arts; Fine and decorative arts",
+        "subclasses": {
+            "700": "The arts",
+            "701": "Philosophy and theory",
+            "702": "Miscellany",
+            "703": "Dictionaries and encyclopedias",
+            "704": "Special topics",
+            "705": "Serial publications",
+            "706": "Organizations",
+            "707": "Education, research, related topics",
+            "708": "Galleries, museums, private collections",
+            "709": "Historical, geographic, persons treatment"
+        }
+    },
+    "701": {
+        "class": "Philosophy and theory",
+        "subclasses": {
+            "701": "Philosophy and theory",
+            "702": "Miscellany",
+            "703": "Dictionaries and encyclopedias",
+            "704": "Special topics",
+            "705": "Serial publications",
+            "706": "Organizations",
+            "707": "Education, research, related topics",
+            "708": "Galleries, museums, private collections",
+            "709": "Historical, geographic, persons treatment"
+        }
+    },
+    "710": {
+        "class": "Civic and landscape art",
+        "subclasses": {
+            "710": "Civic and landscape art",
+            "711": "Area planning (Civic art)",
+            "712": "Landscape architecture",
+            "713": "Landscape architecture of trafficways",
+            "714": "Water features",
+            "715": "Woody plants",
+            "716": "Herbaceous plants",
+            "717": "Structures in landscape architecture",
+            "718": "Landscape design of cemeteries",
+            "719": "Natural landscapes"
+        }
+    },
+    "720": {
+        "class": "Architecture",
+        "subclasses": {
+            "720": "Architecture",
+            "721": "Architectural structure",
+            "722": "Architecture from earliest times to ca. 300",
+            "723": "Architecture from ca. 300 to 1399",
+            "724": "Architecture from 1400",
+            "725": "Public structures",
+            "726": "Buildings for religious and related purposes",
+            "727": "Buildings for education and research",
+            "728": "Residential and related buildings",
+            "729": "Design and decoration"
+        }
+    },
+    "730": {
+        "class": "Plastic arts; Sculpture",
+        "subclasses": {
+            "730": "Plastic arts; Sculpture",
+            "731": "Processes, forms, subjects of sculpture",
+            "732": "Sculpture to ca. 500",
+            "733": "Greek, Etruscan, Roman sculpture",
+            "734": "Sculpture from ca. 500 to 1399",
+            "735": "Sculpture from 1400",
+            "736": "Carving and carvings",
+            "737": "Numismatics and sigillography",
+            "738": "Ceramic arts",
+            "739": "Art metalwork"
+        }
+    },
+    "740": {
+        "class": "Drawing and decorative arts",
+        "subclasses": {
+            "740": "Drawing and decorative arts",
+            "741": "Drawing and drawings",
+            "742": "Perspective",
+            "743": "Drawing and drawings by subject",
+            "744": "Not assigned or no longer used",
+            "745": "Decorative arts",
+            "746": "Textile arts",
+            "747": "Interior decoration",
+            "748": "Glass",
+            "749": "Furniture and accessories"
+        }
+    },
+    "750": {
+        "class": "Painting and paintings",
+        "subclasses": {
+            "750": "Painting and paintings",
+            "751": "Techniques, equipment, forms",
+            "752": "Color",
+            "753": "Symbolism, allegory, mythology, legend",
+            "754": "Genre paintings",
+            "755": "Religion",
+            "756": "Other subjects",
+            "757": "Human figures",
+            "758": "Other subjects",
+            "759": "Historical, geographic, persons treatment"
+        }
+    },
+    "760": {
+        "class": "Printmaking and prints",
+        "subclasses": {
+            "760": "Printmaking and prints",
+            "761": "Relief processes (Block printing)",
+            "762": "Not assigned or no longer used",
+            "763": "Lithographic processes",
+            "764": "Chromolithography and serigraphy",
+            "765": "Metal engraving",
+            "766": "Mezzotinting",
+            "767": "Etching and drypoint",
+            "768": "Not assigned or no longer used",
+            "769": "Prints"
+        }
+    },
+    "770": {
+        "class": "Photography and photographs",
+        "subclasses": {
+            "770": "Photography and photographs",
+            "771": "Techniques, procedures, apparatus, equipment, materials",
+            "772": "Not assigned or no longer used",
+            "773": "Prints",
+            "774": "Holography",
+            "775": "Digital photography",
+            "776": "Computer art",
+            "777": "Moving pictures",
+            "778": "Special kinds of photography",
+            "779": "Photographic images"
+        }
+    },
+    "780": {
+        "class": "Music",
+        "subclasses": {
+            "780": "Music",
+            "781": "General principles and musical forms",
+            "782": "Vocal music",
+            "783": "Music for single voices; The voice",
+            "784": "Instruments and Instrumental ensembles",
+            "785": "Ensembles with only one instrument per part",
+            "786": "Keyboard, mechanical, and other non-acoustic instruments",
+            "787": "Stringed instruments",
+            "788": "Wind instruments",
+            "789": "Not assigned or no longer used"
+        }
+    },
+    "790": {
+        "class": "Recreational and performing arts",
+        "subclasses": {
+            "790": "Recreational and performing arts",
+            "791": "Public performances",
+            "792": "Stage presentations",
+            "793": "Indoor games and amusements",
+            "794": "Indoor games of skill",
+            "795": "Games of chance",
+            "796": "Athletic and outdoor sports and games",
+            "797": "Aquatic and air sports",
+            "798": "Equestrian sports and animal racing",
+            "799": "Fishing, hunting, shooting"
+        }
+    },
+    "800": {
+        "class": "Literature, rhetoric, and criticism",
+        "subclasses": {
+            "800": "Literature, rhetoric, and criticism",
+            "801": "Philosophy and theory",
+            "802": "Miscellany",
+            "803": "Dictionaries, encyclopedias, concordances",
+            "804": "Not assigned or no longer used",
+            "805": "Serial publications",
+            "806": "Organizations and management",
+            "807": "Education, research, related topics",
+            "808": "Rhetoric and collections of literature",
+            "809": "Literary history and criticism"
+        }
+    },
+    "810": {
+        "class": "American literature in English",
+        "subclasses": {
+            "810": "American literature in English",
+            "811": "Poetry",
+            "812": "Drama",
+            "813": "Fiction",
+            "814": "Essays",
+            "815": "Speeches",
+            "816": "Letters",
+            "817": "Satire and humor",
+            "818": "Miscellaneous writings",
+            "819": "Not assigned or no longer used"
+        }
+    },
+    "820": {
+        "class": "English and Old English literatures",
+        "subclasses": {
+            "820": "English and Old English literatures",
+            "821": "English poetry",
+            "822": "English drama",
+            "823": "English fiction",
+            "824": "English essays",
+            "825": "English speeches",
+            "826": "English letters",
+            "827": "English satire and humor",
+            "828": "English miscellaneous writings",
+            "829": "Old English (Anglo-Saxon)"
+        }
+    },
+    "830": {
+        "class": "German and related literatures",
+        "subclasses": {
+            "830": "German and related literatures",
+            "831": "German poetry",
+            "832": "German drama",
+            "833": "German fiction",
+            "834": "German essays",
+            "835": "German speeches",
+            "836": "German letters",
+            "837": "German satire and humor",
+            "838": "German miscellaneous writings",
+            "839": "Other Germanic literatures"
+        }
+    },
+    "840": {
+        "class": "French and related literatures",
+        "subclasses": {
+            "840": "French and related literatures",
+            "841": "French poetry",
+            "842": "French drama",
+            "843": "French fiction",
+            "844": "French essays",
+            "845": "French speeches",
+            "846": "French letters",
+            "847": "French satire and humor",
+            "848": "French miscellaneous writings",
+            "849": "Occitan, Catalan, Franco-Provençal"
+        }
+    },
+    "850": {
+        "class": "Italian, Romanian, and related literatures",
+        "subclasses": {
+            "850": "Italian, Romanian, and related literatures",
+            "851": "Italian poetry",
+            "852": "Italian drama",
+            "853": "Italian fiction",
+            "854": "Italian essays",
+            "855": "Italian speeches",
+            "856": "Italian letters",
+            "857": "Italian satire and humor",
+            "858": "Italian miscellaneous writings",
+            "859": "Romanian, Rhaeto-Romanic"
+        }
+    },
+    "860": {
+        "class": "Spanish, Portuguese, Galician literatures",
+        "subclasses": {
+            "860": "Spanish, Portuguese, Galician literatures",
+            "861": "Spanish poetry",
+            "862": "Spanish drama",
+            "863": "Spanish fiction",
+            "864": "Spanish essays",
+            "865": "Spanish speeches",
+            "866": "Spanish letters",
+            "867": "Spanish satire and humor",
+            "868": "Spanish miscellaneous writings",
+            "869": "Portuguese, Galician literatures"
+        }
+    },
+    "870": {
+        "class": "Latin and Italic literatures",
+        "subclasses": {
+            "870": "Latin and Italic literatures",
+            "871": "Latin poetry",
+            "872": "Latin dramatic poetry and drama",
+            "873": "Latin epic poetry and fiction",
+            "874": "Latin lyric poetry",
+            "875": "Latin speeches",
+            "876": "Latin letters",
+            "877": "Latin satire and humor",
+            "878": "Latin miscellaneous writings",
+            "879": "Italic literatures"
+        }
+    },
+    "880": {
+        "class": "Classical and modern Greek literatures",
+        "subclasses": {
+            "880": "Classical and modern Greek literatures",
+            "881": "Classical Greek poetry",
+            "882": "Classical Greek drama",
+            "883": "Classical Greek epic poetry and fiction",
+            "884": "Classical Greek lyric poetry",
+            "885": "Classical Greek speeches",
+            "886": "Classical Greek letters",
+            "887": "Classical Greek satire and humor",
+            "888": "Classical Greek miscellaneous writings",
+            "889": "Modern Greek literature"
+        }
+    },
+    "890": {
+        "class": "Other literatures",
+        "subclasses": {
+            "890": "Other literatures",
+            "891": "East Indo-European and Celtic literatures",
+            "892": "Afro-Asiatic literatures",
+            "893": "Non-Semitic Afro-Asiatic literatures",
+            "894": "Altaic, Uralic, Hyperborean, Dravidian",
+            "895": "East and Southeast Asian literatures",
+            "896": "African literatures",
+            "897": "North American native literatures",
+            "898": "South American native literatures",
+            "899": "Austronesian and other literatures"
+        }
+    },
+    "900": {
+        "class": "History and geography",
+        "subclasses": {
+            "900": "History and geography",
+            "901": "Philosophy and theory of history",
+            "902": "Miscellany of history",
+            "903": "Dictionaries, encyclopedias, concordances",
+            "904": "Collected accounts of events",
+            "905": "Serial publications of history",
+            "906": "Organizations and management",
+            "907": "Education, research, related topics",
+            "908": "History with respect to groups of people",
+            "909": "World history"
+        }
+    },
+    "901": {
+        "class": "Philosophy and theory of history",
+        "subclasses": {
+            "901": "Philosophy and theory of history"
+        }
+    },
+    "902": {
+        "class": "Miscellany of history",
+        "subclasses": {
+            "902": "Miscellany of history"
+        }
+    },
+    "903": {
+        "class": "Dictionaries, encyclopedias, concordances of history",
+        "subclasses": {
+            "903": "Dictionaries, encyclopedias, concordances of history"
+        }
+    },
+    "904": {
+        "class": "Collected accounts of events",
+        "subclasses": {
+            "904": "Collected accounts of events"
+        }
+    },
+    "905": {
+        "class": "Serial publications of history",
+        "subclasses": {
+            "905": "Serial publications of history"
+        }
+    },
+    "906": {
+        "class": "Organizations and management of history",
+        "subclasses": {
+            "906": "Organizations and management of history"
+        }
+    },
+    "907": {
+        "class": "Education, research, related topics of history",
+        "subclasses": {
+            "907": "Education, research, related topics of history"
+        }
+    },
+    "908": {
+        "class": "History with respect to groups of people",
+        "subclasses": {
+            "908": "History with respect to groups of people"
+        }
+    },
+    "909": {
+        "class": "World history",
+        "subclasses": {
+            "909": "World history"
+        }
+    },
+    "910": {
+        "class": "Geography and travel",
+        "subclasses": {
+            "910": "Geography and travel",
+            "911": "Historical geography",
+            "912": "Graphic representations of earth",
+            "913": "Geography of and travel in ancient world",
+            "914": "Geography of and travel in Europe",
+            "915": "Geography of and travel in Asia",
+            "916": "Geography of and travel in Africa",
+            "917": "Geography of and travel in North America",
+            "918": "Geography of and travel in South America",
+            "919": "Geography of and travel in other areas"
+        }
+    },
+    "920": {
+        "class": "Biography, genealogy, insignia",
+        "subclasses": {
+            "920": "Biography, genealogy, insignia",
+            "921": "Biography",
+            "922": "Religious figures",
+            "923": "Not assigned or no longer used",
+            "924": "Not assigned or no longer used",
+            "925": "Not assigned or no longer used",
+            "926": "Not assigned or no longer used",
+            "927": "Not assigned or no longer used",
+            "928": "Not assigned or no longer used",
+            "929": "Genealogy, names, insignia"
+        }
+    },
+    "930": {
+        "class": "History of ancient world (to ca. 499)",
+        "subclasses": {
+            "930": "History of ancient world (to ca. 499)",
+            "931": "China",
+            "932": "Egypt",
+            "933": "Palestine",
+            "934": "India",
+            "935": "Mesopotamia and Iranian Plateau",
+            "936": "Europe north and west of Italy",
+            "937": "Italy and adjacent territories",
+            "938": "Greece",
+            "939": "Other parts of ancient world"
+        }
+    },
+    "940": {
+        "class": "History of Europe",
+        "subclasses": {
+            "940": "History of Europe",
+            "941": "British Isles",
+            "942": "England and Wales",
+            "943": "Germany and adjacent areas",
+            "944": "France and Monaco",
+            "945": "Italy, San Marino, Vatican City",
+            "946": "Iberian Peninsula and adjacent islands",
+            "947": "Eastern Europe; Russia",
+            "948": "Scandinavia",
+            "949": "Other parts of Europe"
+        }
+    },
+    "950": {
+        "class": "History of Asia",
+        "subclasses": {
+            "950": "History of Asia",
+            "951": "China",
+            "952": "Japan",
+            "953": "Arabian Peninsula and adjacent areas",
+            "954": "South Asia; India",
+            "955": "Iran",
+            "956": "Middle East (Near East)",
+            "957": "Siberia (Asiatic Russia)",
+            "958": "Central Asia",
+            "959": "Southeast Asia"
+        }
+    },
+    "960": {
+        "class": "History of Africa",
+        "subclasses": {
+            "960": "History of Africa",
+            "961": "Tunisia and Libya",
+            "962": "Egypt and Sudan",
+            "963": "Ethiopia",
+            "964": "Morocco and Canary Islands",
+            "965": "Algeria",
+            "966": "West Africa and offshore islands",
+            "967": "Central Africa and offshore islands",
+            "968": "Southern Africa",
+            "969": "South Indian Ocean islands"
+        }
+    },
+    "970": {
+        "class": "History of North America",
+        "subclasses": {
+            "970": "History of North America",
+            "971": "Canada",
+            "972": "Middle America; Mexico",
+            "973": "United States",
+            "974": "Northeastern United States",
+            "975": "Southeastern United States",
+            "976": "South central United States",
+            "977": "North central United States",
+            "978": "Western United States",
+            "979": "Great Basin and Pacific Slope region"
+        }
+    },
+    "980": {
+        "class": "History of South America",
+        "subclasses": {
+            "980": "History of South America",
+            "981": "Brazil",
+            "982": "Argentina",
+            "983": "Chile",
+            "984": "Bolivia",
+            "985": "Peru",
+            "986": "Colombia and Ecuador",
+            "987": "Venezuela",
+            "988": "Guiana",
+            "989": "Paraguay and Uruguay"
+        }
+    },
+    "990": {
+        "class": "History of other areas",
+        "subclasses": {
+            "990": "History of other areas",
+            "991": "Not assigned or no longer used",
+            "992": "Not assigned or no longer used",
+            "993": "New Zealand",
+            "994": "Australia",
+            "995": "Melanesia; New Guinea",
+            "996": "Other parts of Pacific Polynesia",
+            "997": "Atlantic Ocean islands",
+            "998": "Arctic islands and Antarctica",
+            "999": "Extraterrestrial worlds"
         }
     }
+}

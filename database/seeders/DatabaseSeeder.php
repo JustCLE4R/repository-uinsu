@@ -60,6 +60,5 @@ class DatabaseSeeder extends Seeder
             'role' => 'admin'
         ]);
 
-        Archive::factory(10000)->create();
     }
 }
