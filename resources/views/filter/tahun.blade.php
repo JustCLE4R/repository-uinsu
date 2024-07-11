@@ -120,19 +120,25 @@
                                 aria-labelledby="heading${archive.id}" data-bs-parent="#accordionExample"
                                 style="">
                                 <div class="faq-content d-flex flex-wrap" style="text-align: justify;">
-                                    <ul class="">
-                                        <li>
+                            
+                                    <div class="row">
+                                        <div class="col-4">
+                                            
                                             <a href="${archive.official_url}" target="_blank">
                                                 <img src="https://i.pinimg.com/736x/13/67/8e/13678e13661844593564d8587f112ba6.jpg" alt="Cover" style="width: 200px;">
                                             </a>
-                                        </li>
-                                        <li> Jenis Item: ${archive.type}</li>
-                                        <li> Subjek: ${archive.subjek}</li>
-                                        <li> Division: Fakultas ${archive.fakultas}, Prodi ${archive.program_studi}</li>
-                                        <li> Editor: ${archive.editor}</li>
-                                        <li> Dibuat Pada: ${archive.created_at}</li>
-                                        <li> Update Terakhir Pada: ${archive.updated_at}</li>
-                                    </ul>
+                                        </div>
+                                    </div>
+                                     <div class="row">
+                                        <div class="col-6">
+                                            Jenis Item: ${archive.type}
+                                            Subjek: ${archive.subjek}
+                                            Division: Fakultas ${archive.fakultas}, Prodi ${archive.program_studi}
+                                            Editor: ${archive.editor}
+                                            Dibuat Pada: ${archive.created_at}
+                                            Update Terakhir Pada: ${archive.updated_at}
+                                         </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
