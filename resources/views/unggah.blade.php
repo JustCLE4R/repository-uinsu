@@ -56,8 +56,8 @@
                                 <input type="file" class="form-control" id="file" name="file" required>
                             </div>
                             <div class="col-lg-12 col-md-12 col-sm-12 my-2">
-                              <label for="abstract" class="form-label">Abstrak</label>
-                              <textarea type="text" class="form-control" id="abstract" name="abstract" required cols="30" rows="3"></textarea>
+                                <label for="abstract" class="form-label">Abstrak</label>
+                                <textarea type="text" class="form-control" id="abstract" name="abstract" required cols="30" rows="3"></textarea>
                             </div>
                         </div>
                         <div class="row pt-2 justify-content-between page page-active">
@@ -108,13 +108,26 @@
                                     required>
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-12 my-2">
-                                <label for="subjek" class="form-label">Subjek</label>
-                                <input type="text" class="form-control" id="subjek" name="subjek" required>
+                                <label for="subject_id" class="form-label">Subjek</label>
+                                <select class="form-control" id="subject_id" name="subject_id" required>
+                                    <option value="" selected hidden>Pilih Subjek</option>
+                                    @foreach ($subjects as $subject)
+                                        <option value="{{ $subject->id }}">{{ '[' . $subject->code . '] ' . $subject->name }}</option>
+                                    @endforeach
+                                </select>
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-12 my-2">
                                 <label for="nomor_klasifikasi" class="form-label">Nomor Klasifikasi</label>
                                 <input type="text" class="form-control" id="nomor_klasifikasi"
                                     name="nomor_klasifikasi" required>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 my-2">
+                                <label for="visibility" class="form-label">Visibilitas</label>
+                                <select class="form-control" id="visibility" name="visibility" required>
+                                    <option value="" selected hidden>Pilih Visibilitas</option>
+                                    <option value="public">Public</option>
+                                    <option value="private">Private</option>
+                                </select>
                             </div>
                         </div>
                         <div class="col-12 text-end">

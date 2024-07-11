@@ -7,8 +7,8 @@
           <div class="bg-light rounded p-5 border-top border-success border-5" style="min-height: 70vh">
               <div class="row">
                   <div class="col-12">
-                      <span class="h4">Arsip</span>
-                      <hr />
+                    <span class="h4">Arsip</span>
+                    <hr />
                   </div>
               </div>
               <form method="post" action="/submit" enctype="multipart/form-data">
@@ -19,31 +19,28 @@
                   </div>
                   <div class="col-lg-4 col-md-6 col-sm-12 my-2">
                     <label for="type" class="form-label">Tipe</label>
-                    <input type="text" class="form-control {{ $errors->has('type') ? 'is-invalid' : '' }}" id="type"
-                      name="type" value="{{ old('type') }}" required>
+                    <input type="text" class="form-control {{ $errors->has('type') ? 'is-invalid' : '' }}" id="type" name="type" value="{{ old('type') }}" required>
                     @error('type')
                     <div style="color: red; ">{{ $message }}</div>
                     @enderror
                   </div>
                   <div class="col-lg-4 col-md-6 col-sm-12 my-2">
                     <label for="title" class="form-label">Judul</label>
-                    <input type="text" class="form-control" id="title" name="title" value="{{ old('title') }}" required>
+                    <input type="text" class="form-control {{ $errors->has('title') ? 'is-invalid' : '' }}" id="title" name="title" value="{{ old('title') }}" required>
                     @error('title')
                     <div style="color: red; ">{{ $message }}</div>
                     @enderror
                   </div>
                   <div class="col-lg-4 col-md-6 col-sm-12 my-2">
                     <label for="abstract" class="form-label">Abstrak</label>
-                    <input type="text" class="form-control" id="abstract" name="abstract" value="{{ old('abstract') }}"
-                      required>
+                    <input type="text" class="form-control {{ $errors->has('abstract') ? 'is-invalid' : '' }}" id="abstract" name="abstract" value="{{ old('abstract') }}" required>
                     @error('abstract')
                     <div style="color: red; ">{{ $message }}</div>
                     @enderror
                   </div>
                   <div class="col-lg-4 col-md-6 col-sm-12 my-2">
                     <label for="editor" class="form-label">Editor</label>
-                    <input type="text" class="form-control" id="editor" name="editor" value="{{ old('editor') }}"
-                      required>
+                    <input type="text" class="form-control {{ $errors->has('editor') ? 'is-invalid' : '' }}" id="editor" name="editor" value="{{ old('editor') }}" required>
                     @error('editor')
                     <div style="color: red; ">{{ $message }}</div>
                     @enderror
@@ -63,7 +60,7 @@
                   </div>
                   <div class="col-lg-4 col-md-6 col-sm-12 my-2">
                     <label for="fakultas" class="form-label">Fakultas</label>
-                    <select type="text" class="form-control" id="fakultas" name="fakultas" onchange="getProgramStudi(this.value)" required>
+                    <select type="text" class="form-control {{ $errors->has('fakultas') ? 'is-invalid' : '' }}" id="fakultas" name="fakultas" onchange="getProgramStudi(this.value)" required>
                       <option value="" selected hidden>Pilih Fakultas</option>
                       <option value="Dakwah dan Komunikasi">Dakwah dan Komunikasi</option>
                       <option value="Kesehatan Masyarakat">Kesehatan Masyarakat</option>
@@ -89,104 +86,109 @@
                   </div>
                   <div class="col-lg-4 col-md-6 col-sm-12 my-2">
                     <label for="penerbit" class="form-label">Penerbit</label>
-                    <input type="text" class="form-control" id="penerbit" name="penerbit" value="{{ old('penerbit') }}"
-                      required>
+                    <input type="text" class="form-control {{ $errors->has('penerbit') ? 'is-invalid' : '' }}" id="penerbit" name="penerbit" value="{{ old('penerbit') }}" required>
                     @error('penerbit')
                       <div style="color: red; ">{{ $message }}</div>
                     @enderror
                   </div>
                   <div class="col-lg-4 col-md-6 col-sm-12 my-2">
                     <label for="tempat_terbit" class="form-label">Tempat Terbit</label>
-                    <input type="text" class="form-control" id="tempat_terbit" name="tempat_terbit"
-                      value="{{ old('tempat_terbit') }}" required>
+                    <input type="text" class="form-control {{ $errors->has('tempat_terbit') ? 'is-invalid' : '' }}" id="tempat_terbit" name="tempat_terbit" value="{{ old('tempat_terbit') }}" required>
                     @error('tempat_terbit')
                       <div style="color: red; ">{{ $message }}</div>
                     @enderror
                   </div>
                   <div class="col-lg-4 col-md-6 col-sm-12 my-2">
                     <label for="isbn_issn" class="form-label">ISBN/ISSN</label>
-                    <input type="text" class="form-control" id="isbn_issn" name="isbn_issn"
-                      value="{{ old('isbn_issn') }}" required>
+                    <input type="text" class="form-control {{ $errors->has('isbn_issn') ? 'is-invalid' : '' }}" id="isbn_issn" name="isbn_issn" value="{{ old('isbn_issn') }}" required>
                     @error('isbn_issn')
                       <div style="color: red; ">{{ $message }}</div>
                     @enderror
                   </div>
                   <div class="col-lg-4 col-md-6 col-sm-12 my-2">
                     <label for="official_url" class="form-label">Official URL</label>
-                    <input type="text" class="form-control" id="official_url" name="official_url"
-                      value="{{ old('official_url') }}" required>
+                    <input type="text" class="form-control {{ $errors->has('official_url') ? 'is-invalid' : '' }}" id="official_url" name="official_url" value="{{ old('official_url') }}" required>
                     @error('official_url')
                       <div style="color: red; ">{{ $message }}</div>
                     @enderror
                   </div>
                   <div class="col-lg-4 col-md-6 col-sm-12 my-2">
                     <label for="date" class="form-label">Tanggal &amp; Waktu</label>
-                    <input type="date" class="form-control" id="date" name="date" value="{{ old('date') }}" required>
+                    <input type="date" class="form-control {{ $errors->has('date') ? 'is-invalid' : '' }}" id="date" name="date" value="{{ old('date') }}" required>
                     @error('date')
                       <div style="color: red; ">{{ $message }}</div>
                     @enderror
                   </div>
                   <div class="col-lg-4 col-md-6 col-sm-12 my-2">
                     <label for="volume" class="form-label">Volume</label>
-                    <input type="text" class="form-control" id="volume" name="volume" value="{{ old('volume') }}"
-                      required>
+                    <input type="text" class="form-control {{ $errors->has('volume') ? 'is-invalid' : '' }}" id="volume" name="volume" value="{{ old('volume') }}" required>
                     @error('volume')
                       <div style="color: red; ">{{ $message }}</div>
                     @enderror
                   </div>
                   <div class="col-lg-4 col-md-6 col-sm-12 my-2">
                     <label for="number" class="form-label">Nomor</label>
-                    <input type="text" class="form-control" id="number" name="number" value="{{ old('number') }}"
-                      required>
+                    <input type="text" class="form-control {{ $errors->has('number') ? 'is-invalid' : '' }}" id="number" name="number" value="{{ old('number') }}" required>
                     @error('number')
                       <div style="color: red; ">{{ $message }}</div>
                     @enderror
                   </div>
                   <div class="col-lg-4 col-md-6 col-sm-12 my-2">
                     <label for="page" class="form-label">Halaman</label>
-                    <input type="text" class="form-control" id="page" name="page" value="{{ old('page') }}" required>
+                    <input type="text" class="form-control {{ $errors->has('page') ? 'is-invalid' : '' }}" id="page" name="page" value="{{ old('page') }}" required>
                     @error('page')
                       <div style="color: red; ">{{ $message }}</div>
                     @enderror
                   </div>
                   <div class="col-lg-4 col-md-6 col-sm-12 my-2">
                     <label for="identification_number" class="form-label">Nomor Identifikasi</label>
-                    <input type="text" class="form-control" id="identification_number" name="identification_number"
-                      value="{{ old('identification_number') }}" required>
+                    <input type="text" class="form-control {{ $errors->has('identification_number') ? 'is-invalid' : '' }}" id="identification_number" name="identification_number" value="{{ old('identification_number') }}" required>
                     @error('identification_number')
                       <div style="color: red; ">{{ $message }}</div>
                     @enderror
                   </div>
                   <div class="col-lg-4 col-md-6 col-sm-12 my-2">
                     <label for="journal_name" class="form-label">Nama Jurnal</label>
-                    <input type="text" class="form-control" id="journal_name" name="journal_name"
-                      value="{{ old('journal_name') }}" required>
+                    <input type="text" class="form-control {{ $errors->has('journal_name') ? 'is-invalid' : '' }}" id="journal_name" name="journal_name" value="{{ old('journal_name') }}" required>
                     @error('journal_name')
                       <div style="color: red; ">{{ $message }}</div>
                     @enderror
                   </div>
                   <div class="col-lg-4 col-md-6 col-sm-12 my-2">
-                    <label for="subjek" class="form-label">Subjek</label>
-                    <input type="text" class="form-control" id="subjek" name="subjek" value="{{ old('subjek') }}"
-                      required>
-                    @error('subjek')
+                    <label for="subject_id" class="form-label">Subjek</label>
+                    <select class="form-control {{ $errors->has('subject_id') ? 'is-invalid' : '' }}" id="subject_id" name="subject_id" required>
+                      <option value="" selected hidden>Pilih Subjek</option>
+                      @foreach ($subjects as $subject)
+                        <option value="{{ $subject->id }}" {{ old('subject_id') == $subject->id ? 'selected' : '' }}>{{ '[' . $subject->code . '] ' . $subject->name }}</option>
+                      @endforeach
+                    </select>
+                    @error('subject_id')
                       <div style="color: red; ">{{ $message }}</div>
                     @enderror
                   </div>
                   <div class="col-lg-4 col-md-6 col-sm-12 my-2">
                     <label for="nomor_klasifikasi" class="form-label">Nomor Klasifikasi</label>
-                    <input type="text" class="form-control" id="nomor_klasifikasi" name="nomor_klasifikasi"
-                      value="{{ old('nomor_klasifikasi') }}" required>
+                    <input type="text" class="form-control {{ $errors->has('nomor_klasifikasi') ? 'is-invalid' : '' }}" id="nomor_klasifikasi" name="nomor_klasifikasi" value="{{ old('nomor_klasifikasi') }}" required>
                     @error('nomor_klasifikasi')
                       <div style="color: red; ">{{ $message }}</div>
                     @enderror
                   </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12 my-2">
+                    <label for="visibility" class="form-label">Visibilitas</label>
+                    <select class="form-control {{ $errors->has('visibility') ? 'is-invalid' : '' }}"  id="visibility" name="visibility">
+                      <option value="" selected hidden>Pilih Visibilitas</option>
+                      <option value="public" {{ old('visibility') == 'public' ? 'selected' : '' }}>Public</option>
+                      <option value="private" {{ old('visibility') == 'private' ? 'selected' : '' }}>Private</option>
+                    </select>
+                    @error('visibility')
+                      <div style="color: red; ">{{ $message }}</div>
+                    @enderror      
+                  </div>
                 </div>
                 <div class="col-12 text-end">
-                  <button type="submit" class="btn btn-success mt-3">Ajukan Dokumen</button>
+                  <button type="submit" class="btn btn-success mt-3">Submit Dokumen</button>
                 </div>
               </form>
-             
           </div>
       </div>
   </div>

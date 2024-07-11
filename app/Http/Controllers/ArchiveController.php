@@ -8,6 +8,7 @@ use GeoIp2\Database\Reader;
 use Illuminate\Http\Request;
 use Torann\GeoIP\Facades\GeoIP;
 use App\Http\Requests\ArchiveRequest;
+use App\Models\Subject;
 use Illuminate\Support\Facades\Storage;
 use Stevebauman\Location\Facades\Location;
 
@@ -37,7 +38,9 @@ class ArchiveController extends Controller
     }
 
     public function create(){
-        return view('unggah');
+        return view('unggah',[
+            'subjects' => Subject::distinct()->get(),
+        ]);
     }
 
     public function store(ArchiveRequest $request){

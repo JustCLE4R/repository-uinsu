@@ -98,7 +98,7 @@
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12 my-2">
                           <label for="exampleFormControlInput1" class="form-label">Subjek</label>
-                          <input type="text" class="form-control" value="{{ $archive->subjek }}" disabled>
+                          <input type="text" class="form-control" value="{{ '[' . $archive->subject->code . '] ' . $archive->subject->name }}" disabled>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12 my-2">
                           <label for="exampleFormControlInput1" class="form-label">Nomor Klasifikasi</label>

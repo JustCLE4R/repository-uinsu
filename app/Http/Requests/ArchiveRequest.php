@@ -39,9 +39,10 @@ class ArchiveRequest extends FormRequest
             "page" => "required|numeric|max:255",
             "identification_number" => "required|max:255",
             "journal_name" => "required|max:255",
-            "subjek" => "required|max:255",
+            "subject_id" => "required|max:255",
             "nomor_klasifikasi" => "required|max:255",
             "file" => "required|mimes:pdf,jpg,jpeg,png",
+            "visibility" => ["required", "in:public,private"],
         ];
     }
 
@@ -75,9 +76,10 @@ class ArchiveRequest extends FormRequest
             'page' => 'Halaman',
             'identification_number' => 'Nomor Identifikasi',
             'journal_name' => 'Nama Jurnal',
-            'subjek' => 'Subjek',
+            'subject_id' => 'Subjek',
             'nomor_klasifikasi' => 'Nomor Klasifikasi',
             'file' => 'File',
+            'visibility' => 'Visibilitas',
         ];
     }
 

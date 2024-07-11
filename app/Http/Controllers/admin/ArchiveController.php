@@ -4,6 +4,7 @@ namespace App\Http\Controllers\admin;
 
 use App\Models\User;
 use App\Models\Archive;
+use App\Models\Subject;
 use App\Models\ChangeLog;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -58,7 +59,9 @@ class ArchiveController extends Controller
      */
     public function create()
     {
-        return view('admin.archive.submit');
+        return view('admin.archive.submit',[
+            'subjects' => Subject::distinct()->get()
+        ]);
     }
 
     /**
@@ -87,7 +90,7 @@ class ArchiveController extends Controller
     public function show(Archive $archive)
     {
         return view('admin.archive.show', [
-            'archive' => $archive
+            'archive' => $archive,
         ]);
     }
 
@@ -100,7 +103,8 @@ class ArchiveController extends Controller
         abort_if($archive->status != 'pending', 403);
 
         return view('admin.archive.editAccept', [
-            'archive' => $archive
+            'archive' => $archive,
+            'subjects' => Subject::distinct()->get(),
         ]);
     }
 
