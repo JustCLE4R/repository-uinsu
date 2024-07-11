@@ -13,6 +13,9 @@ Route::view('/arsip/prodi/{prodi}', 'filter.prodi');
 Route::view('/arsip/tahun/{year}', 'filter.tahun')->where('year', '[0-9]{4}');
 Route::view('/pencarian', 'pencarian');
 
+// Download Archive
+Route::get('/archive/download/{id}', [ArchiveController::class, 'downloadArchive']);
+
   Route::middleware(['guest', 'no-cache'])->group(function () {
     Route::get('/login', [LoginController::class, 'index'])->name('login');
     Route::post('/login', [LoginController::class, 'authenticate']);
@@ -27,6 +30,7 @@ Route::middleware(['auth'])->group(function () {
   Route::get('/unggah', [ArchiveController::class, 'create']);
   Route::post('/submit', [ArchiveController::class, 'store']);
 
+  // Dashboard untuk admin
   Route::middleware(['is-admin', 'no-cache'])->prefix('admin')->group(function () {
     Route::get('/', [AdminArchive::class, 'index']);
 
