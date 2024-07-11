@@ -22,19 +22,26 @@ class SubjectsSeeder extends Seeder
         // Decode JSON data into an associative array
         $ddcData = json_decode($jsonData, true);
         
-        // Iterate over the DDC data and insert it into the database
+        // Iterate over the DDC data and insert the appropriate data into the database
         foreach ($ddcData as $code => $classData) {
             $className = $classData['class'];
-            Subject::create([
-                'code' => $code,
-                'name' => $className
-            ]);
-            
-            foreach ($classData['subclasses'] as $subCode => $subClassName) {
+            $subclasses = $classData['subclasses'];
+
+            // Check if subclasses are empty
+            if (empty($subclasses)) {
+                // Insert the class if subclasses are empty
                 Subject::create([
-                    'code' => $subCode,
-                    'name' => $subClassName
+                    'code' => $code,
+                    'name' => $className
                 ]);
+            } else {
+                // Insert each subclass
+                foreach ($subclasses as $subCode => $subClassName) {
+                    Subject::create([
+                        'code' => $subCode,
+                        'name' => $subClassName
+                    ]);
+                }
             }
         }
     }

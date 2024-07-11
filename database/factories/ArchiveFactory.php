@@ -2,8 +2,9 @@
 
 namespace Database\Factories;
 
-use Illuminate\Database\Eloquent\Factories\Factory;
 use App\Models\Archive;
+use App\Models\Subject;
+use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Archive>
@@ -42,7 +43,7 @@ class ArchiveFactory extends Factory
             "page" => fake()->numberBetween(1, 1000),
             "identification_number" => fake()->numberBetween(1, 1000),
             "journal_name" => fake()->word(3, true),
-            "subjek" => fake()->word(3, true),
+            "subject_id" => Subject::all()->random()->id,
             "nomor_klasifikasi" => fake()->numberBetween(1000000000, 9999999999),
             "fakultas" => $fakultas,
             'program_studi' => $program_studi,

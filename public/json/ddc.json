@@ -453,20 +453,6 @@
             "309": "Social situation and conditions"
         }
     },
-    "301": {
-        "class": "Sociology and anthropology",
-        "subclasses": {
-            "301": "Sociology and anthropology",
-            "302": "Social interaction",
-            "303": "Social processes",
-            "304": "Factors affecting social behavior",
-            "305": "Social groups",
-            "306": "Culture and institutions",
-            "307": "Communities",
-            "308": "No longer used",
-            "309": "Social situation and conditions"
-        }
-    },
     "310": {
         "class": "Statistics",
         "subclasses": {
@@ -756,20 +742,6 @@
         "class": "Natural sciences and mathematics",
         "subclasses": {
             "500": "Natural sciences and mathematics",
-            "501": "Philosophy and theory",
-            "502": "Miscellany",
-            "503": "Dictionaries and encyclopedias",
-            "504": "Not assigned or no longer used",
-            "505": "Serial publications",
-            "506": "Organizations and management",
-            "507": "Education, research, related topics",
-            "508": "Natural history",
-            "509": "Historical, geographic, persons treatment"
-        }
-    },
-    "501": {
-        "class": "Philosophy and theory",
-        "subclasses": {
             "501": "Philosophy and theory",
             "502": "Miscellany",
             "503": "Dictionaries and encyclopedias",
@@ -1081,20 +1053,6 @@
             "709": "Historical, geographic, persons treatment"
         }
     },
-    "701": {
-        "class": "Philosophy and theory",
-        "subclasses": {
-            "701": "Philosophy and theory",
-            "702": "Miscellany",
-            "703": "Dictionaries and encyclopedias",
-            "704": "Special topics",
-            "705": "Serial publications",
-            "706": "Organizations",
-            "707": "Education, research, related topics",
-            "708": "Galleries, museums, private collections",
-            "709": "Historical, geographic, persons treatment"
-        }
-    },
     "710": {
         "class": "Civic and landscape art",
         "subclasses": {
@@ -1392,60 +1350,6 @@
             "906": "Organizations and management",
             "907": "Education, research, related topics",
             "908": "History with respect to groups of people",
-            "909": "World history"
-        }
-    },
-    "901": {
-        "class": "Philosophy and theory of history",
-        "subclasses": {
-            "901": "Philosophy and theory of history"
-        }
-    },
-    "902": {
-        "class": "Miscellany of history",
-        "subclasses": {
-            "902": "Miscellany of history"
-        }
-    },
-    "903": {
-        "class": "Dictionaries, encyclopedias, concordances of history",
-        "subclasses": {
-            "903": "Dictionaries, encyclopedias, concordances of history"
-        }
-    },
-    "904": {
-        "class": "Collected accounts of events",
-        "subclasses": {
-            "904": "Collected accounts of events"
-        }
-    },
-    "905": {
-        "class": "Serial publications of history",
-        "subclasses": {
-            "905": "Serial publications of history"
-        }
-    },
-    "906": {
-        "class": "Organizations and management of history",
-        "subclasses": {
-            "906": "Organizations and management of history"
-        }
-    },
-    "907": {
-        "class": "Education, research, related topics of history",
-        "subclasses": {
-            "907": "Education, research, related topics of history"
-        }
-    },
-    "908": {
-        "class": "History with respect to groups of people",
-        "subclasses": {
-            "908": "History with respect to groups of people"
-        }
-    },
-    "909": {
-        "class": "World history",
-        "subclasses": {
             "909": "World history"
         }
     },

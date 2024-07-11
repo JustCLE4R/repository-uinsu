@@ -19,7 +19,7 @@ class ArchiveController extends Controller
     
             if ($request->has('user')) {
                 $query->whereHas('user', function ($query) use ($request) {
-                    $query->where('nama', $request->user);
+                    $query->where('nama', 'like', '%'.strtolower($request->user).'%');
                 });
             }
     
@@ -38,6 +38,8 @@ class ArchiveController extends Controller
                     $query->where('status', $request->status);
                 }
             }
+    
+            $query->where('visibility', 'public');
     
             $data = $query->paginate(500)->appends($request->all());
     
