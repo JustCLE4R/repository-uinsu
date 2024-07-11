@@ -114,7 +114,7 @@
                             <button class="w-100 ps-3 pe-5 text-start collapsed" type="button"
                                 data-bs-toggle="collapse" data-bs-target="#collapse${archive.id}"
                                 aria-expanded="false" aria-controls="collapse${archive.id}">
-                                <p>${archive.user.nama} (${year}) <a href="#">${archive.title}</a> ${archive.tempat_terbit} ${archive.isbn_issn}</p>
+                                <p>${archive.user.nama} (${year}) <a class="text-success" href="#">${archive.title}</a> ${archive.tempat_terbit} ${archive.isbn_issn}</p>
                             </button>
                             <div id="collapse${archive.id}" class="collapse"
                                 aria-labelledby="heading${archive.id}" data-bs-parent="#accordionExample"
@@ -123,7 +123,7 @@
                                     <ul class="">
                                         <li>
                                             <a href="${archive.official_url}" target="_blank">
-                                                <img src="${archive.cover_url}" alt="Cover" style="width: 200px;">
+                                                <img src="https://i.pinimg.com/736x/13/67/8e/13678e13661844593564d8587f112ba6.jpg" alt="Cover" style="width: 200px;">
                                             </a>
                                         </li>
                                         <li> Jenis Item: ${archive.type}</li>

@@ -68,7 +68,7 @@
 
                             </div>
                         </div>
-                        <div class="row" id="tahun" > </div>
+                        <div class="row" id="tahun" style="display: none;"> </div>
                         <div class="row" id="division"style="display: none;"> </div>
                         <div class="row" id="author" style="display: none;">
                             <nav aria-label="Page navigation">
