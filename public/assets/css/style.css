@@ -52,7 +52,7 @@
   top: 37.1%;
   width: 11%;
   height: 14%;
-  background: #018aff;
+  background: #004fc5;
   transform: rotateZ(45deg) scale(1.5);
   transform-origin: 100% 100%;
   animation: floatUpDown 3s ease-in-out infinite, rotateForever 3s linear infinite;
@@ -76,7 +76,7 @@
   top: -4%;
   width: 6.63%;
   height: 8.83%;
-  background: #00BFFB;
+  background: #007cfb;
   transform: rotateZ(45deg) scale(1.5);
   transform-origin: 100% 100%;
   animation: floatUpDown 3s ease-in-out infinite, rotateForever 3s linear infinite;
@@ -100,7 +100,7 @@
   top: 80.6%;
   width: 13.51%;
   height: 18.01%;
-  background: #0270D7;
+  background:#00188b;
   transform: rotateZ(-22deg);
   transform-origin: 100% 100%;
   z-index: 99;
@@ -718,7 +718,7 @@ ul .indicator::after {
   position: relative;
   z-index: 1;
   padding: 120px 0 120px;
-  background-image: url("https://preview.uideck.com/items/bliss/assets/img/hero/hero-bg.jpg");
+  background-image: url("/assets/img/b1.jpg");
   background-repeat: no-repeat;
   background-position: left bottom;
   background-size: cover;

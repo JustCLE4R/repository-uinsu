@@ -92,164 +92,121 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(document).ready(function() {
-            const resultsPerPage = 10;
-            let currentPage = 1;
-            let searchQuery = '';
-            let filteredData = [];
+           
 
-            // Handle search input
-            $('#search-input').on('input', function() {
-                searchQuery = $(this).val();
-                currentPage = 1; // Reset to the first page on new search
-                performSearch();
-            });
+           const itemsPerPage = 10;
+           let currentPage = 1;
+           let data = [];
 
-            // Handle pagination click
-            $('.pagination').on('click', 'a', function(e) {
-                e.preventDefault();
-                const id = $(this).attr('id');
+           function renderPage(page) {
+               const startIndex = (page - 1) * itemsPerPage;
+               const endIndex = startIndex + itemsPerPage;
+               const paginatedData = data.slice(startIndex, endIndex);
 
-                if (id === 'prevPage') {
-                    if (currentPage > 1) {
-                        currentPage--;
-                        renderResults(filteredData);
-                    }
-                } else if (id === 'nextPage') {
-                    currentPage++;
-                    renderResults(filteredData);
-                } else {
-                    currentPage = parseInt($(this).text());
-                    renderResults(filteredData);
-                }
-            });
+               let htmlContent = '';
 
-            function performSearch() {
-                $.ajax({
-                    url: `/api/archives`,
-                    method: 'GET',
-                    dataType: 'json',
-                    success: function(response) {
-                        if (response.status === 'success') {
-                            const data = response.data;
-                            filteredData = filterResults(data);
-                            renderResults(filteredData);
-                        } else {
-                            $('#pencarian').html('<p>Data tidak ditemukan.</p>');
-                        }
-                    },
-                    error: function(error) {
-                        console.error('Error fetching data:', error);
-                        $('#pencarian').html('<p>Terjadi kesalahan saat mengambil data.</p>');
-                    }
-                });
-            }
+               $.each(paginatedData, function(index, archive) {
+                   const year = new Date(archive.date).getFullYear();
 
-            function filterResults(data) {
-                return data.filter(archive => {
-                    return archive.title.includes(searchQuery) ||
-                        archive.tempat_terbit.includes(searchQuery) ||
-                        archive.isbn_issn.includes(searchQuery) ||
-                        archive.user.nama.includes(searchQuery);
-                });
-            }
+                   htmlContent += `
+               <div class="col-12">
+                   <div class="accordion wow fadeInUp shadow" data-wow-delay=".2s" id="accordionExample"
+                       style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                       <div class="single-faq">
+                           <button class="w-100 ps-3 pe-5 text-start collapsed" type="button"
+                               data-bs-toggle="collapse" data-bs-target="#collapse${archive.id}"
+                               aria-expanded="false" aria-controls="collapse${archive.id}">
+                               <p>${archive.user.nama} (${year}) <a href="#">${archive.title}</a> ${archive.tempat_terbit} ${archive.isbn_issn}</p>
+                           </button>
+                           <div id="collapse${archive.id}" class="collapse"
+                               aria-labelledby="heading${archive.id}" data-bs-parent="#accordionExample"
+                               style="">
+                               <div class="faq-content d-flex row" style="text-align: start;">                            
+                               
+                                       <div class="col-lg-3 col-sm-12">                                            
+                                           <a href="${archive.official_url}" target="_blank">
+                                               <img src="https://i.pinimg.com/736x/13/67/8e/13678e13661844593564d8587f112ba6.jpg" alt="Cover" width="200px" height="250px">
+                                           </a>
+                                       </div>
+                                                   
+                                       <div class="col-lg-9 col-sm-12">
+                                           <b>Jenis Item</b><br>
+                                           <span class="mb-1">${archive.type}</span></br>
+                                           <b>Subjek</b><br>
+                                           <span class="mb-1">${archive.subjek}</span></br>
+                                           <b>Division</b><br>                                            
+                                           <span class="mb-1"class="mb-1">Fakultas ${archive.fakultas}, Prodi ${archive.program_studi}</span></br>
+                                           <b>Editor</b><br>
+                                           <span class="mb-1">${archive.editor}</span></br>
+                                           <a href="/dokumen" class="btn btn-sm btn-success text-light">Kunjungi <i class="fa-solid fa-angles-right"></i></a>
+                                       </div>
+                           
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           `;
+               });
 
-            function formatDate(dateString) {
-                const options = {
-                    year: 'numeric',
-                    month: 'long',
-                    day: 'numeric'
-                };
-                return new Date(dateString).toLocaleDateString('id-ID', options);
-            }
+               $('#prodi').html(htmlContent);
+           }
 
-            function renderResults(data) {
-                let htmlContent = '';
-                const totalPages = Math.ceil(data.length / resultsPerPage);
-                const start = (currentPage - 1) * resultsPerPage;
-                const end = start + resultsPerPage;
+           function updatePagination() {
+               $('#prevPage').parent().toggleClass('disabled', currentPage === 1);
+               $('#nextPage').parent().toggleClass('disabled', currentPage * itemsPerPage >= data.length);
+           }
 
-                const paginatedData = data.slice(start, end);
+           const prodi = window.location.href.split('/').pop();
+           const path = decodeURIComponent(window.location.pathname);
+           const segments = path.split('/');
+           const prodis = segments.pop(); 
 
-                if (paginatedData.length === 0) {
-                    $('#pencarian').html('<p>Data tidak ditemukan.</p>');
-                    return;
-                }
+           $('#nama-prodi').html(`<h5 class="my-2">Arsip prodi ${prodis}</h5>`);
+           $.ajax({
+               url: `/api/archives?prodi=${prodi}`,
+               method: 'GET',
+               dataType: 'json',
+               success: function(response) {
+                   if (response.status === 'success') {
+                       data = response.data;
 
-                paginatedData.forEach(archive => {
-                    const year = new Date(archive.date).getFullYear();
-                    htmlContent += `
-                <div class="col-12">
-                    <div class="accordion wow fadeInUp shadow" data-wow-delay=".2s" id="accordionExample"
-                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-                        <div class="single-faq">
-                            <button class="w-100 ps-3 pe-5 text-start collapsed" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#collapse${archive.id}"
-                                aria-expanded="false" aria-controls="collapse${archive.id}">
-                                <p>${archive.user.nama} (${year}) <a href="#">${archive.title}</a> ${archive.tempat_terbit} ${archive.isbn_issn}</p>
-                            </button>
-                            <div id="collapse${archive.id}" class="collapse"
-                                aria-labelledby="heading${archive.id}" data-bs-parent="#accordionExample"
-                                style="">
-                                <div class="faq-content d-flex flex-wrap" style="text-align: justify;">
-                                    <ul class="">
-                                        <li><i class="fa-solid fa-caret-right"></i> Jenis Item: ${archive.type}</li>
-                                        <li><i class="fa-solid fa-caret-right"></i> Subjek: ${archive.subjek}</li>
-                                        <li><i class="fa-solid fa-caret-right"></i> Division: Fakultas ${archive.fakultas}, Prodi ${archive.program_studi}</li>
-                                        <li><i class="fa-solid fa-caret-right"></i> Editor: ${archive.editor}</li>
-                                        <li><i class="fa-solid fa-caret-right"></i> Dibuat Pada: ${formatDate(archive.created_at)}</li>
-                                        <li><i class="fa-solid fa-caret-right"></i> Update Terakhir Pada: ${formatDate(archive.updated_at)}</li>
-                                        <li><i class="fa-solid fa-caret-right"></i> <a href="${archive.official_url}">Buka File</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            `;
-                });
+                       renderPage(currentPage);
+                       updatePagination();
+                   }
+               },
+               error: function(error) {
+                   console.error('Error fetching data:', error);
+               }
+           });
 
-                $('#pencarian').html(htmlContent);
-                renderPagination(totalPages);
-            }
+           $('#prevPage').click(function(e) {
+               e.preventDefault();
+               if (currentPage > 1) {
+                   currentPage--;
+                   renderPage(currentPage);
+                   updatePagination();
+               }
+           });
 
-            function renderPagination(totalPages) {
-                let paginationContent = '';
+           $('#nextPage').click(function(e) {
+               e.preventDefault();
+               if (currentPage * itemsPerPage < data.length) {
+                   currentPage++;
+                   renderPage(currentPage);
+                   updatePagination();
+               }
+           });
 
-                if (totalPages > 1) {
-                    if (currentPage > 1) {
-                        paginationContent += `
-                    <li class="page-item">
-                        <a class="page-link" href="#" id="prevPage" aria-label="Previous">
-                            <span aria-hidden="true">&laquo;</span>
-                        </a>
-                    </li>
-                `;
-                    }
-
-                    for (let i = 1; i <= totalPages; i++) {
-                        paginationContent += `
-                    <li class="page-item ${i === currentPage ? 'active' : ''}">
-                        <a class="page-link" href="#" id="page${i}">${i}</a>
-                    </li>
-                `;
-                    }
-
-                    if (currentPage < totalPages) {
-                        paginationContent += `
-                    <li class="page-item">
-                        <a class="page-link" href="#" id="nextPage" aria-label="Next">
-                            <span aria-hidden="true">&raquo;</span>
-                        </a>
-                    </li>
-                `;
-                    }
-                }
-
-                $('.pagination').html(paginationContent);
-            }
-
-            // Perform initial search to populate the page
-            performSearch();
-        });
+           $('.pagination').on('click', 'a.page-link', function(e) {
+               e.preventDefault();
+               const page = parseInt($(this).text());
+               if (!isNaN(page)) {
+                   currentPage = page;
+                   renderPage(currentPage);
+                   updatePagination();
+               }
+           });
+       });
     </script>
 @endsection

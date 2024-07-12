@@ -121,16 +121,26 @@
                             <div id="collapse${archive.id}" class="collapse"
                                 aria-labelledby="heading${archive.id}" data-bs-parent="#accordionExample"
                                 style="">
-                                <div class="faq-content d-flex flex-wrap" style="text-align: justify;">
-                                    <ul class="">
-                                        <li><i class="fa-solid fa-caret-right"></i> Jenis Item: ${archive.type}</li>
-                                        <li><i class="fa-solid fa-caret-right"></i> Subjek: ${archive.subjek}</li>
-                                        <li><i class="fa-solid fa-caret-right"></i> Division: Fakultas ${archive.fakultas}, author ${archive.program_studi}</li>
-                                        <li><i class="fa-solid fa-caret-right"></i> Editor: ${archive.editor}</li>
-                                        <li><i class="fa-solid fa-caret-right"></i> Dibuat Pada: ${archive.created_at}</li>
-                                        <li><i class="fa-solid fa-caret-right"></i> Update Terakhir Pada: ${archive.updated_at}</li>
-                                        <li><i class="fa-solid fa-caret-right"></i> <a href="${archive.official_url}">Buka File</a></li>
-                                    </ul>
+                                <div class="faq-content d-flex row" style="text-align: start;">                            
+                                
+                                        <div class="col-lg-3 col-sm-12">                                            
+                                            <a href="${archive.official_url}" target="_blank">
+                                                <img src="https://i.pinimg.com/736x/13/67/8e/13678e13661844593564d8587f112ba6.jpg" alt="Cover" width="200px" height="250px">
+                                            </a>
+                                        </div>
+                                                    
+                                        <div class="col-lg-9 col-sm-12">
+                                            <b>Jenis Item</b><br>
+                                            <span class="mb-1">${archive.type}</span></br>
+                                            <b>Subjek</b><br>
+                                            <span class="mb-1">${archive.subjek}</span></br>
+                                            <b>Division</b><br>                                            
+                                            <span class="mb-1"class="mb-1">Fakultas ${archive.fakultas}, Prodi ${archive.program_studi}</span></br>
+                                            <b>Editor</b><br>
+                                            <span class="mb-1">${archive.editor}</span></br>
+                                            <a href="#" class="btn btn-sm btn-success text-light">Kunjungi <i class="fa-solid fa-angles-right"></i></a>
+                                        </div>
+                            
                                 </div>
                             </div>
                         </div>

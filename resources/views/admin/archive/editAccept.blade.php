@@ -20,41 +20,43 @@
                               <div class="col-12">
                                 <h5>Form Publikasi</h5>
                               </div>
-                              <div class="col-lg-4 col-md-6 col-sm-12 my-2">
+                              <div class="col-lg-6 col-md-6 col-sm-12 my-2">
                                   <label for="type" class="form-label">Tipe</label>
                                   <input type="text" class="form-control {{ $errors->has('type') ? 'is-invalid' : '' }}"  value="{{ old('type') ?? $archive->type }}" id="type" name="type" >
                                   @error('type')
                                     <div style="color: red; ">{{ $message }}</div>
                                   @enderror      
                               </div>
-                              <div class="col-lg-4 col-md-6 col-sm-12 my-2">
+                              <div class="col-lg-6 col-md-6 col-sm-12 my-2">
                                   <label for="title" class="form-label">Judul</label>
                                   <input type="text" class="form-control {{ $errors->has('title') ? 'is-invalid' : '' }}"  value="{{ old('title') ?? $archive->title }}" id="title" name="title" >
                                   @error('title')
                                     <div style="color: red; ">{{ $message }}</div>
                                   @enderror      
                               </div>
-                              <div class="col-lg-4 col-md-6 col-sm-12 my-2">
-                                  <label for="abstract" class="form-label">Abstrak</label>
-                                  <input type="text" class="form-control {{ $errors->has('abstract') ? 'is-invalid' : '' }}"  value="{{ old('abstract') ?? $archive->abstract }}" id="abstract" name="abstract" >
-                                  @error('abstract')
-                                    <div style="color: red; ">{{ $message }}</div>
-                                  @enderror      
-                              </div>
-                              <div class="col-lg-4 col-md-6 col-sm-12 my-2">
+                              
+                              <div class="col-lg-6 col-md-6 col-sm-12 my-2">
                                   <label for="editor" class="form-label">Editor</label>
                                   <input type="text" class="form-control {{ $errors->has('editor') ? 'is-invalid' : '' }}"  value="{{ old('editor') ?? $archive->editor }}" id="editor" name="editor" >
                                   @error('editor')
                                     <div style="color: red; ">{{ $message }}</div>
                                   @enderror      
                               </div>
-                              <div class="col-lg-4 col-md-6 col-sm-12 my-2">
+                              <div class="col-lg-6 col-md-6 col-sm-12 my-2">
                                 <label for="file" class="form-label">File</label>
                                 <a href="{{ asset('storage/' . $archive->file) }}" target="_blank">Lihat File</a>
                                 <input type="file" class="form-control {{ $errors->has('file') ? 'is-invalid' : '' }}" id="file" name="file">
                                 @error('file')
                                 <div style="color: red; ">{{ $message }}</div>
                                 @enderror
+                              </div>
+                              <div class="col-lg-12 col-md-12 col-sm-12 my-2">
+                                <label for="abstract" class="form-label">Abstrak</label>
+                                {{-- <input type="text" class="form-control {{ $errors->has('abstract') ? 'is-invalid' : '' }}"  value="{{ old('abstract') ?? $archive->abstract }}" id="abstract" name="abstract" > --}}
+                                <textarea type="text" class="form-control {{ $errors->has('abstract') ? 'is-invalid' : '' }}"  value="{{ old('abstract') ?? $archive->abstract }}" id="abstract" name="abstract" cols="30" rows="2"></textarea>
+                                @error('abstract')
+                                  <div style="color: red; ">{{ $message }}</div>
+                                @enderror      
                               </div>
     
 

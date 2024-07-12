@@ -12,7 +12,7 @@ searchBtn.onclick =()=>{
   if(searchInput.value != ""){
     var values = searchInput.value;
     searchData.classList.remove("active");
-    searchData.innerHTML = "You just typed " + "<span style='font-weight: 500;'>" + values + "</span>";
+    searchData.innerHTML = "Hasil Pencarian Anda ada dibawah";
   }else{
     searchData.textContent = "";
   }
