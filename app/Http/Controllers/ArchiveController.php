@@ -10,7 +10,6 @@ use Torann\GeoIP\Facades\GeoIP;
 use App\Http\Requests\ArchiveRequest;
 use App\Models\Subject;
 use Illuminate\Support\Facades\Storage;
-use Stevebauman\Location\Facades\Location;
 
 class ArchiveController extends Controller
 {
@@ -99,4 +98,9 @@ class ArchiveController extends Controller
         $archive->save();
     }
 
+    public function show(Archive $archive){
+        return view('filter.dokumen', [
+            'archive' => $archive
+        ]);
+    }
 }

@@ -12,15 +12,15 @@ Route::view('/arsip/fakultas/{fakultas}', 'filter.fakultas');
 Route::view('/arsip/prodi/{prodi}', 'filter.prodi');
 Route::view('/arsip/tahun/{year}', 'filter.tahun')->where('year', '[0-9]{4}');
 Route::view('/pencarian', 'pencarian');
-Route::view('/dokumen', 'filter.dokumen');
+Route::get('/dokumen/{archive}', [ArchiveController::class, 'show']);
 
 // Download Archive
-Route::get('/archive/download/{id}', [ArchiveController::class, 'downloadArchive']);
+Route::get('/dokumen/download/{id}', [ArchiveController::class, 'downloadArchive']);
 
-  Route::middleware(['guest', 'no-cache'])->group(function () {
-    Route::get('/login', [LoginController::class, 'index'])->name('login');
-    Route::post('/login', [LoginController::class, 'authenticate']);
-  });
+Route::middleware(['guest', 'no-cache'])->group(function () {
+  Route::get('/login', [LoginController::class, 'index'])->name('login');
+  Route::post('/login', [LoginController::class, 'authenticate']);
+});
 
 Route::middleware(['auth'])->group(function () {
   Route::get('/logout', [LoginController::class, 'logout'])->middleware('no-cache')->name('logout');

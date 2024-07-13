@@ -9,14 +9,14 @@
                     </div>
                 </div>
                 <div class=" mb-30 mt-10">
-                    <h3 class="mb-25 wow fadeInUp text-center" data-wow-delay=".2s">Optimalisasi Produktivitas Petani Tradisional dalam Mencapai Sustainable Development Growth di Desa Pakantan Ditinjau dari Ekonomi Islam</h3>
+                    <h3 class="mb-25 wow fadeInUp text-center" data-wow-delay=".2s">{{ $archive->title }}</h3>
                 </div>
                 <span>
-                    Aisyah, Aisyah and Lubis, Fauzi Arif and Harahap, Rahmat Daim (2024) Optimalisasi Produktivitas Petani Tradisional dalam Mencapai Sustainable Development Growth di Desa Pakantan Ditinjau dari Ekonomi Islam. Reslaj: Religion Education Social Laa Roiba Journal, Vol 6 (No 1). pp. 848-859. ISSN 2656-4691
+                    {{ $archive->user->nama }} ({{ \Carbon\Carbon::parse($archive->date)->format('Y') }}){{ $archive->title }};{{ $archive->tempat_terbit }} {{ $archive->isbn_issn }}
                 </span>
                 <span class="h6 mt-5">Abstrak</span>
                 <span style="text-align: justify">
-                    Tujuan dari penelitian ini adalah untuk mengoptimalkan produktivitas petani tradisional di desa Pakantan dan mencapai pertumbuhan yang berkelanjutan melalui pendekatan ekonomi Islam. Metode penelitian yang digunakan adalah kualitatif dan berdasarkan pendekatan studi kasus. Analisis data dilakukan dengan menggunakan pendekatan kualitatif deskriptif dan analisis keuangan syariah. Hasil penelitian menunjukkan bahwa terdapat beberapa faktor yang mempengaruhi produktivitas petani tradisional di desa Pakantan antara lain faktor sosial, ekonomi dan teknis. Strategi pembangunan berkelanjutan seperti penggunaan teknik pertanian modern, pembentukan koperasi petani dan penerapan prinsip ekonomi Islam seperti keadilan, keberlanjutan dan kemandirian diperlukan untuk meningkatkan produktivitas petani. Kesimpulan dari penelitian ini adalah optimalisasi produktivitas petani tradisional di Desa Pakantan dapat dicapai melalui pendekatan ekonomi. Islam yang berkelanjutan dan ramah lingkungan. Oleh karena itu, diusulkan agar pemerintah dan masyarakat dapat bersinergi menerapkan prinsip ekonomi Islam dalam pembangunan pertanian desa Pakantan.
+                    {{ $archive->abstract }}
                 </span>
                 <div class="row mt-4">
                     
