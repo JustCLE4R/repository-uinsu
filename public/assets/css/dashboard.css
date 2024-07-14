@@ -294,6 +294,12 @@ a {
     outline: none;
 }
 
+.nav-active{
+    color: var(--primary);
+    background: #ffffff;
+    border-color: var(--primary);
+}
+
 .sidebar .navbar .navbar-nav .nav-link:hover,
 .sidebar .navbar .navbar-nav .nav-link.active {
     color: var(--primary);

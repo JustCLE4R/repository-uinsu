@@ -138,7 +138,7 @@
                                            <span class="mb-1"class="mb-1">Fakultas ${archive.fakultas}, Prodi ${archive.program_studi}</span></br>
                                            <b>Editor</b><br>
                                            <span class="mb-1">${archive.editor}</span></br>
-                                           <a href="/dokumen" class="btn btn-sm btn-success text-light">Kunjungi <i class="fa-solid fa-angles-right"></i></a>
+                                           <a href="/dokumen/${archive.id}" class="btn btn-sm btn-success text-light">Kunjungi <i class="fa-solid fa-angles-right"></i></a>
                                        </div>
                            
                                </div>

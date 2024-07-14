@@ -18,9 +18,9 @@
                           @method('PUT')
                           <div class="mb-3">
                             <label for="reason" class="form-label">Alasan Penolakan</label>
-                            <textarea class="form-control" id="reason" name="reject_reason" rows="3" required></textarea>
+                            <textarea class="form-control" id="reason" name="reject_reason" rows="10" required></textarea>
                           </div>
-                          <button type="submit" class="btn btn-success">Tolak!</button>
+                          <button type="submit" class="btn btn-danger">Tolak!</button>
                         </form>
                       </div>
                     </div>

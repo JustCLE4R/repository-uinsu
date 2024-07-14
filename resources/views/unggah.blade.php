@@ -57,7 +57,7 @@
                             </div>
                             <div class="col-lg-12 col-md-12 col-sm-12 my-2">
                                 <label for="abstract" class="form-label">Abstrak</label>
-                                <textarea type="text" class="form-control" id="abstract" name="abstract" required cols="30" rows="3"></textarea>
+                                <textarea type="text" class="form-control" id="abstract" name="abstract" required cols="30" rows="5"></textarea>
                             </div>
                         </div>
                         <div class="row pt-2 justify-content-between page page-active">

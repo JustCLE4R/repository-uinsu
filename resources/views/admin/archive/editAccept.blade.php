@@ -53,7 +53,7 @@
                               <div class="col-lg-12 col-md-12 col-sm-12 my-2">
                                 <label for="abstract" class="form-label">Abstrak</label>
                                 {{-- <input type="text" class="form-control {{ $errors->has('abstract') ? 'is-invalid' : '' }}"  value="{{ old('abstract') ?? $archive->abstract }}" id="abstract" name="abstract" > --}}
-                                <textarea type="text" class="form-control {{ $errors->has('abstract') ? 'is-invalid' : '' }}"  value="{{ old('abstract') ?? $archive->abstract }}" id="abstract" name="abstract" cols="30" rows="2"></textarea>
+                                <textarea type="text" class="form-control {{ $errors->has('abstract') ? 'is-invalid' : '' }}"  value="{{ old('abstract') ?? $archive->abstract }}" id="abstract" name="abstract" cols="30" rows="5"></textarea>
                                 @error('abstract')
                                   <div style="color: red; ">{{ $message }}</div>
                                 @enderror      
