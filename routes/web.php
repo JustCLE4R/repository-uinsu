@@ -12,7 +12,7 @@ Route::view('/arsip/fakultas/{fakultas}', 'filter.fakultas');
 Route::view('/arsip/prodi/{prodi}', 'filter.prodi');
 Route::view('/arsip/tahun/{year}', 'filter.tahun')->where('year', '[0-9]{4}');
 Route::view('/pencarian', 'pencarian');
-Route::get('/dokumen/{archive}', [ArchiveController::class, 'show']);
+Route::get('/dokumen/{archive}', [ArchiveController::class, 'showArchive']);
 
 // Download Archive
 Route::get('/dokumen/download/{id}', [ArchiveController::class, 'downloadArchive']);

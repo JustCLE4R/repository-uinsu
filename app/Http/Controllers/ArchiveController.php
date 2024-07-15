@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 use Torann\GeoIP\Facades\GeoIP;
 use App\Http\Requests\ArchiveRequest;
 use App\Models\Subject;
+use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Storage;
 
 class ArchiveController extends Controller
@@ -59,7 +60,7 @@ class ArchiveController extends Controller
     public function downloadArchive($id, Request $request){
         $archive = Archive::findorfail($id);
 
-        if (!Storage::exists($archive->file)) {
+        if (!Storage::exists($archive->file) || $archive->visibility == 'private') {
             abort(404, 'File not found.');
         }
 
@@ -73,18 +74,28 @@ class ArchiveController extends Controller
     }
 
     protected function updateDownloadStatistics(Archive $archive, $originCountry) {
-        // Update total downloads
-        $archive->increment('total_downloads');
+        $currentDate = Carbon::now()->format('Y-m-d');
 
-        // Update monthly downloads
-        $currentMonth = Carbon::now()->format('Y-m');
-        $monthlyDownloads = json_decode($archive->monthly_downloads, true) ?? [];
-        if (isset($monthlyDownloads[$currentMonth])) {
-            $monthlyDownloads[$currentMonth]++;
-        } else {
-            $monthlyDownloads[$currentMonth] = 1;
+        $sessionKey = 'downloaded_archives_' . $archive->id;
+        $downloadSession = Session::get($sessionKey, []);
+    
+        // If the current date is already in the session, do not count this download
+        if (in_array($currentDate, $downloadSession)) {
+            return;
         }
-        $archive->monthly_downloads = json_encode($monthlyDownloads);
+    
+        // Add the current date to the session
+        $downloadSession[] = $currentDate;
+        Session::put($sessionKey, $downloadSession);
+
+        // Update daily downloads
+        $download = json_decode($archive->downloads, true) ?? [];
+        if (isset($download[$currentDate])) {
+            $download[$currentDate]++;
+        } else {
+            $download[$currentDate] = 1;
+        }
+        $archive->downloads = json_encode($download);
 
         // Update download origins
         $downloadOrigins = json_decode($archive->download_origins, true) ?? [];
@@ -98,9 +109,42 @@ class ArchiveController extends Controller
         $archive->save();
     }
 
-    public function show(Archive $archive){
+    public function showArchive(Archive $archive){
+        if($archive->status != 'accepted')
+            abort(404);
+        
+        $this->updateViewStatistics($archive);
+
         return view('filter.dokumen', [
             'archive' => $archive
         ]);
+    }
+
+    protected function updateViewStatistics(Archive $archive) {
+        $currentDate = Carbon::now()->format('Y-m-d');
+
+        // Handle session visit for prevent repeated visits
+        $sessionKey = 'visited_archives_' . $archive->id;
+        $visitSession = Session::get($sessionKey, []);
+
+        // If the current date is already in the session, do not count this visit
+        if (in_array($currentDate, $visitSession)) {
+            return;
+        }
+
+        // Add the current date to the session
+        $visitSession[] = $currentDate;
+        Session::put($sessionKey, $visitSession);
+
+        // Update daily views
+        $visit = json_decode($archive->visits, true) ?? [];
+        if (isset($visit[$currentDate])) {
+            $visit[$currentDate]++;
+        } else {
+            $visit[$currentDate] = 1;
+        }
+        $archive->visits = json_encode($visit);
+
+        $archive->save();
     }
 }

@@ -19,6 +19,7 @@ return new class extends Migration
             $table->mediumText('abstract');
             $table->string('editor');
             $table->string('file');
+            $table->string('thumbnail');
 
             // Publication Details
             $table->string('penerbit');
@@ -41,9 +42,9 @@ return new class extends Migration
             $table->timestamp('accepted_at')->nullable();
             $table->enum('visibility', ['public', 'private'])->default('public');
 
-            // Download statistics
-            $table->unsignedBigInteger('total_downloads')->default(0);
-            $table->jsonb('monthly_downloads')->nullable();
+            //Statistics
+            $table->jsonb('visits')->nullable();
+            $table->jsonb('downloads')->nullable();
             $table->jsonb('download_origins')->nullable();
 
             $table->softDeletes();

@@ -59,29 +59,10 @@ class ArchiveController extends Controller
      */
     public function create()
     {
+        // storing through public ArchiveController
         return view('admin.archive.submit',[
             'subjects' => Subject::distinct()->get()
         ]);
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(ArchiveRequest $request)
-    {
-        $data = $request->all();
-
-        $data['file'] = $request->file('file')->store('archives');
-        $data['user_id'] = auth()->user()->id;
-        $data['fakultas'] = auth()->user()->fakultas;
-        $data['program_studi'] = auth()->user()->program_studi;
-        
-        Archive::create($data);
-
-        if(auth()->user()->role == 'admin')
-            return redirect('/admin/requests')->with('success', 'Archive submitted successfully');
-
-        return redirect('/')->with('success', 'Archive submitted successfully');
     }
 
     /**

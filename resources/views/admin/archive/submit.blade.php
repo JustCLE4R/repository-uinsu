@@ -49,11 +49,10 @@
                   </div>
                   <div class="col-lg-12 col-md-12 col-sm-12 my-2">
                     <label for="abstract" class="form-label">Abstrak</label>
-                    {{-- <input type="text" class="form-control {{ $errors->has('abstract') ? 'is-invalid' : '' }}" id="abstract" name="abstract" value="{{ old('abstract') }}" required> --}}
-                    <textarea type="text" class="form-control {{ $errors->has('abstract') ? 'is-invalid' : '' }}" id="abstract" name="abstract" value="{{ old('abstract') }}" required cols="30" rows="5"></textarea>
+                    <textarea type="text" class="form-control {{ $errors->has('abstract') ? 'is-invalid' : '' }}" name="abstract" cols="30" rows="2">{{ old('abstract') }}</textarea>
                     @error('abstract')
-                    <div style="color: red; ">{{ $message }}</div>
-                    @enderror
+                      <div style="color: red; ">{{ $message }}</div>
+                    @enderror 
                   </div>
 
                 </div>
