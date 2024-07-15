@@ -14,6 +14,7 @@ class StatisticController extends Controller
             $archives = Archive::all();
 
             $downloadStats = [];
+            $downloadOrigins =[];
 
             foreach ($archives as $archive) {
                 if ($archive->downloads) {
@@ -26,11 +27,25 @@ class StatisticController extends Controller
                         }
                     }
                 }
+
+                if ($archive->download_origins) {
+                    $downloadOrigins = json_decode($archive->download_origins, true);
+                    foreach ($downloadOrigins as $country => $count) {
+                        if (isset($downloadOrigins[$country])) {
+                            $downloadOrigins[$country] += $count;
+                        } else {
+                            $downloadOrigins[$country] = $count;
+                        }
+                    }
+                }
             }
 
             return response()->json([
                 'status' => 'success',
-                'data' => $downloadStats
+                'data' => [
+                    'downloadStats' => $downloadStats,
+                    'downloadOrigins' => $downloadOrigins
+                ]
             ]);
         } catch (\Exception $e) {
             return response()->json([
@@ -74,6 +89,30 @@ class StatisticController extends Controller
     }
 
     public function uploadStats(){
-        
+        try {
+            $archives = Archive::all();
+
+            $uploadStats = [];
+
+            foreach ($archives as $archive) {
+                $date = $archive->created_at->format('Y-m-d');
+                if (isset($uploadStats[$date])) {
+                    $uploadStats[$date] += 1;
+                } else {
+                    $uploadStats[$date] = 1;
+                }
+            }
+
+            return response()->json([
+                'status' => 'success',
+                'data' => $uploadStats
+            ]);
+        } catch (\Exception $e) {
+            return response()->json([
+                'status' => 'error',
+                'message' => 'Something went wrong',
+                'error' => $e->getMessage(),
+            ], 500);
+        }
     }
 }
