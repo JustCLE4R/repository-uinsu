@@ -4,6 +4,10 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ArchiveController;
 use App\Http\Controllers\admin\ArchiveController as AdminArchive;
+use App\Http\Controllers\admin\ArchiveAcceptController as AdminAcceptArchive;
+use App\Http\Controllers\admin\ArchiveRejectController as AdminRejectArchive;
+use App\Http\Controllers\admin\ArchiveTrashController as AdminTrashArchive;
+use App\Http\Controllers\admin\DashboardController;
 
 Route::get('/', [ArchiveController::class, 'landing']);
 Route::get('/arsip', [ArchiveController::class, 'arsip']);
@@ -33,27 +37,23 @@ Route::middleware(['auth'])->group(function () {
 
   // Dashboard untuk admin
   Route::middleware(['is-admin', 'no-cache'])->prefix('admin')->group(function () {
-    Route::get('/', [AdminArchive::class, 'index']);
+    Route::get('/', [DashboardController::class, 'index']);
 
-    Route::get('/archive/create', [AdminArchive::class, 'create']);
-    
-    Route::get('/archives', [AdminArchive::class, 'indexAccepted']);
-    Route::get('/archive/{archive}', [AdminArchive::class, 'show']);
-    Route::delete('/archive/{archive}', [AdminArchive::class, 'destroy']);
+    Route::resource('archive', AdminArchive::class)->except(['store']);
 
-    Route::get('/trash', [AdminArchive::class, 'indexTrash']);
-    Route::delete('/trash/{archive}', [AdminArchive::class, 'forceDestroy']);
-    Route::put('/trash/{archive}', [AdminArchive::class, 'restore']);
+    Route::get('/trash', [AdminTrashArchive::class, 'index']);
+    Route::delete('/trash/{archive}', [AdminTrashArchive::class, 'forceDestroy']);
+    Route::put('/trash/{archive}', [AdminTrashArchive::class, 'restore']);
     
-    Route::get('/requests', [AdminArchive::class, 'indexPending']);
-    Route::get('/archive/{archive}/editaccept', [AdminArchive::class, 'editAccept']);
-    Route::put('/archive/{archive}/accept', [AdminArchive::class, 'accept']);
+    Route::get('/requests', [AdminAcceptArchive::class, 'index']);
+    Route::get('/archive/{archive}/editaccept', [AdminAcceptArchive::class, 'edit']);
+    Route::put('/archive/{archive}/accept', [AdminAcceptArchive::class, 'accept']);
 
-    Route::get('/reject', [AdminArchive::class, 'indexRejected']);
-    Route::get('/archive/{archive}/editreject', [AdminArchive::class, 'editReject']);
-    Route::put('/archive/{archive}/reject', [AdminArchive::class, 'reject']);
+    Route::get('/reject', [AdminRejectArchive::class, 'index']);
+    Route::get('/archive/{archive}/editreject', [AdminRejectArchive::class, 'edit']);
+    Route::put('/archive/{archive}/reject', [AdminRejectArchive::class, 'reject']);
     
-    Route::get('/changelogs', [AdminArchive::class, 'history']);
+    Route::get('/changelogs', [DashboardController::class, 'history']);
   });
 });
 

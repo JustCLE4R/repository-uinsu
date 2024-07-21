@@ -49,7 +49,9 @@ class ArchiveController extends Controller
         $data['file'] = $request->file('file')->store('archives');
         $data['user_id'] = auth()->user()->id;
         
-        Archive::create($data);
+        $archive = Archive::create($data);
+
+        createLog($archive, 'submit', null, $archive->toArray());
 
         if(auth()->user()->role == 'admin')
             return redirect('/admin/requests')->with('success', 'Archive submitted successfully');

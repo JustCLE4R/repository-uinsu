@@ -19,7 +19,7 @@ return new class extends Migration
             $table->mediumText('abstract');
             $table->string('editor');
             $table->string('file');
-            $table->string('thumbnail');
+            $table->string('thumbnail')->nullable();
 
             // Publication Details
             $table->string('penerbit');

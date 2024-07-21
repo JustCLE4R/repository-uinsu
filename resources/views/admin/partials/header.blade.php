@@ -7,7 +7,7 @@
 
         <div class="navbar-nav w-100 ">
             <a href="/admin" class="nav-item nav-link {{ Request::is('admin') ? 'nav-active' : '' }}"><i class="bi bi-house-fill me-2 fs-5"></i>Beranda</a>
-            <a href="/admin/archives" class="nav-item nav-link {{ Request::is('admin/archives') ? 'nav-active' : '' }}"><i class="bi bi-files me-2 fs-5"></i>Arsip</a>
+            <a href="/admin/archive" class="nav-item nav-link {{ Request::is('admin/archives') ? 'nav-active' : '' }}"><i class="bi bi-files me-2 fs-5"></i>Arsip</a>
             <a href="/admin/archive/create" class="nav-item nav-link {{ Request::is('admin/archive/create') ? 'nav-active' : '' }}"><i class="bi bi-file-earmark-plus-fill me-2 fs-5"></i>Tambah Arsip</a>
             <a href="/admin/requests" class="nav-item nav-link {{ Request::is('admin/requests') ? 'nav-active' : '' }}"><i class="bi bi-speedometer2 me-2 fs-5"></i>Pengajuan</a>
             <a href="/admin/trash" class="nav-item nav-link {{ Request::is('admin/trash') ? 'nav-active' : '' }}"><i class="bi bi-ui-checks me-2 fs-5"></i>Sampah</a>

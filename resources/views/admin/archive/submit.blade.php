@@ -42,7 +42,7 @@
                   <div class="col-lg-6 col-md-6 col-sm-12 my-2">
                     <label for="file" class="form-label">File</label>
                     <input type="file" class="form-control {{ $errors->has('file') ? 'is-invalid' : '' }}" id="file"
-                      name="file" required>
+                      name="file" required accept=".pdf">
                     @error('file')
                     <div style="color: red; ">{{ $message }}</div>
                     @enderror
