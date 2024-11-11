@@ -20,7 +20,9 @@
         
     </ul>
     <div class="profile">
+        
         @if(Auth::check())
+            <a href="/logout" class="text-secondary fs-6 " data-wow-delay=".4s"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout &nbsp; </a>
             <img class="rounded-circle" src="{{ Auth::user()->foto ? url('https://pmb.uinsu.ac.id/file/photo/' . Auth::user()->foto) : '/assets/img/account.png' }}" alt="" style="width: 35px; height: 35px;">
         @else
             <img class="rounded-circle" src="/assets/img/account.png" alt="" style="width: 35px; height: 35px;">

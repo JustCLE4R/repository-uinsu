@@ -29,7 +29,7 @@
                             </div>
                         </div> --}}
 
-                        <a href="/logout" class="btn btn-success wow fadeInUp " data-wow-delay=".4s">Logout <i class="fa-solid fa-arrow-right-from-bracket"></i> </a>
+                       
 
                     </div>
                 </div>
