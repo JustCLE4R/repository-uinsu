@@ -171,4 +171,43 @@ class CountArchiveController extends Controller
             ], 500);
         }
     }
+
+    public function countBySubject(){
+        try {
+            $archives = Archive::with('subject')
+                ->where('status', 'accepted')
+                ->get();
+            
+            $data = [];
+            $total = 0;
+            
+            foreach ($archives as $archive) {
+                $subjectId = $archive->subject_id;
+                if (!isset($data[$subjectId])) {
+                    $subject = $archive->subject;
+                    $data[$subjectId] = [
+                        'count' => 0,
+                        'code' => $subject ? $subject->code : '',
+                        'name' => $subject ? $subject->name : '',
+                    ];
+                }
+                $data[$subjectId]['count']++;
+                $total++;
+            }
+            
+            $response = [
+                'status' => 'success',
+                'data' => $data,
+                'total' => $total,
+            ];
+            
+            return response()->json($response, 200);        
+        } catch (\Exception $e) {
+            return response()->json([
+                'status' => 'error',
+                'message' => 'Something went wrong',
+                'error' => $e->getMessage(),
+            ], 500);
+        }
+    }
 }

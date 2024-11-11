@@ -29,6 +29,7 @@
                                     <th style="background-color: transparent !important; " class="col">Abstrak</th>
                                     <th style=" background-color: transparent !important; " class="col">Editor</th>
                                     <th style=" background-color: transparent !important; " class="col text-center">File</th>
+                                    <th style=" background-color: transparent !important; " class="col text-center">Aksi</th>
                                 </tr>
                             </thead>
                             <tbody style=" background-color: transparent !important; ">
@@ -41,6 +42,14 @@
                                     <td>{{ $archive->abstract }}</td>
                                     <td>{{ $archive->editor }}</td>
                                     <td class="text-center"><a class="btn btn-sm btn-success" target="_blank" href="{{ asset('storage/'.$archive->file) }}">Buka</a></td>
+                                    <td width="8%" class="text-center">
+                                        <a href="/admin/archive/{{ $archive->id }}" class="btn btn-sm btn-primary py-0 px-1 d-inline"><i class="bi bi-eye-fill"></i></a>
+                                        <a href="/admin/archive/{{ $archive->id }}/edit" class="btn btn-sm btn-warning py-0 px-1 d-inline"><i class="bi bi-pencil-fill"></i></a>
+                                        <form action="/admin/archive/{{ $archive->id }}" method="POST" class="d-inline">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button type="submit" class="btn btn-sm btn-danger py-0 px-1" onclick="return confirm('Are you sure to delete?')"><i class="bi bi-trash"></i></button>
+                                        </form>
                                     </tr>
                                 @endforeach
                             </tbody>

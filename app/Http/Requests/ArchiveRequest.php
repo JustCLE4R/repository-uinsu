@@ -41,7 +41,7 @@ class ArchiveRequest extends FormRequest
             "journal_name" => "required|max:255",
             "subject_id" => "required|max:255",
             "nomor_klasifikasi" => "required|max:255",
-            "file" => "required|mimes:pdf,jpg,jpeg,png",
+            "file" => "required|mimes:pdf",
             "visibility" => ["required", "in:public,private"],
         ];
     }
@@ -50,7 +50,7 @@ class ArchiveRequest extends FormRequest
     {
         return [
             'required' => ':attribute harus diisi',
-            'mimes' => ':attribute harus berupa PDF, JPG, JPEG, PNG',
+            'mimes' => ':attribute harus berupa PDF',
             'date' => ':attribute harus berupa tanggal',
             'date_format' => ':attribute harus berupa format :format',
             'numeric' => ':attribute harus berupa angka',

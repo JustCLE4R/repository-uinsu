@@ -11,7 +11,7 @@ class ArchiveController extends Controller
     public function show(Request $request)
     {
         try {
-            $query = Archive::query()->with('user');
+            $query = Archive::query()->with(['user', 'subject']);
     
             if ($request->has('tahun')) {
                 $query->whereYear('date', $request->tahun);
@@ -37,6 +37,10 @@ class ArchiveController extends Controller
                 } else {
                     $query->where('status', $request->status);
                 }
+            }
+
+            if ($request->has('subjek')) {
+                $query->where('subject_id', $request->subjek);
             }
     
             $query->where('visibility', 'public');

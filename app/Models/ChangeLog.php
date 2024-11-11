@@ -13,6 +13,11 @@ class ChangeLog extends Model
 
     protected $guarded = ['id'];
 
+    protected $casts = [
+        'old_values' => 'array',
+        'new_values' => 'array',
+    ];
+
     public function archive()
     {
         return $this->belongsTo(Archive::class)->withTrashed();

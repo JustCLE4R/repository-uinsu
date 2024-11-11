@@ -108,9 +108,12 @@
                   <span><img src="assets/img/logo.png"  alt=""></span>
                 </div>
               </div>
-            @if (session('error'))
-              <div class="alert alert-danger">{{ session('error') }}</div>
-            @endif
+              @if (session()->has('error'))
+              <div style="color: red; font-weight: bold;" role="alert" data-aos="fade-up" data-aos-duration="1000">
+                <span class="fas fa-exclamation-triangle"></span>&nbsp;
+                {{ session('error') }}
+              </div>
+              @endif
             <form action="{{ route('login') }}" method="POST">
               @csrf
               <div class="input-boxes">

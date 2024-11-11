@@ -16,7 +16,7 @@ return new class extends Migration
             // $table->foreignId('archive_id')->constrained('archives')->onDelete('cascade');
             $table->unsignedBigInteger('archive_id');
             $table->foreignId('user_id')->constrained('users')->onDelete('cascade');
-            $table->enum('action',  ['accept', 'edit', 'reject', 'delete', 'permanent_delete', 'restore']);
+            $table->enum('action',  ['submit', 'revision', 'accept', 'edit', 'reject', 'delete', 'permanent_delete', 'restore']);
             $table->jsonb('old_values')->nullable()->default(null);
             $table->jsonb('new_values')->nullable()->default(null);
             $table->timestamps();
